@@ -4,7 +4,7 @@ const gulp = require( 'gulp' ),
 	watch = require( 'gulp-watch' );
 
 gulp.task( 'sass', () => {
-	const mask = ['library/**/*.scss', 'blocks/**/*.scss'],
+	const mask = ['lib/**/*.scss', 'blocks/**/*.scss'],
 		run = () => gulp.src( mask )
 			.pipe( concat( 'style.scss' ))
 			.pipe( sass(/*{
