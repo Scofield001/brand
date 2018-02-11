@@ -1,0 +1,94 @@
+$subject: #9f9f9f;
+$back-modal: rgba(58,56,56, 0.5);
+$hover: #ef5b70;
+$black: #222;
+
+.products {
+	padding: 45px 230px 113px;
+	&__title,
+	&__subject {
+		text-align: center;
+	}
+	&__title {
+		color: $black;
+		font-size: 30px;
+		letter-spacing: 0.75px;
+		margin-bottom: 7px;
+	}
+	&__subject {
+		color: $subject;
+		font-size: 14px;
+		font-weight: normal;
+		letter-spacing: 0.35px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 60px 0 18px;
+	}
+	&__item {
+		margin-bottom: 40px; //оставить (ошибка дизайнера)
+		&:hover {
+			box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+			.products__modal {
+				visibility: visible;
+			}
+		}
+	}
+	&__box {
+		position: relative;
+	}
+	&__modal {
+		position: absolute;
+		top: 0;
+		background: $back-modal;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+	}
+	&__btn {
+		margin-top: 97px;
+		margin-left: 70px;
+		background: url(../img/svg/cart-modal.svg) no-repeat 9px;
+		color: #fff;
+		font-size: 13px;
+		font-weight: bold;
+		// padding: 10px 13px 7px 43px;
+		padding: 13px 12px 10px 42px;
+		border: 1px solid #fff;
+	}
+	&__holder {
+		padding: 14px 15px 20px;
+	}
+	&__link {
+		font-size: 13px;
+		text-transform: uppercase;
+		&:hover {
+			color: $pink;
+		}
+	}
+	&__price {
+		color: $pink;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 13px;
+		display: block;
+	}
+	&__show-link {
+		margin: 0 auto;
+		width: 212px;
+		display: block;
+		color: #fff;
+		background: $pink;
+		font-size: 16px;
+		font-weight: bold;
+		letter-spacing: 0.4px;
+		padding: 14px 0 16px 24px;
+		&:hover {
+			background: $hover;
+			transition: .5s;
+		}
+	}
+}
