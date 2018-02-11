@@ -1,0 +1,10 @@
+$present-back: #dadad2;
+
+.present {
+	&__item {
+		&_one {
+			height: 542px;
+			background-image: url('../img/present-1.jpg');
+		}
+	}
+}
