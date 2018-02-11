@@ -4,6 +4,7 @@ $present-back: #dadad2;
 	padding: 98px 230px 30px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	&__list {
 		width: 560px;
 	}
