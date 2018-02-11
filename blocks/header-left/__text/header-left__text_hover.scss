@@ -1,0 +1,17 @@
+$pink: #f16d7f;
+
+.header-left {
+	&__text {
+		 &_hover {
+			font-weight: 900;
+		}
+	}
+	&__link {
+		&:hover {
+			.header-left__text_hover {
+				transition: .2s;
+				color: $pink;
+			}
+		}
+	}
+}
