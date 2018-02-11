@@ -1,0 +1,33 @@
+$pink: #f16d7f;
+.header-right {
+	display: inherit; //flex
+	justify-content: inherit; //space-between
+	&__img {
+		margin-right: 24px;
+		align-self: flex-end;
+	}
+	&__box {
+		background: $pink;
+		margin-right: 1px; //удалить(ошибка дизайнера)
+		&:hover {
+			.header-right__link {
+				color: #fff;
+			}
+		}
+	}
+	&__link {
+		display: inline-block;
+		padding: 8px 0 12px 19px;
+		// padding: 0;
+	}
+	&__holder {
+		&[open] .header-right__arrow {
+			color: #fff;
+		}
+	}
+	&__arrow {
+		outline: none;
+		padding: 10px 4px 12px 8px;
+		cursor: s-resize;
+	}
+}
