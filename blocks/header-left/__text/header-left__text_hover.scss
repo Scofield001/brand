@@ -8,6 +8,10 @@ $pink: #f16d7f;
 	}
 	&__link {
 		&:hover {
+			.header-left__img {
+				filter: none;
+				transition: .2s;
+			}
 			.header-left__text_hover {
 				transition: .2s;
 				color: $pink;
