@@ -3,6 +3,7 @@ $gray: #e8e8e8;
 $border-pink: #ef5b70;
 $black: #222;
 .slider {
+		background: $gray url(../img/curly-sue.jpg) no-repeat 100%;
 	&__nav {
 		background: #fff;
 	}
@@ -23,7 +24,6 @@ $black: #222;
 	    }
 	}
 	&__box {
-		background: $gray url(../img/curly-sue.jpg) no-repeat 235px -51px;
 		height: 613px;
 		display: flex;
 		align-items: center;
