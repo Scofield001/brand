@@ -1,7 +1,6 @@
 $pink: #f16d7f;
 .header-right {
 	display: inherit; //flex
-	justify-content: inherit; //space-between
 	&__img {
 		margin-right: 24px;
 		align-self: flex-end;
@@ -17,7 +16,8 @@ $pink: #f16d7f;
 	}
 	&__link {
 		display: inline-block;
-		padding: 8px 0 12px 19px;
+		padding: 9px 0 11px 18px;
+		letter-spacing: -0.2px; // удалить (ошибка рендеринга)
 	}
 	&__holder {
 		&[open] .header-right__arrow {
@@ -25,8 +25,9 @@ $pink: #f16d7f;
 		}
 	}
 	&__arrow {
+		font-size: 11px;
 		outline: none;
-		padding: 10px 4px 12px 8px;
+		padding: 14px 9px 12px 9px;
 		cursor: s-resize;
 	}
 }

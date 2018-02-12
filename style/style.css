@@ -230,10 +230,7 @@ summary {
   margin: 0 auto; }
 
 .header-right {
-  display: inherit;
-  -webkit-box-pack: inherit;
-  -ms-flex-pack: inherit;
-  justify-content: inherit; }
+  display: inherit; }
   .header-right__img {
     margin-right: 24px;
     -ms-flex-item-align: end;
@@ -245,12 +242,14 @@ summary {
       color: #fff; }
   .header-right__link {
     display: inline-block;
-    padding: 8px 0 12px 19px; }
+    padding: 9px 0 11px 18px;
+    letter-spacing: -0.2px; }
   .header-right__holder[open] .header-right__arrow {
     color: #fff; }
   .header-right__arrow {
+    font-size: 11px;
     outline: none;
-    padding: 10px 4px 12px 8px;
+    padding: 14px 9px 12px 9px;
     cursor: s-resize; }
 
 .header {
@@ -312,8 +311,8 @@ summary {
     height: 100%;
     visibility: hidden; }
   .products__btn {
-    margin-top: 97px;
-    margin-left: 70px;
+    display: block;
+    margin: 97px auto;
     background: url(../img/svg/cart-modal.svg) no-repeat 9px;
     color: #fff;
     font-size: 13px;
@@ -414,10 +413,11 @@ summary {
   .header-left__img {
     margin-right: 2px;
     -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
+    filter: grayscale(1);
+    margin-top: 1px; }
   .header-left__text {
     display: inline-block;
-    margin-bottom: 4px; }
+    margin-bottom: 5px; }
   .header-left__nav {
     display: inherit;
     margin-left: 37px;
@@ -429,20 +429,23 @@ summary {
       transition: .2s;
       color: #222; }
   .header-left__label, .header-left__search, .header-left__submit {
-    border: 1px solid #e6e6e6; }
+    border: 1px solid #e6e6e6;
+    outline: none; }
   .header-left__label {
-    padding: 10px 2px 10px 12px;
+    padding: 10px 5px 10px 12px;
     border-radius: 3px 0 0 3px;
     background-color: #cdcdcc;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
     border-right: 0;
-    text-align: left; }
+    text-align: left;
+    font-size: 11px; }
     .header-left__label:before {
       font-weight: 300;
-      padding-right: 8px;
+      padding-right: 7px;
       content: 'Browse';
-      letter-spacing: .35px; }
+      font-size: 14px;
+      letter-spacing: .5px; }
   .header-left__form {
     display: inherit; }
   .header-left__search {
@@ -450,7 +453,6 @@ summary {
     width: 281px;
     padding-left: 15px;
     letter-spacing: .35px;
-    outline: none;
     background-color: #fff; }
     .header-left__search::-webkit-input-placeholder {
       font-weight: 300;
@@ -468,7 +470,6 @@ summary {
     width: 36px;
     cursor: pointer;
     border-radius: 0 3px 3px 0;
-    outline: none;
     background: #fff url(../img/svg/search.svg) no-repeat 50%;
     border-left: 0; }
 

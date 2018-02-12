@@ -51,13 +51,12 @@ $black: #222;
 		visibility: hidden;
 	}
 	&__btn {
-		margin-top: 97px;
-		margin-left: 70px;
+		display: block;
+		margin: 97px auto;
 		background: url(../img/svg/cart-modal.svg) no-repeat 9px;
 		color: #fff;
 		font-size: 13px;
 		font-weight: bold;
-		// padding: 10px 13px 7px 43px;
 		padding: 13px 12px 10px 42px;
 		border: 1px solid #fff;
 	}
