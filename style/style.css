@@ -218,9 +218,12 @@ summary {
   font-size: 14px;
   cursor: pointer; }
 
+.center {
+  max-width: 1140px;
+  margin: 0 auto; }
+
 .container {
   width: 1600px;
-  padding: 0 230px;
   margin: 0 auto; }
 
 .header-right {
@@ -253,7 +256,7 @@ summary {
   align-items: center; }
 
 .products {
-  padding: 45px 230px 113px; }
+  padding: 45px 0 113px; }
   .products__title, .products__subject {
     text-align: center; }
   .products__title {
@@ -323,52 +326,46 @@ summary {
       background: #ef5b70;
       transition: .5s; }
 
-.slider__nav {
-  background: #fff; }
-
-.slider__list {
-  display: flex;
-  justify-content: center; }
-
-.slider__link {
-  border-bottom: 3px solid transparent;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 16px 23px 16px;
-  display: block; }
-  .slider__link:hover {
-    border-bottom: 3px solid #ef5b70;
-    color: #f16d7f; }
-
-.slider__box {
-  background: #e8e8e8 url(../img/curly-sue.jpg) no-repeat 235px -51px;
-  height: 613px;
-  display: flex;
-  align-items: center; }
-  .slider__box:hover .slider__holder {
-    border-color: #f16d7f;
-    transition: .2s; }
-  .slider__box:hover .slider__text {
-    color: #f16d7f;
-    transition: .2s; }
-
-.slider__holder {
-  border-left: 12px solid #222;
-  padding-left: 12px;
-  margin-bottom: 78px; }
-
-.slider__title, .slider__subject {
-  font-weight: 900;
-  text-transform: uppercase; }
-
-.slider__title {
-  font-size: 60px;
-  letter-spacing: 1.5px; }
-
-.slider__subject {
-  letter-spacing: 1px;
-  font-size: 40px; }
+.slider {
+  background: #e8e8e8 url(../img/curly-sue.jpg) no-repeat 100%; }
+  .slider__nav {
+    background: #fff; }
+  .slider__list {
+    display: flex;
+    justify-content: center; }
+  .slider__link {
+    border-bottom: 3px solid transparent;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px 23px 16px;
+    display: block; }
+    .slider__link:hover {
+      border-bottom: 3px solid #ef5b70;
+      color: #f16d7f; }
+  .slider__box {
+    height: 613px;
+    display: flex;
+    align-items: center; }
+    .slider__box:hover .slider__holder {
+      border-color: #f16d7f;
+      transition: .2s; }
+    .slider__box:hover .slider__text {
+      color: #f16d7f;
+      transition: .2s; }
+  .slider__holder {
+    border-left: 12px solid #222;
+    padding-left: 12px;
+    margin-bottom: 78px; }
+  .slider__title, .slider__subject {
+    font-weight: 900;
+    text-transform: uppercase; }
+  .slider__title {
+    font-size: 60px;
+    letter-spacing: 1.5px; }
+  .slider__subject {
+    letter-spacing: 1px;
+    font-size: 40px; }
 
 .header-left {
   display: inherit;
@@ -379,7 +376,8 @@ summary {
     letter-spacing: .68px;
     text-transform: uppercase; }
   .header-left__img {
-    margin-right: 2px; }
+    margin-right: 2px;
+    filter: grayscale(1); }
   .header-left__text {
     display: inline-block;
     margin-bottom: 4px; }
@@ -437,9 +435,10 @@ summary {
     border-left: 0; }
 
 .present {
-  padding: 98px 230px 30px;
+  padding: 98px 0 30px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .present__list {
     width: 560px; }
   .present__item {
@@ -467,6 +466,10 @@ summary {
 
 .header-left__text_hover {
   font-weight: 900; }
+
+.header-left__link:hover .header-left__img {
+  filter: none;
+  transition: .2s; }
 
 .header-left__link:hover .header-left__text_hover {
   transition: .2s;
