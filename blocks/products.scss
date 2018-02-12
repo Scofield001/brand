@@ -4,7 +4,10 @@ $hover: #ef5b70;
 $black: #222;
 
 .products {
-	padding: 45px 0 113px;
+	margin: 75px auto 113px;
+	&__header {
+		margin-bottom: 59px;
+	}
 	&__title,
 	&__subject {
 		text-align: center;
@@ -25,10 +28,10 @@ $black: #222;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding: 60px 0 18px;
+		margin-bottom: 19px;
 	}
 	&__item {
-		margin-bottom: 40px; //оставить (ошибка дизайнера)
+		margin-bottom: 39px;
 		&:hover {
 			box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 			.products__modal {
