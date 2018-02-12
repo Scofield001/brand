@@ -270,7 +270,7 @@ summary {
     height: 99px; }
 
 .products {
-  margin: 75px auto 113px; }
+  margin-bottom: 113px; }
   .products__header {
     margin-bottom: 59px; }
   .products__title, .products__subject {
@@ -350,7 +350,8 @@ summary {
       transition: .5s; }
 
 .slider {
-  background: #e8e8e8 url(../img/curly-sue.jpg) no-repeat 100%; }
+  background: #e8e8e8 url(../img/curly-sue.jpg) no-repeat 100%;
+  margin-bottom: 98px; }
   .slider__nav {
     background: #fff; }
   .slider__list {
@@ -420,8 +421,7 @@ summary {
   .header-left__nav {
     display: inherit;
     margin-left: 37px;
-    margin-top: 2px;
-    height: 38px; }
+    margin-top: 2px; }
   .header-left__holder {
     color: #838383; }
     .header-left__holder:hover .header-left__label:before {
@@ -473,7 +473,7 @@ summary {
     border-left: 0; }
 
 .present {
-  margin: 98px auto 45px;
+  margin-bottom: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
