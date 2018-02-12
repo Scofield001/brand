@@ -15,6 +15,7 @@ $placeholder: #a4a4a4;
 	}
 	&__img {
 		margin-right: 2px;
+		filter: grayscale(1);
 	}
 	&__text {
 		display: inline-block;
