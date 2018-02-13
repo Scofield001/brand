@@ -23,7 +23,7 @@
 						<span class="header-left__text">bran</span><span class="header-left__text header-left__text_hover">d</span>
 					</a>
 					<div class="header-left__nav">
-						<details class="header-left__holder">
+						<details class="header-left__holder" open> <!-- Удалить атрибут -->
 							<summary class="header-left__label"></summary>
 						</details>
 						<form action="#" class="header-left__form">
@@ -36,7 +36,10 @@
 					<img class="header-right__img" src="img/svg/cart.svg" alt="cart">
 					<div class="header-right__box">
 						<!-- ссылка на аккаунт -->
-						<a class="header-right__link" href="cart.html">My Account</a><details class="header-right__holder"><summary class="header-right__arrow"></summary></details> <!-- Если перенести details вниз то почему-то появится невидимая щель(расстояние) между ссылкой и details -->
+						<a class="header-right__link" href="cart.html">My Account</a>
+						<details class="header-right__holder" open>
+							<summary class="header-right__arrow"></summary>
+						</details> <!-- Удалить атрибут -->
 					</div>
 				</div>
 			</div>

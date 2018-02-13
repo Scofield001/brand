@@ -245,7 +245,7 @@ summary {
   .header-right__arrow {
     font-size: 11px;
     outline: none;
-    padding: 14px 9px 12px 9px;
+    padding: 14px 9px 12px 6px;
     cursor: s-resize; }
 
 .header {
@@ -372,36 +372,6 @@ summary {
     letter-spacing: 1px;
     font-size: 40px; }
 
-.present {
-  margin-bottom: 75px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .present__list {
-    width: 560px; }
-  .present__item {
-    margin-bottom: 20px;
-    background-color: #dadad2;
-    background-repeat: no-repeat; }
-    .present__item:hover .present__subject {
-      color: #f16d7f;
-      transition: .2s; }
-  .present__box {
-    margin-top: 26px;
-    padding: 14px 18px 10px;
-    background: #fff;
-    display: inline-block; }
-  .present__title, .present__subject {
-    font-weight: 900;
-    text-transform: uppercase; }
-  .present__title {
-    font-size: 18px;
-    letter-spacing: .45px;
-    margin-bottom: 4px; }
-  .present__subject {
-    font-size: 30px;
-    letter-spacing: .75px; }
-
 .header-left {
   display: inherit;
   align-items: center; }
@@ -470,6 +440,47 @@ summary {
     background: #fff url(../img/svg/search.svg) no-repeat 50%;
     border-left: 0; }
 
+.present {
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .present__list {
+    width: 560px; }
+  .present__item {
+    margin-bottom: 20px;
+    background-color: #dadad2;
+    background-repeat: no-repeat; }
+    .present__item:hover .present__subject {
+      color: #f16d7f;
+      transition: .2s; }
+  .present__box {
+    margin-top: 26px;
+    padding: 14px 18px 10px;
+    background: #fff;
+    display: inline-block; }
+  .present__title, .present__subject {
+    font-weight: 900;
+    text-transform: uppercase; }
+  .present__title {
+    font-size: 18px;
+    letter-spacing: .45px;
+    margin-bottom: 4px; }
+  .present__subject {
+    font-size: 30px;
+    letter-spacing: .75px; }
+
+.header-left__text_hover {
+  font-weight: 900; }
+
+.header-left__link:hover .header-left__img {
+  filter: none;
+  transition: .2s; }
+
+.header-left__link:hover .header-left__text_hover {
+  transition: .2s;
+  color: #f16d7f; }
+
 .present__item_four {
   height: 542px;
   background-image: url("../img/present-4.jpg"); }
@@ -486,14 +497,3 @@ summary {
   height: 261px;
   background-image: url("../img/present-2.jpg");
   background-position: 100% 0; }
-
-.header-left__text_hover {
-  font-weight: 900; }
-
-.header-left__link:hover .header-left__img {
-  filter: none;
-  transition: .2s; }
-
-.header-left__link:hover .header-left__text_hover {
-  transition: .2s;
-  color: #f16d7f; }
