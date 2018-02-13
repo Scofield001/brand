@@ -20,7 +20,7 @@ $placeholder: #a4a4a4;
 	}
 	&__text {
 		display: inline-block;
-		margin-bottom: 5px;
+		margin-bottom: 5px; //удалить (ошибка дизайнера)
 	}
 	&__nav {
 		display: inherit; //flex
@@ -57,7 +57,7 @@ $placeholder: #a4a4a4;
 			padding-right: 7px;
 			content: 'Browse';
 			font-size: 14px;
-			letter-spacing: .5px; //удалить (ошибка рендеринга)
+			letter-spacing: .5px; //удалить (ошибка рендера)
 		}
 	}
 	&__form {

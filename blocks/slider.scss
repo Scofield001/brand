@@ -2,6 +2,7 @@ $pink: #f16d7f;
 $gray: #e8e8e8;
 $border-pink: #ef5b70;
 $black: #222;
+
 .slider {
 	background: $gray url(../img/curly-sue.jpg) no-repeat 100%;
 	margin-bottom: 98px;
@@ -42,7 +43,6 @@ $black: #222;
 	&__holder {
 		border-left: 12px solid $black;
 		padding-left: 12px;
-		// align-self: center;
 		margin-bottom: 78px;
 	}
 	&__title,

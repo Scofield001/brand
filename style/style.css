@@ -237,7 +237,6 @@ summary {
     .header-right__box:hover .header-right__link {
       color: #fff; }
   .header-right__link {
-    display: inline-block;
     padding: 9px 0 11px 18px;
     letter-spacing: -0.2px; }
   .header-right__holder[open] .header-right__arrow {
@@ -264,7 +263,6 @@ summary {
   .products__title, .products__subject {
     text-align: center; }
   .products__title {
-    color: #222;
     font-size: 30px;
     letter-spacing: 0.75px;
     margin-bottom: 7px; }

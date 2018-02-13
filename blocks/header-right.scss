@@ -15,9 +15,8 @@ $pink: #f16d7f;
 		}
 	}
 	&__link {
-		display: inline-block;
 		padding: 9px 0 11px 18px;
-		letter-spacing: -0.2px; // удалить (ошибка рендеринга)
+		letter-spacing: -0.2px; // удалить (ошибка рендера)
 	}
 	&__holder {
 		&[open] .header-right__arrow {
