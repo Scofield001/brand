@@ -1,0 +1,69 @@
+$pink: #f16d7f;
+$border-gray: #e6e6e6;
+$gray: #e8e8e8;
+$title: #232323;
+$link: #4f4f4f;
+
+.menu-left {
+	color: $arrow;
+	position: relative;
+	&:hover {
+		.header-left__label {
+			&:before {
+				transition: .2s;
+				color: $black;
+			}
+		}
+	}
+	&__nav {
+		border: 1px solid $border-gray;
+		padding: 7px 13px;
+		position: absolute;
+		left: 36px;
+		border-radius: 5px;
+		background-color: #fff;
+		border-top: 0;
+	}
+	&__label {
+		outline: none;
+		height: 38px;
+		padding: 10px 6px 10px 12px;
+		border-radius: 3px 0 0 3px;
+		background-color: #cdcdcc;
+		background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+		font-size: 11px;
+		margin-left: 36px;
+		border: 1px solid $border-gray;
+		border-right: 0;
+		&:before {
+			font-weight: 300;
+			padding-right: 10px;
+			content: 'Browse';
+			font-size: 14px;
+		}
+	}
+	&__item {
+		margin: 12px 0;
+
+	}
+	&__title {
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 32px;
+		text-transform: uppercase;
+		letter-spacing: 0.35px;
+		border-bottom: 1px solid $gray;
+		color: $title;
+	}
+	&__link {
+		width: 234px;
+		display: block;
+		color: $link;
+		padding-left: 6px;
+		font-size: 14px;
+		letter-spacing: 0.35px;
+		&:hover {
+			color: $pink;
+		}
+	}
+}
