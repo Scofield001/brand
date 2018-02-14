@@ -1,0 +1,17 @@
+$back: #f16d7f;
+$hover: #ef5b70;
+
+.btn-expand {
+	margin: 0 auto;
+	display: block;
+	color: #fff;
+	background: $back;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.4px;
+	padding: 14px 19px 16px 24px;
+	&:hover {
+		background: $hover;
+		transition: .5s;
+	}
+}

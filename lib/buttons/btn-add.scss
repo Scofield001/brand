@@ -1,0 +1,15 @@
+.btn-add {
+	position: absolute;
+	top: 98px;
+	left: 70px;
+	visibility: hidden;
+	background: url(../img/svg/cart-modal.svg) no-repeat 9px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 13px 12px 10px 42px;
+	border: 1px solid #fff;
+	&:hover {
+		cursor: ne-resize;
+	}
+}
