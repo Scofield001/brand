@@ -6,7 +6,7 @@ $present-back: #dadad2;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	&__list {
-		width: 560px; //удалить, если изображения-контент
+		width: 560px;
 	}
 	&__item {
 		margin-bottom: 20px;
@@ -33,7 +33,6 @@ $present-back: #dadad2;
 	&__title {
 		font-size: 18px;
 		letter-spacing: .45px;
-		margin-bottom: 4px; //удалить (ошибка дизайнера)
 	}
 	&__subject {
 		font-size: 30px;
