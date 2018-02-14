@@ -1,4 +1,6 @@
 $pink: #f16d7f;
+$border-gray: #e6e6e6;
+
 .header-right {
 	display: flex;
 	&__img {
@@ -15,16 +17,5 @@ $pink: #f16d7f;
 	}
 	&__link {
 		padding: 9px 0 11px 18px;
-	}
-	&__holder {
-		&[open] .header-right__arrow {
-			color: #fff;
-		}
-	}
-	&__arrow {
-		font-size: 11px;
-		outline: none;
-		padding: 14px 9px 12px 6px;
-		cursor: s-resize;
 	}
 }
