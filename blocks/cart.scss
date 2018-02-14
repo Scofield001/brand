@@ -1,0 +1,83 @@
+$pink: #f16d7f;
+$border-gray: #e6e6e6;
+$color-link: #4a4a4a;
+
+.cart {
+	position: relative;
+	&[open] .cart__arrow {
+		color: #fff;
+	}
+	&__arrow {
+		font-size: 11px;
+		outline: none;
+		padding: 14px 10px 12px 7px;
+		cursor: s-resize;
+	}
+	&__box {
+		padding: 20px 13px 11px 16px;
+		border: 1px solid $border-gray;
+		position: absolute;
+		top: 54px;
+		right: -59px;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+	&__list {
+	}
+	&__item {
+		border-bottom: 1px solid $border-gray;
+		display: flex;
+		align-items: center;
+		margin-bottom: 16px;
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		padding-bottom: 16px;
+		&:hover {
+			.cart__text {
+				color: $pink;
+			}
+		}
+	}
+	&__inner {
+		font-size: 12px;
+		text-transform: uppercase;
+		margin-left: 9px;
+	}
+	&__text,
+	&__title {
+		padding-left: 5px;
+	}
+	&__title {
+		width: 135px;
+		margin-bottom: 7px;
+	}
+	&__multi {
+		font-size: 10px;
+	}
+	&__wrap {
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: space-between;
+		margin: 16px 0 31px;
+	}
+	&__link-next {
+		display: inline-block;
+		width: 100%;
+		height: 50px;
+		color: $color;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		border: 1px solid $color-link;
+		margin-bottom: 7px;
+		padding: 17px 72px;
+		&:hover {
+			color: $pink;
+			border-color: $pink;
+		}
+	}
+}
