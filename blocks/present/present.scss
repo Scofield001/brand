@@ -1,7 +1,7 @@
 $present-back: #dadad2;
 
 .present {
-	margin-bottom: 75px;
+	padding: 98px 0 50px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -33,6 +33,7 @@ $present-back: #dadad2;
 	&__title {
 		font-size: 18px;
 		letter-spacing: .45px;
+		margin-bottom: 4px;
 	}
 	&__subject {
 		font-size: 30px;
