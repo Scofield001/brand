@@ -18,61 +18,188 @@
 		<header class="header">
 			<div class="header__box center">
 				<div class="header-left">
-					<a class="header-left__link" href="index.html">
+					<a class="header-left__main-link" href="index.html">
 						<img class="header-left__img" src="img/logo.png" width="59" alt="logo">
-						bran
-						<span class="header-left__text">d</span>
+						<span>bran<span class="header-left__text">d</span></span>
 					</a>
-					<div class="header-left__nav">
-						<details class="header-left__holder" open> <!-- Удалить атрибут -->
-							<summary class="header-left__label"></summary>
-						</details>
-						<form action="#" class="header-left__form">
-							<input class="header-left__search" type="search" name="search" placeholder="Search for Item..." autofocus autocomplete="on">
-							<input class="header-left__submit" type="submit" name="submit" value="">
-						</form>
-					</div>
+					<details class="menu-left"> <!-- Удалить атрибут -->
+						<summary class="menu-left__label"></summary>
+						<nav class="menu-left__nav">
+							<div class="triangle"></div>
+							<ul class="menu-left__list">
+								<li class="menu-left__item menu-left__item_first">
+									<h3 class="menu-left__title">women</h3>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Dresses</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Tops</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Sweaters/Knits</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Jackets/Coats</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Blazers</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Denim</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Leggings/Pants</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Skirts/Shorts</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="#" class="menu-left__link">Accessories</a>
+								</li>
+							</ul>
+							<ul class="menu-left__list">
+								<li class="menu-left__item menu-left__item_first">
+									<h3 class="menu-left__title">men</h3>
+								</li>
+								<li class="menu-left__item">
+									<a href="" class="menu-left__link">Tees/Tank tops</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="" class="menu-left__link">Shirts/Polos</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="" class="menu-left__link">Sweaters</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="" class="menu-left__link">Sweatshirts/Hoodies</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="" class="menu-left__link">Blazers</a>
+								</li>
+								<li class="menu-left__item">
+									<a href="" class="menu-left__link">Jackets/vests</a>
+								</li>
+							</ul>
+						</nav>
+					</details>
+					<form action="#" class="header-left__form">
+						<input class="header-left__search" type="search" name="search" placeholder="Search for Item..." autofocus autocomplete="on">
+						<input class="header-left__submit" type="submit" name="submit" value="">
+					</form>
 				</div>
 				<div class="header-right">
 					<img class="header-right__img" src="img/svg/cart.svg" alt="cart">
 					<div class="header-right__box">
-						<a class="header-right__link" href="cart.html">My Account</a>
-						<details class="header-right__holder" open>
-							<summary class="header-right__arrow"></summary>
-						</details> <!-- Удалить атрибут -->
+						<a class="header-right__link" href="cart.html">My Account</a><details class="cart" open> <!-- Удалить атрибут -->
+							<summary class="cart__arrow"></summary>
+							<div class="cart__box">
+								<div class="triangle triangle_position"></div>
+								<ul class="cart__list">
+									<li class="cart__item">
+										<a class="cart__link" href="products/product.html">
+											<img class="cart__img" src="img/good-1.jpg" alt="good" width="72">
+											<div class="cart__inner">
+												<h3 class="cart__title">rebox zane</h3>
+												<div class="stars">
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gray">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+												</div>
+												<span class="cart__text">
+													<span class="cart__quantity">1</span>
+													<span class="cart__multi">&ensp;x&ensp;</span>
+													<span class="cart__price">$250</span>
+												</span>
+											</div>
+										</a>
+										<button class="btn-delete"></button>
+									</li>
+									<li class="cart__item">
+										<a class="cart__link" href="products/product.html">
+											<img class="cart__img" src="img/good-2.jpg" alt="good" width="72">
+											<div class="cart__inner">
+												<h3 class="cart__title">rebox zane</h3>
+												<div class="stars">
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+													<svg height="15" width="16" viewbox='0 0 14 22' class="stars__gold">
+													<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"/>
+													</svg>
+												</div>
+												<span class="cart__text">
+													<span class="cart__quantity">1</span>
+													<span class="cart__multi">&ensp;x&ensp;</span>
+													<span class="cart__price">$250</span>
+												</span>
+											</div>
+										</a>
+										<button class="btn-delete"></button>
+									</li>
+								</ul>
+								<div class="cart__wrap">
+									<span class="cart__main-text">total</span>
+									<span class="cart__main-price">$500.00</span>
+								</div>
+								<button class="btn-cart">checkout</button>
+								<a class="cart__link-next" href="cart.html">go to cart</a>
+							</div>
+						</details>
 					</div>
 				</div>
 			</div>
 		</header>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link" href="index.html">home</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">man</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">women</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">kids</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">accoseriese</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">featured</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">hot deals</a>
+				</li>
+			</ul>
+		</nav>
 		<main class="content">
 			<div class="slider">
-				<nav class="slider__nav">
-					<ul class="slider__list">
-						<li class="slider__item">
-							<a class="slider__link" href="index.html">home</a>
-						</li>
-						<li class="slider__item">
-							<a class="slider__link" href="#">man</a>
-						</li>
-						<li class="slider__item">
-							<a class="slider__link" href="#">women</a>
-						</li>
-						<li class="slider__item">
-							<a class="slider__link" href="#">kids</a>
-						</li>
-						<li class="slider__item">
-							<a class="slider__link" href="#">accoseriese</a>
-						</li>
-						<li class="slider__item">
-							<a class="slider__link" href="#">featured</a>
-						</li>
-						<li class="slider__item">
-							<a class="slider__link" href="#">hot deals</a>
-						</li>
-					</ul>
-				</nav>
 				<div class="slider__box center">
-					<div class="slider__holder">
+					<div class="slider__wrap">
 						<h2 class="slider__title">the brand</h2>
 						<h3 class="slider__subject">of luxerious
 							<span class="slider__text"> fashion</span>
@@ -117,103 +244,87 @@
 				</header>
 				<ul class="products__list">
 					<li class="products__item">
-						<div class="products__box">
-							<img src="img/main-product-1.jpg" alt="product" class="products__img" width="261">
-							<div class="products__modal">
-								<button class="products__btn">Add to Cart</button>
+						<a class="products__link" href='products/product.html' target='_blank'>
+							<img class="products__img" src="img/main-product-1.jpg" alt="product" width="261">
+							<div class="products__box">
+								<h3 class="products__caption">mango&ensp;people&ensp;t-shirt</h3>
+								<span class="products__price">$52.00</span>
 							</div>
-						</div>
-						<div class="products__holder">
-							<a href='products/product.html' target='_blank' class="products__link">mango&#8194;people&#8194;t-shirt</a>
-							<span class="products__price">$52.00</span>
-						</div>
+						</a>
+						<button class="btn-add">Add to Cart</button>
 					</li>
 					<li class="products__item">
-						<div class="products__box">
-							<img src="img/main-product-2.jpg" alt="product" class="products__img" width="261">
-							<div class="products__modal">
-								<button class="products__btn">Add to Cart</button>
+						<a class="products__link" href='products/product.html' target='_blank'>
+							<img class="products__img" src="img/main-product-2.jpg" alt="product" width="261">
+							<div class="products__box">
+								<h3 class="products__caption">mango&ensp;people&ensp;t-shirt</h3>
+								<span class="products__price">$52.00</span>
 							</div>
-						</div>
-						<div class="products__holder">
-							<a href='products/product.html' target='_blank' class="products__link">mango&#8194;people&#8194;t-shirt</a>
-							<span class="products__price">$52.00</span>
-						</div>
+						</a>
+						<button class="btn-add">Add to Cart</button>
 					</li>
 					<li class="products__item">
-						<div class="products__box">
-							<img src="img/main-product-3.jpg" alt="product" class="products__img" width="261">
-							<div class="products__modal">
-								<button class="products__btn">Add to Cart</button>
+						<a class="products__link" href='products/product.html' target='_blank'>
+							<img class="products__img" src="img/main-product-3.jpg" alt="product" width="261">
+							<div class="products__box">
+								<h3 class="products__caption">mango&ensp;people&ensp;t-shirt</h3>
+								<span class="products__price">$52.00</span>
 							</div>
-						</div>
-						<div class="products__holder">
-							<a href='products/product.html' target='_blank' class="products__link">mango&#8194;people&#8194;t-shirt</a>
-							<span class="products__price">$52.00</span>
-						</div>
+						</a>
+						<button class="btn-add">Add to Cart</button>
 					</li>
 					<li class="products__item">
-						<div class="products__box">
-							<img src="img/main-product-4.jpg" alt="product" class="products__img" width="261">
-							<div class="products__modal">
-								<button class="products__btn">Add to Cart</button>
+						<a class="products__link" href='products/product.html' target='_blank'>
+							<img class="products__img" src="img/main-product-4.jpg" alt="product" width="261">
+							<div class="products__box">
+								<h3 class="products__caption">mango&ensp;people&ensp;t-shirt</h3>
+								<span class="products__price">$52.00</span>
 							</div>
-						</div>
-						<div class="products__holder">
-							<a href='products/product.html' target='_blank' class="products__link">mango&#8194;people&#8194;t-shirt</a>
-							<span class="products__price">$52.00</span>
-						</div>
+						</a>
+						<button class="btn-add">Add to Cart</button>
 					</li>
 					<li class="products__item">
-						<div class="products__box">
-							<img src="img/main-product-5.jpg" alt="product" class="products__img" width="261">
-							<div class="products__modal">
-								<button class="products__btn">Add to Cart</button>
+						<a class="products__link" href='products/product.html' target='_blank'>
+							<img class="products__img" src="img/main-product-5.jpg" alt="product" width="261">
+							<div class="products__box">
+								<h3 class="products__caption">mango&ensp;people&ensp;t-shirt</h3>
+								<span class="products__price">$52.00</span>
 							</div>
-						</div>
-						<div class="products__holder">
-							<a href='products/product.html' target='_blank' class="products__link">mango&#8194;people&#8194;t-shirt</a>
-							<span class="products__price">$52.00</span>
-						</div>
+						</a>
+						<button class="btn-add">Add to Cart</button>
 					</li>
 					<li class="products__item">
-						<div class="products__box">
-							<img src="img/main-product-6.jpg" alt="product" class="products__img" width="261">
-							<div class="products__modal">
-								<button class="products__btn">Add to Cart</button>
+						<a class="products__link" href='products/product.html' target='_blank'>
+							<img class="products__img" src="img/main-product-6.jpg" alt="product" width="261">
+							<div class="products__box">
+								<h3 class="products__caption">mango&ensp;people&ensp;t-shirt</h3>
+								<span class="products__price">$52.00</span>
 							</div>
-						</div>
-						<div class="products__holder">
-							<a href='products/product.html' target='_blank' class="products__link">mango&#8194;people&#8194;t-shirt</a>
-							<span class="products__price">$52.00</span>
-						</div>
+						</a>
+						<button class="btn-add">Add to Cart</button>
 					</li>
 					<li class="products__item">
-						<div class="products__box">
-							<img src="img/main-product-7.jpg" alt="product" class="products__img" width="261">
-							<div class="products__modal">
-								<button class="products__btn">Add to Cart</button>
+						<a class="products__link" href='products/product.html' target='_blank'>
+							<img class="products__img" src="img/main-product-7.jpg" alt="product" width="261">
+							<div class="products__box">
+								<h3 class="products__caption">mango&ensp;people&ensp;t-shirt</h3>
+								<span class="products__price">$52.00</span>
 							</div>
-						</div>
-						<div class="products__holder">
-							<a href='products/product.html' target='_blank' class="products__link">mango&#8194;people&#8194;t-shirt</a>
-							<span class="products__price">$52.00</span>
-						</div>
+						</a>
+						<button class="btn-add">Add to Cart</button>
 					</li>
 					<li class="products__item">
-						<div class="products__box">
-							<img src="img/main-product-8.jpg" alt="product" class="products__img" width="261">
-							<div class="products__modal">
-								<button class="products__btn">Add to Cart</button>
+						<a class="products__link" href='products/product.html' target='_blank'>
+							<img class="products__img" src="img/main-product-8.jpg" alt="product" width="261">
+							<div class="products__box">
+								<h3 class="products__caption">mango&ensp;people&ensp;t-shirt</h3>
+								<span class="products__price">$52.00</span>
 							</div>
-						</div>
-						<div class="products__holder">
-							<a href='products/product.html' target='_blank' class="products__link">mango&#8194;people&#8194;t-shirt</a>
-							<span class="products__price">$52.00</span>
-						</div>
+						</a>
+						<button class="btn-add">Add to Cart</button>
 					</li>
 				</ul>
-				<a class="products__show-link" href="catalog.html">Browse All Product&#8194;&rarr;</a>
+				<button class="btn-expand">Browse All Product&ensp;&rarr;</button>
 			</section>
 		</main>
 		<footer class="footer"></footer>
