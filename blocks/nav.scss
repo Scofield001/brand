@@ -1,0 +1,23 @@
+$border-pink: #ef5b70;
+
+.nav {
+	background: #fff;
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+	}
+	&__link {
+		border-bottom: 3px solid transparent;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 16px 23px 16px;
+		display: block;
+		&:hover {
+			border-bottom: 3px solid $border-pink;
+			color: $pink;
+		}
+	}
+}
