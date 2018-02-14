@@ -5,9 +5,11 @@ $border-gray: #e6e6e6;
 $placeholder: #a4a4a4;
 
 .header-left {
-	display: inherit; //flex
+	display: flex;
 	align-items: center;
 	&__link {
+		display: flex;
+		align-items: center;
 		font-size: 27px;
 		font-weight: 300;
 		letter-spacing: .68px;
@@ -16,16 +18,26 @@ $placeholder: #a4a4a4;
 	&__img {
 		margin-right: 2px;
 		filter: grayscale(1);
-		margin-top: 1px; //удалить (ошибка дизайнера)
+	}
+	&__link {
+		&:hover {
+			.header-left__img {
+				filter: none;
+				transition: .2s;
+			}
+			.header-left__text {
+				color: $pink;
+				transition: .2s;
+			}
+		}
 	}
 	&__text {
 		display: inline-block;
-		margin-bottom: 5px; //удалить (ошибка дизайнера)
+		font-weight: 900;
 	}
 	&__nav {
-		display: inherit; //flex
+		display: flex;
 		margin-left: 37px;
-		margin-top: 2px; //удалить (ошибка дизайнера)
 	}
 	&__holder {
 		color: $arrow;
@@ -54,14 +66,13 @@ $placeholder: #a4a4a4;
 		font-size: 11px;
 		&:before {
 			font-weight: 300;
-			padding-right: 7px;
+			padding-right: 10px;
 			content: 'Browse';
 			font-size: 14px;
-			letter-spacing: .5px; //удалить (ошибка рендера)
 		}
 	}
 	&__form {
-		display: inherit; //flex
+		display: flex;
 	}
 	&__search {
 		font-size: 14px;
