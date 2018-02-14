@@ -1,36 +1,15 @@
 $pink: #f16d7f;
 $gray: #e8e8e8;
-$border-pink: #ef5b70;
 $black: #222;
 
 .slider {
 	background: $gray url(../img/curly-sue.jpg) no-repeat 100%;
-	margin-bottom: 98px;
-	&__nav {
-		background: #fff;
-	}
-	&__list {
-		display: flex;
-		justify-content: center;
-	}
-	&__link {
-		border-bottom: 3px solid transparent;
-		font-size: 14px;
-		font-weight: bold;
-		text-transform: uppercase;
-	    padding: 16px 23px 16px;
-	    display: block;
-	    &:hover {
-	    	border-bottom: 3px solid $border-pink;
-	    	color: $pink;
-	    }
-	}
 	&__box {
 		height: 613px;
 		display: flex;
 		align-items: center;
 		&:hover {
-			.slider__holder {
+			.slider__wrap {
 				border-color: $pink;
 				transition: .2s;
 			}
@@ -40,10 +19,9 @@ $black: #222;
 			}
 		}
 	}
-	&__holder {
+	&__wrap {
 		border-left: 12px solid $black;
 		padding-left: 12px;
-		margin-bottom: 78px;
 	}
 	&__title,
 	&__subject {
