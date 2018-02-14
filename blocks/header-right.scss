@@ -1,13 +1,12 @@
 $pink: #f16d7f;
 .header-right {
-	display: inherit; //flex
+	display: flex;
 	&__img {
 		margin-right: 24px;
 		align-self: flex-end;
 	}
 	&__box {
 		background: $pink;
-		margin-right: 1px; //удалить(ошибка дизайнера)
 		&:hover {
 			.header-right__link {
 				color: #fff;
@@ -16,7 +15,6 @@ $pink: #f16d7f;
 	}
 	&__link {
 		padding: 9px 0 11px 18px;
-		letter-spacing: -0.2px; // удалить (ошибка рендера)
 	}
 	&__holder {
 		&[open] .header-right__arrow {
