@@ -1,0 +1,61 @@
+$pink: #f16d7f;
+$back: #222224;
+$white: #fbfbfb;
+.banner {
+	display: flex;
+	margin: 55px auto 97px;
+	background: $back;
+	&__pic {
+		height: 529px;
+		background: url(../img/snow.jpg) no-repeat;
+		width: 767px;
+		&:hover {
+			.banner__slogan {
+				color: $pink;
+				transition: .2s
+			}
+		}
+	}
+	&__wrap {
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		display: inline-block;
+		color: #fff;
+		margin: 134px 36px;
+	}
+	&__title {
+		font-size: 54px;
+	}
+	&__text {
+		font-size: 32px;
+		letter-spacing: 0.9px;
+	}
+	&__list {
+		padding: 52px 44px 0 34px;
+		flex-grow: 1;
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+	&__icon {
+		align-self: flex-start;
+	}
+	&__inner {
+		color: $white;
+		max-width: 219px;
+	}
+	&__subject {
+		font-size: 20px;
+		letter-spacing: 0.5px;
+	}
+	&__lead {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 24px;
+		letter-spacing: 0.35px;
+		margin-top: 11px;
+	}
+}
