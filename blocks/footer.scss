@@ -1,0 +1,48 @@
+$color: #898989;
+$pink: #f16d7f;
+
+.footer {
+	background: #fff;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 110px 0 70px;
+	}
+	&__wrap {
+	}
+	&__text {
+		max-width: 428px;
+		color: $color;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 24px;
+		letter-spacing: 0.35px;
+		margin-top: 22px;
+	}
+	&__list {
+		margin-right: 10px;
+	}
+	&__item {
+	}
+	&__title {
+		color: $pink;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 0.45px;
+		margin: 11px 0 37px;
+	}
+	&__link {
+		color: $color;
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		display: block;
+		text-transform: capitalize;
+		margin-bottom: 24px;
+		width: 166px; //под вопросом
+		&:hover {
+			color: $pink;
+			// fill: #fff;
+		}
+	}
+}
