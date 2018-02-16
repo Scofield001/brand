@@ -1,14 +1,17 @@
-$pink: #f16d7f;
+$arrow: #838383;
+$black: #222;
 $border-gray: #e6e6e6;
 $gray: #e8e8e8;
 $title: #232323;
 $link: #4f4f4f;
+$pink: #f16d7f;
 
 .menu-left {
 	color: $arrow;
 	position: relative;
+	z-index: 1; /*Из-за центрального меню*/
 	&:hover {
-		.header-left__label {
+		.menu-left__label {
 			&:before {
 				transition: .2s;
 				color: $black;

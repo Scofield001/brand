@@ -1,10 +1,11 @@
-$pink: #f16d7f;
 $border-gray: #e6e6e6;
+$pink: #f16d7f;
 $color-link: #4a4a4a;
 
-.cart {
+.min-cart {
+	z-index: 1; /*Из-за центрального меню*/
 	position: relative;
-	&[open] .cart__arrow {
+	&[open] .min-cart__arrow {
 		color: #fff;
 	}
 	&__arrow {
@@ -14,15 +15,13 @@ $color-link: #4a4a4a;
 		cursor: s-resize;
 	}
 	&__box {
-		padding: 20px 13px 11px 16px;
+		padding: 20px 13px 8px 16px;
 		border: 1px solid $border-gray;
 		position: absolute;
 		top: 54px;
 		right: -59px;
 		border-radius: 5px;
 		background-color: #fff;
-	}
-	&__list {
 	}
 	&__item {
 		border-bottom: 1px solid $border-gray;
@@ -73,7 +72,7 @@ $color-link: #4a4a4a;
 		font-weight: bold;
 		text-transform: uppercase;
 		border: 1px solid $color-link;
-		margin-bottom: 7px;
+		margin-bottom: 11px;
 		padding: 17px 72px;
 		&:hover {
 			color: $pink;

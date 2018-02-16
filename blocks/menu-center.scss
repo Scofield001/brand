@@ -1,0 +1,47 @@
+$pink: #f16d7f;
+$border: #e6e6e6;
+$gray: #e8e8e8;
+$placeholder: #a4a4a4;
+$title: #232323;
+$link: #4f4f4f;
+
+.menu-center {
+	/*z-index: 2; не определился как лучше*/
+	position: absolute;
+	background: #fff;
+	right: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	min-width: 846px;
+	padding: 0 20px 0px 24px;
+	border-radius: 5px;
+	border: 1px solid $border;
+	visibility: hidden;
+	&__link {
+		text-transform: capitalize;
+	}
+	&__item {
+		margin: 12px 0;
+	}
+	&__title {
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 32px;
+		text-transform: uppercase;
+		letter-spacing: 0.35px;
+		border-bottom: 1px solid $gray;
+		color: $title;
+	}
+	&__link {
+		width: 234px;
+		display: block;
+		color: $link;
+		font-size: 14px;
+		letter-spacing: 0.35px;
+		&:hover {
+			color: $pink;
+		}
+	}
+}
