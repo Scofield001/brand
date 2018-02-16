@@ -36,26 +36,6 @@
   src: url("../fonts/opensans/opensans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/opensans-regular.woff2") format("woff2"), url("../fonts/opensans/opensans-regular.woff") format("woff"), url("../fonts/opensans/opensans-regular.ttf") format("truetype");
   font-weight: normal; }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 27px;
-  font-weight: 300;
-  letter-spacing: .68px;
-  text-transform: uppercase; }
-  .logo:hover .logo__img {
-    filter: none;
-    transition: .2s; }
-  .logo:hover .logo__text {
-    color: #f16d7f;
-    transition: .2s; }
-  .logo__img {
-    margin-right: 8px;
-    filter: grayscale(1); }
-  .logo__text {
-    display: inline-block;
-    font-weight: 900; }
-
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -407,6 +387,26 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 99px; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+  font-weight: 300;
+  letter-spacing: .68px;
+  text-transform: uppercase; }
+  .logo:hover .logo__img {
+    filter: none;
+    transition: .2s; }
+  .logo:hover .logo__text {
+    color: #f16d7f;
+    transition: .2s; }
+  .logo__img {
+    margin-right: 8px;
+    filter: grayscale(1); }
+  .logo__text {
+    display: inline-block;
+    font-weight: 900; }
 
 .menu-center {
   /*z-index: 2; не определился как лучше*/
@@ -852,13 +852,13 @@ p {
   align-self: center;
   margin-bottom: 19px; }
 
+.banner__item_column {
+  flex-direction: column; }
+
 .banner__inner_text {
   padding: 0;
   text-align: center;
   max-width: 310px; }
-
-.banner__item_column {
-  flex-direction: column; }
 
 .banner__list_display {
   display: flex;
