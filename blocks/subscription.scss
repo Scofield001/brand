@@ -1,0 +1,58 @@
+$hover: #ef5b70;
+$pink: #f16d7f;
+
+.subscription {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	justify-content: center;
+	opacity: .5;
+	&:hover {
+		background: rgba(255,255,255,0.5);
+		opacity: 1;
+		transition: .2s;
+	}
+	&__box {
+		margin-right: auto;
+		margin-left: 92px;
+		text-align: center;
+	}
+	&__title {
+		font-size: 24px;
+		letter-spacing: 0.6px;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+	&__subject {
+		font-size: 14px;
+		letter-spacing: 0.35px;
+		text-transform: uppercase;
+		margin-bottom: 31px;
+	}
+	&__form {
+		display: flex;
+		height: 46px;
+	}
+	&__email {
+		width: 282px;
+		border-radius: 23px 0 0 23px;
+		background-color: #e1e1e1;
+		border: 0;
+		padding-left: 27px;
+		outline: none;
+	}
+	&__btn {
+		border: 0;
+		border-radius: 0 23px 23px 0;
+		cursor: pointer;
+		color: #fff;
+		font-size: 14px;
+		letter-spacing: 0.35px;
+		background-color: $pink;
+		padding: 15px 20px;
+		&:hover {
+			background-color: $hover;
+			transition: .2s;
+		}
+	}
+}
