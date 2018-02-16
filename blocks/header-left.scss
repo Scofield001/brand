@@ -1,43 +1,11 @@
-$pink: #f16d7f;
-$black: #222;
-$arrow: #838383;
 $border-gray: #e6e6e6;
-$gray: #e8e8e8;
 $placeholder: #a4a4a4;
-$title: #232323;
-$link: #4f4f4f;
 
 .header-left {
 	display: flex;
 	align-items: center;
-	&__main-link {
-		display: flex;
-		align-items: center;
-		font-size: 27px;
-		font-weight: 300;
-		letter-spacing: .68px;
-		text-transform: uppercase;
-		&:hover {
-			.header-left__img {
-				filter: none;
-				transition: .2s;
-			}
-			.header-left__text {
-				color: $pink;
-				transition: .2s;
-			}
-		}
-	}
-	&__img {
-		margin-right: 8px;
-		filter: grayscale(1);
-	}
-	&__text {
-		display: inline-block;
-		font-weight: 900;
-	}
 	&__search,
-	&__submit {
+	&__btn {
 		border: 1px solid $border-gray;
 		outline: none;
 		height: 38px;
@@ -68,7 +36,7 @@ $link: #4f4f4f;
 			color: $placeholder;
 		}
 	}
-	&__submit {
+	&__btn {
 		width: 36px;
 		cursor: pointer;
 		border-radius: 0 3px 3px 0;
