@@ -1,0 +1,28 @@
+$pink: #f16d7f;
+
+.logo {
+	display: flex;
+	align-items: center;
+	font-size: 27px;
+	font-weight: 300;
+	letter-spacing: .68px;
+	text-transform: uppercase;
+	&:hover {
+		.logo__img {
+			filter: none;
+			transition: .2s;
+		}
+		.logo__text {
+			color: $pink;
+			transition: .2s;
+		}
+	}
+	&__img {
+		margin-right: 8px;
+		filter: grayscale(1);
+	}
+	&__text {
+		display: inline-block;
+		font-weight: 900;
+	}
+}
