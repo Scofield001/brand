@@ -1,0 +1,9 @@
+.offers {
+	background: url(../img/back-review.jpg) no-repeat;
+	height: 438px;
+	display: flex;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}
+}
