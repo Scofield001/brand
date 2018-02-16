@@ -1,8 +1,8 @@
-$header: #ececec;
+$border: #ececec;
 
 .header {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
-	border-bottom: 1px solid $header;
+	border-bottom: 1px solid $border;
 	&__box {
 		display: flex;
 		justify-content: space-between;
