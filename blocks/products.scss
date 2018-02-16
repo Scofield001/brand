@@ -2,7 +2,7 @@ $subject: #9f9f9f;
 $pink: #f16d7f;
 
 .products {
-	padding: 25px 0 113px;
+	padding: 25px 0 58px;
 	&__header {
 		margin-bottom: 60px;
 	}
@@ -25,7 +25,7 @@ $pink: #f16d7f;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin-bottom: 16px;
+		margin-bottom: 18px;
 	}
 	&__item {
 		position: relative;
@@ -44,7 +44,7 @@ $pink: #f16d7f;
 		display: block;
 	}
 	&__box {
-		padding: 14px 15px 20px;
+		padding: 17px 15px 20px;
 	}
 	&__wrap {
 		padding: 14px 15px 20px;
