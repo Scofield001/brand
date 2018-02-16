@@ -1,0 +1,35 @@
+$back: #e6e6e6;
+$pink: #f16d7f;
+$text: #7a7a7a;
+
+.footer-bottom {
+	padding: 24px 0;
+	background: $back;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__text {
+		color: $text;
+		font-size: 16px;
+		letter-spacing: 0.4px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 191px;
+	}
+	&__item {
+	}
+	&__link {
+		font-size: 0;
+		background-color: #fff;
+		display: block;
+		width: 32px;
+		height: 32px;
+		&:hover {
+			background-color: $pink;
+		}
+	}
+}
