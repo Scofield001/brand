@@ -9,12 +9,14 @@ $pink: #f16d7f;
 		flex-wrap: wrap;
 		padding: 110px 0 70px;
 	}
+	&__wrap {
+		width: 428px;
+	}
 	&__nav {
 		display: flex;
 		justify-content: space-between;
 	}
 	&__text {
-		max-width: 428px;
 		color: $color;
 		font-size: 14px;
 		font-weight: 300;
@@ -24,6 +26,7 @@ $pink: #f16d7f;
 	}
 	&__list {
 		margin-right: 60px;
+		width: 166px;
 	}
 	&__item {
 	}
@@ -41,7 +44,6 @@ $pink: #f16d7f;
 		display: block;
 		text-transform: capitalize;
 		margin-bottom: 24px;
-		width: 166px; //под вопросом
 		&:hover {
 			color: $pink;
 			// fill: #fff;
