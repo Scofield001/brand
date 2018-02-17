@@ -284,6 +284,14 @@ p {
 .triangle_position {
   left: 23px; }
 
+.container {
+  width: 1600px;
+  margin: 0 auto; }
+
+.center {
+  width: 1140px;
+  margin: 0 auto; }
+
 .account[open] {
   color: #fff; }
 
@@ -337,14 +345,6 @@ p {
     display: flex;
     flex-direction: column;
     margin-right: 50px; }
-
-.center {
-  width: 1140px;
-  margin: 0 auto; }
-
-.container {
-  width: 1600px;
-  margin: 0 auto; }
 
 .header-left {
   display: flex;
@@ -468,6 +468,8 @@ p {
     border-radius: 5px;
     background-color: #fff;
     border-top: 0; }
+  .menu-left__list {
+    width: 234px; }
   .menu-left__item {
     margin: 12px 0; }
   .menu-left__title {
@@ -479,7 +481,6 @@ p {
     border-bottom: 1px solid #e8e8e8;
     color: #232323; }
   .menu-left__link {
-    width: 234px;
     display: block;
     color: #4f4f4f;
     padding-left: 6px;
@@ -546,6 +547,7 @@ p {
     border-bottom: 1px solid #e6e6e6;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 16px; }
   .min-cart__link {
     display: flex;
@@ -560,7 +562,6 @@ p {
   .min-cart__text, .min-cart__title {
     padding-left: 5px; }
   .min-cart__title {
-    width: 135px;
     margin-bottom: 7px; }
   .min-cart__multi {
     font-size: 10px; }
@@ -572,8 +573,7 @@ p {
     justify-content: space-between;
     margin: 16px 0 31px; }
   .min-cart__link-next {
-    display: inline-block;
-    width: 100%;
+    display: block;
     height: 50px;
     color: #4a4a4a;
     font-size: 14px;
@@ -593,6 +593,49 @@ p {
   .offers__box {
     display: flex;
     justify-content: space-between; }
+
+.present {
+  padding: 98px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .present__list {
+    width: 560px; }
+  .present__one, .present__two, .present__three, .present__four {
+    margin-bottom: 20px;
+    background-color: #dadad2;
+    background-repeat: no-repeat; }
+    .present__one:hover .present__subject, .present__two:hover .present__subject, .present__three:hover .present__subject, .present__four:hover .present__subject {
+      color: #f16d7f;
+      transition: .2s; }
+  .present__one, .present__four {
+    height: 542px; }
+  .present__two, .present__three {
+    height: 261px; }
+  .present__one {
+    background-image: url("../img/present-1.jpg"); }
+  .present__two {
+    background-image: url("../img/present-2.jpg");
+    background-position: 100% 0; }
+  .present__three {
+    background-image: url("../img/present-3.jpg"); }
+  .present__four {
+    background-image: url("../img/present-4.jpg"); }
+  .present__box {
+    margin-top: 26px;
+    padding: 14px 18px 10px;
+    background: #fff;
+    display: inline-block; }
+  .present__title, .present__subject {
+    font-weight: 900;
+    text-transform: uppercase; }
+  .present__title {
+    font-size: 18px;
+    letter-spacing: .45px;
+    margin-bottom: 4px; }
+  .present__subject {
+    font-size: 30px;
+    letter-spacing: .75px; }
 
 .products {
   padding: 25px 0 58px; }
@@ -662,8 +705,9 @@ p {
     border-radius: 50%;
     align-self: flex-start;
     margin-right: 28px; }
+  .review__wrap {
+    width: 386px; }
   .review__lead {
-    max-width: 386px;
     font-size: 16px;
     font-style: italic;
     line-height: 26px;
@@ -810,11 +854,12 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 110px 0 70px; }
+  .footer__wrap {
+    width: 428px; }
   .footer__nav {
     display: flex;
     justify-content: space-between; }
   .footer__text {
-    max-width: 428px;
     color: #898989;
     font-size: 14px;
     font-weight: 300;
@@ -822,7 +867,8 @@ p {
     letter-spacing: 0.35px;
     margin-top: 22px; }
   .footer__list {
-    margin-right: 60px; }
+    margin-right: 60px;
+    width: 166px; }
   .footer__title {
     color: #f16d7f;
     font-size: 18px;
@@ -835,8 +881,7 @@ p {
     letter-spacing: 0.4px;
     display: block;
     text-transform: capitalize;
-    margin-bottom: 24px;
-    width: 166px; }
+    margin-bottom: 24px; }
     .footer__link:hover {
       color: #f16d7f; }
 
@@ -868,17 +913,15 @@ p {
   z-index: 1;
   position: absolute;
   background: #fff;
-  right: -90px;
+  left: -198px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: space-between;
   padding: 0 20px 0px 24px;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
   visibility: hidden; }
-  .mega__link {
-    text-transform: capitalize; }
+  .mega__list {
+    width: 234px; }
   .mega__item {
     margin: 12px 0; }
   .mega__title {
@@ -890,11 +933,11 @@ p {
     border-bottom: 1px solid #e8e8e8;
     color: #232323; }
   .mega__link {
-    width: 234px;
     display: block;
     color: #4f4f4f;
     font-size: 14px;
-    letter-spacing: 0.35px; }
+    letter-spacing: 0.35px;
+    text-transform: capitalize; }
     .mega__link:hover {
       color: #f16d7f; }
 
@@ -913,36 +956,6 @@ p {
     .nav__link:hover {
       border-bottom: 3px solid #ef5b70;
       color: #f16d7f; }
-
-.present {
-  padding: 98px 0 50px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .present__list {
-    width: 560px; }
-  .present__item {
-    margin-bottom: 20px;
-    background-color: #dadad2;
-    background-repeat: no-repeat; }
-    .present__item:hover .present__subject {
-      color: #f16d7f;
-      transition: .2s; }
-  .present__box {
-    margin-top: 26px;
-    padding: 14px 18px 10px;
-    background: #fff;
-    display: inline-block; }
-  .present__title, .present__subject {
-    font-weight: 900;
-    text-transform: uppercase; }
-  .present__title {
-    font-size: 18px;
-    letter-spacing: .45px;
-    margin-bottom: 4px; }
-  .present__subject {
-    font-size: 30px;
-    letter-spacing: .75px; }
 
 .banner__icon_center {
   align-self: center;
@@ -996,22 +1009,7 @@ p {
 .mega__box_margin {
   margin: 0 45px; }
 
-.nav__item_hover:hover .mega {
-  visibility: visible; }
-
-.present__item_four {
-  height: 542px;
-  background-image: url("../img/present-4.jpg"); }
-
-.present__item_one {
-  height: 542px;
-  background-image: url("../img/present-1.jpg"); }
-
-.present__item_three {
-  height: 261px;
-  background-image: url("../img/present-3.jpg"); }
-
-.present__item_two {
-  height: 261px;
-  background-image: url("../img/present-2.jpg");
-  background-position: 100% 0; }
+.nav__item_hover {
+  position: relative; }
+  .nav__item_hover:hover .mega {
+    visibility: visible; }
