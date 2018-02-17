@@ -8,7 +8,10 @@ $present-back: #dadad2;
 	&__list {
 		width: 560px;
 	}
-	&__item {
+	&__one,
+	&__two,
+	&__three,
+	&__four {
 		margin-bottom: 20px;
 		background-color: $present-back;
 		background-repeat: no-repeat;
@@ -18,6 +21,27 @@ $present-back: #dadad2;
 				transition: .2s;
 			}
 		}
+	}
+	&__one,
+	&__four {
+		height: 542px;
+	}
+	&__two,
+	&__three {
+		height: 261px;
+	}
+	&__one {
+		background-image: url('../img/present-1.jpg');
+	}
+	&__two {
+		background-image: url('../img/present-2.jpg');
+		background-position: 100% 0;
+	}
+	&__three {
+		background-image: url('../img/present-3.jpg');
+	}
+	&__four {
+		background-image: url('../img/present-4.jpg');
 	}
 	&__box {
 		margin-top: 26px;
