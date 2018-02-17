@@ -30,6 +30,7 @@ $color-link: #4a4a4a;
 		border-bottom: 1px solid $border-gray;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		margin-bottom: 16px;
 	}
 	&__link {
@@ -52,7 +53,6 @@ $color-link: #4a4a4a;
 		padding-left: 5px;
 	}
 	&__title {
-		width: 135px;
 		margin-bottom: 7px;
 	}
 	&__multi {
@@ -67,8 +67,7 @@ $color-link: #4a4a4a;
 		margin: 16px 0 31px;
 	}
 	&__link-next {
-		display: inline-block;
-		width: 100%;
+		display: block;
 		height: 50px;
 		color: $color-link;
 		font-size: 14px;
