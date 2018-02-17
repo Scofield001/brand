@@ -9,17 +9,15 @@ $link: #4f4f4f;
 	z-index: 1;
 	position: absolute;
 	background: #fff;
-	right: -90px;
+	left: -198px;
 	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
 	justify-content: space-between;
 	padding: 0 20px 0px 24px;
 	border-radius: 5px;
 	border: 1px solid $border;
 	visibility: hidden;
-	&__link {
-		text-transform: capitalize;
+	&__list {
+		width: 234px;
 	}
 	&__item {
 		margin: 12px 0;
@@ -34,11 +32,11 @@ $link: #4f4f4f;
 		color: $title;
 	}
 	&__link {
-		width: 234px;
 		display: block;
 		color: $link;
 		font-size: 14px;
 		letter-spacing: 0.35px;
+		text-transform: capitalize;
 		&:hover {
 			color: $pink;
 		}
