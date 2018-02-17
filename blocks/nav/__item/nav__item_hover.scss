@@ -1,0 +1,9 @@
+.nav {
+	&__item_hover {
+		&:hover {
+			.mega{
+				visibility: visible;
+			}
+		}
+	}
+}
