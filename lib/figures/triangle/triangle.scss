@@ -1,19 +1,12 @@
 $border-gray: #e6e6e6;
-
 .triangle {
+	width: 9px;
+	height: 9px;
+	background-color: #fff;
+	transform: rotate(45deg);
+	border-top: 1px solid $border-gray;
+	border-left: 1px solid $border-gray;
 	position: absolute;
-	left: 61px;
-	top: -8px;
-	border-style: solid;
-	border-width: 0 10px 8px 10px;
-	border-color: transparent transparent $border-gray transparent;
-	&::before {
-		content: '';
-		position: absolute;
-		border-style: solid;
-		border-width: 0 8px 7px 8px;
-		border-color: transparent transparent #fff transparent;
-		top: 1px;
-		left: -8px;
-	}
+	left: 69px;
+	top: -5px;
 }
