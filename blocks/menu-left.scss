@@ -50,6 +50,9 @@ $pink: #f16d7f;
 		background-color: #fff;
 		border-top: 0;
 	}
+	&__list {
+		width: 234px;
+	}
 	&__item {
 		margin: 12px 0;
 
@@ -64,7 +67,6 @@ $pink: #f16d7f;
 		color: $title;
 	}
 	&__link {
-		width: 234px;
 		display: block;
 		color: $link;
 		padding-left: 6px;
