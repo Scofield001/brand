@@ -3,12 +3,18 @@ $back: #222224;
 $white: #fbfbfb;
 .banner {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 55px auto 97px;
 	background: $back;
 	&__pic {
-		height: 529px;
 		background: url(../img/snow.jpg) no-repeat;
+		height: 529px;
 		width: 767px;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		display: inline-block;
+		color: #fff;
 		&:hover {
 			.banner__slogan {
 				color: $pink;
@@ -16,20 +22,14 @@ $white: #fbfbfb;
 			}
 		}
 	}
-	&__wrap {
-		font-weight: bold;
-		letter-spacing: 1.5px;
-		text-transform: uppercase;
-		display: inline-block;
-		color: #fff;
-		margin: 134px 36px;
-	}
 	&__title {
 		font-size: 54px;
+		margin: 134px 0 0 36px;
 	}
 	&__text {
 		font-size: 32px;
 		letter-spacing: 0.9px;
+		margin-left: 36px;
 	}
 	&__list {
 		padding: 52px 44px 0 34px;
