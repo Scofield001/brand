@@ -3,14 +3,6 @@ $pink: #f16d7f;
 
 .nav {
 	background: #fff;
-	&:hover {
-		.menu-center {
-			visibility: visible;
-		}
-	}
-	&__box {
-		position: relative;
-	}
 	&__list {
 		display: flex;
 		justify-content: center;

@@ -5,16 +5,15 @@ $placeholder: #a4a4a4;
 $title: #232323;
 $link: #4f4f4f;
 
-.menu-center {
-	/*z-index: 2; не определился как лучше*/
+.mega {
+	z-index: 1;
 	position: absolute;
 	background: #fff;
-	right: 0;
+	right: -90px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: space-between;
-	min-width: 846px;
 	padding: 0 20px 0px 24px;
 	border-radius: 5px;
 	border: 1px solid $border;

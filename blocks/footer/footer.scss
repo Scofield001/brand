@@ -9,7 +9,9 @@ $pink: #f16d7f;
 		flex-wrap: wrap;
 		padding: 110px 0 70px;
 	}
-	&__wrap {
+	&__nav {
+		display: flex;
+		justify-content: space-between;
 	}
 	&__text {
 		max-width: 428px;
@@ -21,7 +23,7 @@ $pink: #f16d7f;
 		margin-top: 22px;
 	}
 	&__list {
-		margin-right: 10px;
+		margin-right: 60px;
 	}
 	&__item {
 	}

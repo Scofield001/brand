@@ -1,0 +1,49 @@
+$color: #6f6e6e;
+$open: #ef5b70;
+$pink: #f16d7f;
+
+.menu {
+	width: 243px;
+	flex-direction: column;
+	&[open] .menu__label {
+		border-left-color: $open;
+		color: $open;
+		align-self: flex-start;
+	}
+	&__label {
+		color: $color;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		height: 37px;
+		border-left: 8px solid $color;
+		border-bottom: 1px solid $color;
+		padding-left: 11px;
+		margin-bottom: 37px;
+		&::-webkit-details-marker {
+			font-size: 10px;
+		}
+		&::-moz-details-marker {
+			font-size: 10px;
+		}
+	}
+	&__list {
+	}
+	&__item {
+		margin: 23px 0;
+	}
+	&__link {
+		color: $color;
+		font-size: 14px;
+		display: block;
+		text-transform: capitalize;
+		padding-left: 19px;
+		&:hover {
+			color: $pink;
+		}
+	}
+}

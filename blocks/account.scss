@@ -1,0 +1,26 @@
+$back: #f16d7f;
+
+.account {
+	&[open] {
+		color: #fff;
+	}
+	&__text {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 15px;
+		letter-spacing: 0.38px;
+		background: $back;
+		height: 38px;
+		padding-left: 18px;
+		&::-webkit-details-marker {
+			font-size: 12px;
+			padding: 4px 8px 0;
+		}
+		&::-moz-details-marker {
+			font-size: 12px;
+			padding: 4px 8px 0;
+		}
+	}
+}

@@ -1,7 +1,7 @@
 $subject: #9f9f9f;
 $pink: #f16d7f;
 
-.main-products {
+.products {
 	padding: 25px 0 58px;
 	&__header {
 		margin-bottom: 60px;
@@ -31,7 +31,7 @@ $pink: #f16d7f;
 		position: relative;
 		margin-bottom: 40px;
 		&:hover {
-			.main-products__img {
+			.products__img {
 				filter: brightness(0.4);
 			}
 			.btn-add {

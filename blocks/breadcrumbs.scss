@@ -1,0 +1,42 @@
+$back: #f8f3f4;
+$pink: #f16d7f;
+$link: #636363;
+
+.breadcrumbs {
+	background-color: $back;
+	display: flex;
+	align-items: center;
+	height: 148px;
+	margin-bottom: 60px;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__title {
+		color: $pink;
+		font-size: 24px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	&__list {
+	}
+	&__item {
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $link;
+		font-weight: 300;
+	}
+	&__link {
+		&:hover {
+			color: $pink;
+		}
+	}
+	&__partition {
+	}
+	&__text {
+		color: $pink;
+		font-weight: bold;
+	}
+}
