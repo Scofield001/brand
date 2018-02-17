@@ -1,5 +1,6 @@
 .nav {
 	&__item_hover {
+		position: relative;
 		&:hover {
 			.mega{
 				visibility: visible;
