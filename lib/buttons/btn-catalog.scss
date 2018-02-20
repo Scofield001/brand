@@ -1,0 +1,19 @@
+$hover: #ef5b70;
+$color: #c4c4c4;
+
+.btn-catalog {
+	font-size: 16px;
+	font-weight: bold;
+	width: 150px;
+	height: 44px;
+	color: $color;
+	border: 1px solid $color;
+	border-radius: 3px;
+	background-color: transparent;
+	text-transform: capitalize;
+	&:hover {
+		transition: .2s;
+		color: $hover;
+		border-color: $hover;
+	}
+}
