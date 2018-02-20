@@ -1,0 +1,48 @@
+$dark: #4d4d4d;
+$gray: #5e5e5e;
+$text: #b9b9b9;
+$text-right:  #2f2f2f;
+
+.descr {
+	text-align: center;
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+		color: $dark;
+		font-weight: 900;
+		font-size: 18px;
+		margin-bottom: 24px;
+	}
+	&__lead {
+		color: $gray;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 24px;
+		margin: 26px 0 37px;
+	}
+	&__box {
+		display: flex;
+		justify-content: center;
+		margin: 28px;
+	}
+	&__text {
+		width: 132px;
+		height: 10px;
+		color: $text;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0 45px;
+	}
+	&__text-right {
+		color: $text-right;
+		padding-left: 3px;
+	}
+	&__price {
+		color: $gray;
+		font-size: 24px;
+		font-weight: bold;
+		display: block;
+		margin-bottom: 43px;
+	}
+}
