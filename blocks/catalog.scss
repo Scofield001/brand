@@ -1,8 +1,64 @@
+$color: #6f6e6e;
+$border-pag: #ebebeb;
+$color-pag: #c4c4c4;
+$pink: #ef5b70;
+
 .catalog {
 	display: flex;
+	color: $color;
+	margin-top: 60px;
 	&__nav {
 		display: flex;
 		flex-direction: column;
-		margin-right: 50px;
+		margin-right: 48px;
+	}
+	&__box {
+		padding-top: 8px;
+	}
+	&__footer {
+		display: flex;
+		margin-bottom: 55px;
+
+		justify-content: space-between;
+	}
+	&__pagination {
+		border: 1px solid $border-pag;
+		border-radius: 3px;
+		&:hover {
+			border-color: $pink;
+		}
+	}
+	&__list {
+		display: flex;
+	}
+	&__item {
+		font-size: 16px;
+		font-weight: bold;
+		color: $color-pag;
+	}
+	&__btn,
+	&__link {
+		display: block;
+		padding: 12px 9px;
+	}
+	&__btn {
+		background: transparent;
+		&:hover {
+			.arrow {
+				fill: $pink;
+			}
+		}
+	}
+	&__link {
+		color: $color-pag;
+		&:hover {
+			color: $pink;
+		}
+	}
+	&__text {
+		display: block;
+		margin: 0 -9px;
+		padding: 12px 0;
+		cursor: default;
 	}
 }
