@@ -1,20 +1,20 @@
 $pink: #f16d7f;
 
 .logo {
-	display: flex;
-	align-items: center;
 	font-size: 27px;
 	font-weight: 300;
+	display: flex;
 	letter-spacing: .68px;
 	text-transform: uppercase;
+	align-items: center;
 	&:hover {
 		.logo__img {
-			filter: none;
 			transition: .2s;
+			filter: none;
 		}
 		.logo__text {
-			color: $pink;
 			transition: .2s;
+			color: $pink;
 		}
 	}
 	&__img {
@@ -22,7 +22,7 @@ $pink: #f16d7f;
 		filter: grayscale(1);
 	}
 	&__text {
-		display: inline-block;
 		font-weight: 900;
+		display: inline-block;
 	}
 }

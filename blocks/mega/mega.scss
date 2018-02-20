@@ -6,16 +6,17 @@ $title: #232323;
 $link: #4f4f4f;
 
 .mega {
-	z-index: 1;
 	position: absolute;
-	background: #fff;
+	z-index: 0;
 	left: -198px;
 	display: flex;
-	justify-content: space-between;
-	padding: 0 20px 0px 24px;
-	border-radius: 5px;
-	border: 1px solid $border;
 	visibility: hidden;
+	padding: 0 20px 0 24px;
+	border: 1px solid $border;
+	border-radius: 5px;
+	background: #fff;
+
+	justify-content: space-between;
 	&__list {
 		width: 234px;
 	}
@@ -26,17 +27,17 @@ $link: #4f4f4f;
 		font-size: 14px;
 		font-weight: normal;
 		line-height: 32px;
+		letter-spacing: .35px;
 		text-transform: uppercase;
-		letter-spacing: 0.35px;
-		border-bottom: 1px solid $gray;
 		color: $title;
+		border-bottom: 1px solid $gray;
 	}
 	&__link {
-		display: block;
-		color: $link;
 		font-size: 14px;
-		letter-spacing: 0.35px;
+		display: block;
+		letter-spacing: .35px;
 		text-transform: capitalize;
+		color: $link;
 		&:hover {
 			color: $pink;
 		}

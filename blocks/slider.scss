@@ -5,25 +5,27 @@ $black: #222;
 .slider {
 	background: $gray url(../img/curly-sue.jpg) no-repeat 100%;
 	&__box {
-		height: 613px;
 		display: flex;
+		height: 613px;
+
 		align-items: center;
 		&:hover {
 			.slider__wrap {
-				border-color: $pink;
 				transition: .2s;
+				border-color: $pink;
 			}
 			.slider__text {
-				color: $pink;
 				transition: .2s;
+				color: $pink;
 			}
 		}
 	}
 	&__wrap {
-		border-left: 12px solid $black;
 		padding-left: 12px;
+		border-left: 12px solid $black;
 	}
-	&__title,
+	&__title
+	,
 	&__subject {
 		font-weight: 900;
 		text-transform: uppercase;
@@ -33,7 +35,7 @@ $black: #222;
 		letter-spacing: 1.5px;
 	}
 	&__subject {
-		letter-spacing: 1px;
 		font-size: 40px;
+		letter-spacing: 1px;
 	}
 }

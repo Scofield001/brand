@@ -2,30 +2,29 @@ $pink: #f16d7f;
 
 .review {
 	display: flex;
-	align-items: center;
 	width: 50%;
-	border-right: 1px solid #fff;
 	opacity: .5;
+	border-right: 1px solid #fff;
+	align-items: center;
 	&:hover {
-		background-color: rgba(255,255,255,0.5);
-		opacity: 1;
 		transition: .2s;
+		opacity: 1;
+		background-color: rgba(255,255,255,.5);
 		.review__title {
-			color: $pink;
 			transition: .2s;
+			color: $pink;
 		}
 	}
 	&__box {
 		display: flex;
-		margin-left: auto;
 		margin-right: 72px;
+		margin-left: auto;
 	}
-	&__wrap {
-	}
+
 	&__img {
+		margin-right: 28px;
 		border-radius: 50%;
 		align-self: flex-start;
-		margin-right: 28px;
 	}
 	&__wrap {
 		width: 386px;
@@ -34,26 +33,26 @@ $pink: #f16d7f;
 		font-size: 16px;
 		font-style: italic;
 		line-height: 26px;
-		letter-spacing: 0.4px;
 		margin-bottom: 9px;
+		letter-spacing: .4px;
 	}
 	&__footer {
 		align-self: flex-end;
 	}
 	&__title {
 		font-size: 16px;
-		letter-spacing: 0.4px;
+		letter-spacing: .4px;
 	}
 	&__text {
 		font-size: 12px;
 		font-weight: 300;
-		letter-spacing: 0.3px;
 		display: block;
 		margin-bottom: 40px;
+		letter-spacing: .3px;
 	}
 	&__inner {
 		display: flex;
-		justify-content: space-between;
 		width: 140px;
+		justify-content: space-between;
 	}
 }

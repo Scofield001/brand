@@ -7,18 +7,17 @@ $pink: #f16d7f;
 		display: flex;
 		justify-content: center;
 	}
-	&__item {
-	}
+
 	&__link {
-		border-bottom: 3px solid transparent;
 		font-size: 14px;
 		font-weight: bold;
-		text-transform: uppercase;
-		padding: 16px 23px 16px;
 		display: block;
+		padding: 16px 23px 16px;
+		text-transform: uppercase;
+		border-bottom: 3px solid transparent;
 		&:hover {
-			border-bottom: 3px solid $border-pink;
 			color: $pink;
+			border-bottom: 3px solid $border-pink;
 		}
 	}
 }

@@ -8,24 +8,24 @@ $pink: #f16d7f;
 
 .menu-left {
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 	&__text {
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		justify-content: space-between;
+		font-size: 14px;
 		font-size: 14px;
 		font-weight: 300;
-		font-size: 14px;
-		padding-left: 13px;
+		display: flex;
+		flex-direction: row-reverse;
 		height: 38px;
+		margin-left: 36px;
+		padding-left: 13px;
+		color: $arrow;
+		border: 1px solid $border-gray;
+		border-right: 0;
 		border-radius: 3px 0 0 3px;
 		background-color: #cdcdcc;
 		background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
-		margin-left: 36px;
-		border: 1px solid $border-gray;
-		border-right: 0;
-		color: $arrow;
+		align-items: center;
+		justify-content: space-between;
 		&::-webkit-details-marker {
 			font-size: 11px;
 			padding: 4px 5px 0 10px;
@@ -42,36 +42,35 @@ $pink: #f16d7f;
 		}
 	}
 	&__nav {
-		border: 1px solid $border-gray;
-		padding: 7px 13px;
 		position: absolute;
 		left: 36px;
+		padding: 7px 13px;
+		border: 1px solid $border-gray;
+		border-top: 0;
 		border-radius: 5px;
 		background-color: #fff;
-		border-top: 0;
 	}
 	&__list {
 		width: 234px;
 	}
 	&__item {
 		margin: 12px 0;
-
 	}
 	&__title {
 		font-size: 14px;
 		font-weight: normal;
 		line-height: 32px;
+		letter-spacing: .35px;
 		text-transform: uppercase;
-		letter-spacing: 0.35px;
-		border-bottom: 1px solid $gray;
 		color: $title;
+		border-bottom: 1px solid $gray;
 	}
 	&__link {
-		display: block;
-		color: $link;
-		padding-left: 6px;
 		font-size: 14px;
-		letter-spacing: 0.35px;
+		display: block;
+		padding-left: 6px;
+		letter-spacing: .35px;
+		color: $link;
 		&:hover {
 			color: $pink;
 		}

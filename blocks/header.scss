@@ -1,12 +1,12 @@
 $border: #ececec;
 
 .header {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
 	border-bottom: 1px solid $border;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .17);
 	&__box {
 		display: flex;
+		height: 99px;
 		justify-content: space-between;
 		align-items: center;
-		height: 99px;
 	}
 }
