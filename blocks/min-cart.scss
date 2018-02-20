@@ -3,8 +3,8 @@ $pink: #f16d7f;
 $color-link: #4a4a4a;
 
 .min-cart {
-	z-index: 2;
 	position: relative;
+	z-index: 1;
 	margin-right: 24px;
 	&__icon {
 		&::-webkit-details-marker {
@@ -18,42 +18,44 @@ $color-link: #4a4a4a;
 		}
 	}
 	&__box {
-		padding: 20px 13px 8px 16px;
-		border: 1px solid $border-gray;
 		position: absolute;
 		top: 48px;
 		left: -12px;
+		width: 262px;
+		padding: 20px 13px 8px 16px;
+		border: 1px solid $border-gray;
 		border-radius: 5px;
 		background-color: #fff;
 	}
 	&__item {
-		border-bottom: 1px solid $border-gray;
 		display: flex;
+		margin-bottom: 16px;
+		border-bottom: 1px solid $border-gray;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 16px;
 	}
 	&__link {
 		display: flex;
-		align-items: center;
+		width: 100%;
 		padding-bottom: 16px;
+		align-items: center;
 		&:hover {
-			.cart__text {
+			.min-cart__text {
 				color: $pink;
 			}
 		}
 	}
 	&__inner {
 		font-size: 12px;
+		margin-left: 13px;
 		text-transform: uppercase;
-		margin-left: 9px;
-	}
-	&__text,
-	&__title {
-		padding-left: 5px;
 	}
 	&__title {
 		margin-bottom: 7px;
+	}
+	&__text {
+		display: block;
+		margin-top: 12px;
 	}
 	&__multi {
 		font-size: 10px;
@@ -61,21 +63,23 @@ $color-link: #4a4a4a;
 	&__wrap {
 		font-size: 16px;
 		font-weight: bold;
-		text-transform: uppercase;
 		display: flex;
+		margin: 19px 0 31px;
+		text-transform: uppercase;
 		justify-content: space-between;
-		margin: 16px 0 31px;
 	}
 	&__link-next {
-		display: block;
-		height: 50px;
-		color: $color-link;
 		font-size: 14px;
 		font-weight: bold;
-		text-transform: uppercase;
-		border: 1px solid $color-link;
+		display: block;
+		height: 50px;
 		margin-bottom: 11px;
-		padding: 17px 72px;
+		// padding: 17px 72px;
+		padding: 17px 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-link;
+		border: 1px solid $color-link;
 		&:hover {
 			color: $pink;
 			border-color: $pink;
