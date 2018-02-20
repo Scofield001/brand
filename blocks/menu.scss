@@ -4,44 +4,50 @@ $pink: #f16d7f;
 
 .menu {
 	width: 243px;
-	flex-direction: column;
+	color: $color;
 	&[open] .menu__label {
 		border-left-color: $open;
-		color: $open;
 		align-self: flex-start;
+		&:after {
+			content: '\25b2'; //Вверх
+			color: $open;
+		}
 	}
 	&__label {
-		color: $color;
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		justify-content: space-between;
 		font-size: 14px;
 		font-weight: bold;
-		text-transform: uppercase;
+		display: flex;
 		height: 37px;
-		border-left: 8px solid $color;
+		margin-bottom: 19px;
+		padding: 0 5px 0 11px;
+		text-transform: uppercase;
 		border-bottom: 1px solid $color;
-		padding-left: 11px;
-		margin-bottom: 37px;
+		border-left: 5px solid $color;
+		align-items: center;
+		justify-content: space-between;
+		&:after /* Rotate не помогло */ {
+			font-size: 9px;
+			content: '\25bc'; //Вниз
+		}
 		&::-webkit-details-marker {
-			font-size: 10px;
+			display: none;
 		}
 		&::-moz-details-marker {
-			font-size: 10px;
+			display: none;
 		}
 	}
 	&__list {
+		margin-bottom: 38px;
 	}
 	&__item {
-		margin: 23px 0;
+		margin: 17px 0;
 	}
 	&__link {
-		color: $color;
 		font-size: 14px;
 		display: block;
+		padding-left: 17px;
 		text-transform: capitalize;
-		padding-left: 19px;
+		color: $color;
 		&:hover {
 			color: $pink;
 		}
