@@ -3,14 +3,14 @@ $pink: #f16d7f;
 
 .subscription {
 	display: flex;
-	align-items: center;
 	width: 50%;
-	justify-content: center;
 	opacity: .5;
+	align-items: center;
+	justify-content: center;
 	&:hover {
-		background: rgba(255,255,255,0.5);
-		opacity: 1;
 		transition: .2s;
+		opacity: 1;
+		background: rgba(255,255,255,.5);
 	}
 	&__box {
 		margin-right: auto;
@@ -19,15 +19,15 @@ $pink: #f16d7f;
 	}
 	&__title {
 		font-size: 24px;
-		letter-spacing: 0.6px;
-		text-transform: uppercase;
 		margin-bottom: 7px;
+		letter-spacing: .6px;
+		text-transform: uppercase;
 	}
 	&__subject {
 		font-size: 14px;
-		letter-spacing: 0.35px;
-		text-transform: uppercase;
 		margin-bottom: 31px;
+		letter-spacing: .35px;
+		text-transform: uppercase;
 	}
 	&__form {
 		display: flex;
@@ -35,24 +35,24 @@ $pink: #f16d7f;
 	}
 	&__email {
 		width: 282px;
-		border-radius: 23px 0 0 23px;
-		background-color: #e1e1e1;
-		border: 0;
 		padding-left: 27px;
+		border: 0;
+		border-radius: 23px 0 0 23px;
 		outline: none;
+		background-color: #e1e1e1;
 	}
 	&__btn {
+		font-size: 14px;
+		padding: 15px 20px;
+		cursor: pointer;
+		letter-spacing: .35px;
+		color: #fff;
 		border: 0;
 		border-radius: 0 23px 23px 0;
-		cursor: pointer;
-		color: #fff;
-		font-size: 14px;
-		letter-spacing: 0.35px;
 		background-color: $pink;
-		padding: 15px 20px;
 		&:hover {
-			background-color: $hover;
 			transition: .2s;
+			background-color: $hover;
 		}
 	}
 }
