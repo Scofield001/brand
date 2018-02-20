@@ -300,10 +300,6 @@ p {
   .products-btn__like {
     background-image: url("../img/svg/like.svg"); }
 
-.arrow {
-  width: 11px;
-  fill: #aaa; }
-
 .stars {
   display: flex; }
   .stars__gray:before {
@@ -324,11 +320,15 @@ p {
   border-left: 1px solid #e6e6e6;
   background-color: #fff; }
 
-.arrow_color {
-  fill: #fff; }
+.arrow {
+  width: 11px;
+  fill: #aaa; }
 
 .stars_center {
   justify-content: center; }
+
+.arrow_color {
+  fill: #fff; }
 
 .triangle_position {
   left: 28px; }
@@ -1101,22 +1101,6 @@ p {
     .footer-bottom__link:hover {
       background-color: #f16d7f; }
 
-.nav {
-  background: #fff; }
-  .nav__list {
-    display: flex;
-    justify-content: center; }
-  .nav__link {
-    font-size: 14px;
-    font-weight: bold;
-    display: block;
-    padding: 16px 23px 16px;
-    text-transform: uppercase;
-    border-bottom: 3px solid transparent; }
-    .nav__link:hover {
-      color: #f16d7f;
-      border-bottom: 3px solid #ef5b70; }
-
 .mega {
   position: absolute;
   z-index: 0;
@@ -1148,6 +1132,68 @@ p {
     color: #4f4f4f; }
     .mega__link:hover {
       color: #f16d7f; }
+
+.nav {
+  background: #fff; }
+  .nav__list {
+    display: flex;
+    justify-content: center; }
+  .nav__link {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding: 16px 23px 16px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent; }
+    .nav__link:hover {
+      color: #f16d7f;
+      border-bottom: 3px solid #ef5b70; }
+
+.offer {
+  display: flex;
+  margin: 55px auto 97px;
+  background: #222224;
+  flex-wrap: wrap; }
+  .offer__pic {
+    font-weight: bold;
+    display: inline-block;
+    width: 767px;
+    height: 529px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(../img/snow.jpg) no-repeat; }
+    .offer__pic:hover .offer__slogan {
+      transition: .2s;
+      color: #f16d7f; }
+  .offer__title {
+    font-size: 54px;
+    margin: 134px 0 0 36px; }
+  .offer__text {
+    font-size: 32px;
+    margin-left: 36px;
+    letter-spacing: .9px; }
+  .offer__list {
+    padding: 52px 44px 0 34px;
+    flex-grow: 1; }
+  .offer__item {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between; }
+  .offer__icon {
+    align-self: flex-start; }
+  .offer__inner {
+    max-width: 219px;
+    color: #fbfbfb; }
+  .offer__subject {
+    font-size: 20px;
+    letter-spacing: .5px; }
+  .offer__lead {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 11px;
+    letter-spacing: .35px; }
 
 .products {
   padding: 25px 0 58px; }
@@ -1207,52 +1253,6 @@ p {
     left: 70px;
     visibility: hidden; }
 
-.offer {
-  display: flex;
-  margin: 55px auto 97px;
-  background: #222224;
-  flex-wrap: wrap; }
-  .offer__pic {
-    font-weight: bold;
-    display: inline-block;
-    width: 767px;
-    height: 529px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #fff;
-    background: url(../img/snow.jpg) no-repeat; }
-    .offer__pic:hover .offer__slogan {
-      transition: .2s;
-      color: #f16d7f; }
-  .offer__title {
-    font-size: 54px;
-    margin: 134px 0 0 36px; }
-  .offer__text {
-    font-size: 32px;
-    margin-left: 36px;
-    letter-spacing: .9px; }
-  .offer__list {
-    padding: 52px 44px 0 34px;
-    flex-grow: 1; }
-  .offer__item {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: space-between; }
-  .offer__icon {
-    align-self: flex-start; }
-  .offer__inner {
-    max-width: 219px;
-    color: #fbfbfb; }
-  .offer__subject {
-    font-size: 20px;
-    letter-spacing: .5px; }
-  .offer__lead {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    margin-top: 11px;
-    letter-spacing: .35px; }
-
 .footer__list_last {
   margin-right: 30px; }
 
@@ -1281,19 +1281,13 @@ p {
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
+.mega__box_margin {
+  margin: 0 45px; }
+
 .nav__item_hover {
   position: relative; }
   .nav__item_hover:hover .mega {
     visibility: visible; }
-
-.mega__box_margin {
-  margin: 0 45px; }
-
-.products__list_margin {
-  margin-bottom: 4px; }
-
-.products_padding {
-  padding-bottom: 0; }
 
 .offer__icon_center {
   margin-bottom: 19px;
@@ -1315,3 +1309,9 @@ p {
 
 .offer_margin {
   margin: 55px auto 0; }
+
+.products__list_margin {
+  margin-bottom: 4px; }
+
+.products_padding {
+  padding-bottom: 0; }
