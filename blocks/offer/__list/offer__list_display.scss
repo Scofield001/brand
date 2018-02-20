@@ -1,8 +1,8 @@
-.banner {
+.offer {
 	&__list_display {
+		display: flex;
 		padding: 87px 25px 59px;
 		flex-grow: 0;
-		display: flex;
 		justify-content: space-between;
 	}
 }
