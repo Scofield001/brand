@@ -2,16 +2,16 @@ $back: #f16d7f;
 $hover: #ef5b70;
 
 .btn-expand {
-	margin: 0 auto;
-	display: block;
-	color: #fff;
-	background: $back;
 	font-size: 16px;
 	font-weight: bold;
-	letter-spacing: 0.4px;
+	display: block;
+	margin: 0 auto;
 	padding: 14px 19px 16px 24px;
+	letter-spacing: .4px;
+	color: #fff;
+	background: $back;
 	&:hover {
-		background: $hover;
 		transition: .5s;
+		background: $hover;
 	}
 }
