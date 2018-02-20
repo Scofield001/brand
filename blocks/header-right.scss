@@ -3,22 +3,24 @@ $pink: #f16d7f;
 .header-right {
 	display: flex;
 	align-items: flex-end;
-	&__back {
-		color: #fff;
+	position: relative;
+	&__ellipse {
+		z-index: 2;
 		position: absolute;
+		top: -2px;
+		left: 24px;
+		display: flex;
 		width: 19px;
 		height: 19px;
-		background: $pink;
+		color: #fff;
 		border-radius: 50%;
-		display: flex;
+		background: $pink;
 		justify-content: center;
 		align-items: center;
-		top: -4px;
-		left: 24px;
 	}
 	&__quantity {
 		font-size: 12px;
 		font-weight: bold;
-		letter-spacing: 0.3px;
+		letter-spacing: .3px;
 	}
 }
