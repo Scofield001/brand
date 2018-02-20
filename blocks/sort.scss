@@ -1,0 +1,32 @@
+$border: #ebebeb;
+$back: #f3f3f3;
+
+.sort {
+	font-size: 14px;
+	margin-bottom: 23px;
+	padding: 10px 8px;
+	text-transform: capitalize;
+	background: $back;
+	&__box {
+		display: inline-block;
+		margin-right: 6px; /* Костыль */
+		padding: 0;
+		border: 1px solid $border;
+		background-color: #fff;
+	}
+	&__label {
+		display: inline-block;
+		padding: 6px 8px 6px 12px;
+		text-align: center;
+		border-right: 1px solid $border;
+	}
+	&__wrap {
+		display: inline-block;
+		height: 27px;
+		margin-right: 6px;
+		cursor: pointer;
+		border: 0;
+		outline: none;
+		background: transparent;
+	}
+}

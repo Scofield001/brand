@@ -1,0 +1,89 @@
+$color: #6f6e6e;
+$partition: #dfdfdf;
+$circle: #f16d7f;
+$track: #f0f0f0;
+
+.filter {
+	font-size: 14px;
+	display: flex;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+
+	justify-content: space-between;
+	&__box {
+		padding: 0;
+		border: 0;
+	}
+	&__name {
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	&__btn {
+		padding: 0;
+		color: $color;
+		border: 0;
+		background: transparent;
+	}
+	&__partition {
+		color: $partition;
+	}
+	&__check {
+		margin: 0 10px 0 3px;
+	}
+	&__label {
+		width: 24px;
+		margin-right: 20px;
+		font-family: opensans;
+	}
+	&__range {
+		position: relative;
+		top: -6px;
+		width: 262px;
+		/*Только Chrome*/
+		margin-bottom: 13px;
+		background: transparent;
+
+		-webkit-appearance: none;
+		&::-ms-track {
+			/* Скрываем линию */
+			width: 100%;
+			cursor: pointer;
+			color: transparent;
+			border-color: transparent;
+			background: transparent;
+		}
+		&::-webkit-slider-thumb {
+			width: 14px;
+			height: 14px;
+			margin-top: -4px;
+			cursor: pointer;
+			border-radius: 50%;
+			background: $circle;
+			-webkit-appearance: none;
+		}
+		&:focus {
+			outline: none;
+			&::-webkit-slider-runnable-track {
+				background: $track * .97;
+			}
+		}
+		&::-webkit-slider-runnable-track {
+			width: 100%;
+			height: 6px;
+			border-radius: 3px;
+			background: $track;
+		}
+	}
+	&__wrap,
+	&__inner {
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+	}
+	&__inner {
+		justify-content: space-between;
+	}
+	&__price {
+		font-family: opensans;
+	}
+}

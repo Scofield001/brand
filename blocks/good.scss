@@ -1,0 +1,55 @@
+$border-gray: #eaeaea;
+$pink: #f16d7f;
+$dark-pink: #ef5b70;
+
+.good {
+	padding: 73px 0 122px;
+	border: 1px solid $border-gray;
+	background-color: #fff;
+	position: relative;
+	top: -86px;
+	&:hover {
+		.good__title {
+			transition: .2s;
+			color: $pink;
+			&:after {
+				transition: .2s;
+				background: $dark-pink;
+			}
+		}
+		.descr__price {
+			transition: .2s;
+			color: $dark-pink;
+		}
+		.descr__box {
+			border-color: $dark-pink;
+		}
+	}
+	&__header {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__title {
+		font-size: 14px;
+		display: inline-block;
+		margin: 17px;
+		padding-bottom: 15px;
+		color: $gray;
+		border-bottom: 1px solid $border-gray;
+		&:after {
+			position: relative;
+			top: 17px;
+			display: block;
+			width: 63px;
+			height: 3px;
+			margin: 0 auto;
+			content: '';
+			background: $gray;
+		}
+	}
+	&__box {
+		width: 620px;
+		margin: 0 auto;
+		border-bottom: 1px solid $border-gray;
+	}
+}

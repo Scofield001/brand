@@ -1,24 +1,24 @@
 $pink: #f16d7f;
 $back: #222224;
 $white: #fbfbfb;
-.banner {
+.offer {
 	display: flex;
-	flex-wrap: wrap;
 	margin: 55px auto 97px;
 	background: $back;
+	flex-wrap: wrap;
 	&__pic {
-		background: url(../img/snow.jpg) no-repeat;
-		height: 529px;
-		width: 767px;
 		font-weight: bold;
+		display: inline-block;
+		width: 767px;
+		height: 529px;
 		letter-spacing: 1.5px;
 		text-transform: uppercase;
-		display: inline-block;
 		color: #fff;
+		background: url(../img/snow.jpg) no-repeat;
 		&:hover {
-			.banner__slogan {
+			.offer__slogan {
+				transition: .2s;;
 				color: $pink;
-				transition: .2s
 			}
 		}
 	}
@@ -28,34 +28,36 @@ $white: #fbfbfb;
 	}
 	&__text {
 		font-size: 32px;
-		letter-spacing: 0.9px;
 		margin-left: 36px;
+		letter-spacing: .9px;
 	}
 	&__list {
 		padding: 52px 44px 0 34px;
+
 		flex-grow: 1;
 	}
 	&__item {
 		display: flex;
-		justify-content: space-between;
 		margin-bottom: 50px;
+
+		justify-content: space-between;
 	}
 	&__icon {
 		align-self: flex-start;
 	}
 	&__inner {
-		color: $white;
 		max-width: 219px;
+		color: $white;
 	}
 	&__subject {
 		font-size: 20px;
-		letter-spacing: 0.5px;
+		letter-spacing: .5px;
 	}
 	&__lead {
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 24px;
-		letter-spacing: 0.35px;
 		margin-top: 11px;
+		letter-spacing: .35px;
 	}
 }
