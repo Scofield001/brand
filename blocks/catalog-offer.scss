@@ -1,0 +1,34 @@
+$color: #fbfbfb;
+
+.catalog-offer {
+	min-height: 341px;
+	margin-top: 55px;
+	padding: 87px 0 111px;
+	color: $color;
+	background: $black;
+	&__list {
+		display: flex;
+		width: 1090px;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 310px;
+	}
+	&__icon {
+		display: block;
+		margin: 0 auto 19px;
+	}
+	&__title {
+		font-size: 20px;
+		margin-bottom: 11px;
+		text-align: center;
+		letter-spacing: .5px;
+	}
+	&__text {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 23.95px;
+		letter-spacing: .35px;
+	}
+}

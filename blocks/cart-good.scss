@@ -1,0 +1,35 @@
+$black:#222;
+$text: #575757;
+$value: #939393;
+$hover: #f16d7f;
+
+.cart-good {
+	display: flex;
+	align-items: center;
+	// &:hover {
+	// 	.cart-good__title {
+	// 		color: #f16d7f;
+	// 	}
+	// }
+	&__img {
+		margin-right: 20px;
+	}
+	&__title {
+		color: $black;
+		font-size: 13px;
+		margin-bottom: 9px;
+	}
+	&__wrap {
+		margin-top: 12px;
+	}
+	&__text {
+		color: $text;
+		text-transform: capitalize;
+		text-align: left;
+		margin-top: 6px;
+	}
+	&__value {
+		color: $value;
+		padding-left: 8px;
+	}
+}
