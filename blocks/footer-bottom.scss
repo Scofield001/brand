@@ -1,6 +1,8 @@
 $back: #e6e6e6;
 $pink: #f16d7f;
 $text: #7a7a7a;
+$icon: #b2b2b2;
+$hover: #f7f7f8;
 
 .footer-bottom {
 	padding: 24px 0;
@@ -24,13 +26,16 @@ $text: #7a7a7a;
 	}
 
 	&__link {
-		font-size: 0;
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 32px;
 		height: 32px;
 		background-color: #fff;
+		color: $icon;
 		&:hover {
 			background-color: $pink;
+			color: $hover;
 		}
 	}
 }
