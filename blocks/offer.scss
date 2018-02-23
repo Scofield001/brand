@@ -3,47 +3,41 @@ $back: #222224;
 $white: #fbfbfb;
 .offer {
 	display: flex;
+	justify-content: space-between;
 	margin: 55px auto 97px;
-	background: $back;
-	flex-wrap: wrap;
-	&__pic {
+	background: $black url(../img/snow.jpg) no-repeat left top;
+	&:hover {
+		.offer__slogan {
+			color: $pink;
+		}
+	}
+	&__box {
 		font-weight: bold;
 		display: inline-block;
-		width: 767px;
-		height: 529px;
 		letter-spacing: 1.5px;
 		text-transform: uppercase;
 		color: #fff;
-		background: url(../img/snow.jpg) no-repeat;
-		&:hover {
-			.offer__slogan {
-				transition: .2s;;
-				color: $pink;
-			}
-		}
+		margin: 134px 0 0 36px;
 	}
 	&__title {
 		font-size: 54px;
-		margin: 134px 0 0 36px;
+	}
+	&__slogan {
+		transition: color .2s;
 	}
 	&__text {
 		font-size: 32px;
-		margin-left: 36px;
 		letter-spacing: .9px;
 	}
 	&__list {
-		padding: 52px 44px 0 34px;
-
-		flex-grow: 1;
+		padding: 52px 42px 0 34px;
 	}
 	&__item {
+		width: 294px;
 		display: flex;
-		margin-bottom: 50px;
-
+		margin-bottom: 53px;
 		justify-content: space-between;
-	}
-	&__icon {
-		align-self: flex-start;
+		align-items: flex-start;
 	}
 	&__inner {
 		max-width: 219px;
