@@ -9,12 +9,13 @@
 	<meta name='HandheldFriendly' content='true'>
 	<link rel='icon' type='image/png' href='img/favicon/favicon-32x32.png' sizes='32x32'/>
 	<link rel='icon' type='image/png' href='img/favicon/favicon-16x16.png' sizes='16x16'/>
-	<meta name='application-name' content='Man'/>
+	<meta name='application-name' content='Good'/>
 	<meta name='msapplication-TileColor' content='#FFFFFF'/>
 	<meta name='msapplication-square150x150logo' content='img/favicon/mstile-150x150.png'/>
+	<script defer src="js/fontawesome-all.min.js"></script>
 </head>
 <body>
-	<div class='container'>
+	<!-- <div class='container'> -->
 		<header class='header'>
 			<div class='header__box center'>
 				<div class='header-left'>
@@ -85,7 +86,7 @@
 					</details>
 					<form action='#' class='header-left__form'>
 						<input class='header-left__search' type='search' name='search' placeholder='Search for Item...' autofocus autocomplete='on' required>
-						<input class='header-left__btn' type='submit' name='submit' value=''>
+						<button class='btn-search'><i class="fas fa-search"></i></button>
 					</form>
 				</div>
 				<div class='header-right'>
@@ -96,7 +97,7 @@
 						<summary class='min-cart__icon'>
 						</summary>
 						<div class='min-cart__box'>
-							<div class='triangle triangle_position'></div>
+							<div class='min-cart__triangle triangle'></div>
 							<ul class='min-cart__list'>
 								<li class='min-cart__item'>
 									<a class='min-cart__link' href='good.html'>
@@ -104,11 +105,11 @@
 										<div class='min-cart__inner'>
 											<h3 class='min-cart__title'>rebox zane</h3>
 											<div class='stars'>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gray'></div>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 											</div>
 											<span class='min-cart__text'>
 												<span class='min-cart__quantity'>2</span>
@@ -117,7 +118,7 @@
 											</span>
 										</div>
 									</a>
-									<button class='btn-delete'></button>
+									<button class="btn-delete"><i class="fas fa-times-circle"></i></button>
 								</li>
 								<li class='min-cart__item'>
 									<a class='min-cart__link' href='good.html'>
@@ -125,11 +126,11 @@
 										<div class='min-cart__inner'>
 											<h3 class='min-cart__title'>rebox zane</h3>
 											<div class='stars'>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 											</div>
 											<span class='min-cart__text'>
 												<span class='min-cart__quantity'>2</span>
@@ -138,7 +139,7 @@
 											</span>
 										</div>
 									</a>
-									<button class='btn-delete'></button>
+									<button class="btn-delete"><i class="fas fa-times-circle"></i></button>
 								</li>
 								<li class='min-cart__item'>
 									<a class='min-cart__link' href='good.html'>
@@ -146,11 +147,11 @@
 										<div class='min-cart__inner'>
 											<h3 class='min-cart__title'>mango&emsp;people&emsp;t-shirt</h3>
 											<div class='stars'>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gray'></div>
-												<div class='stars__gray'></div>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 											</div>
 											<span class='min-cart__text'>
 												<span class='min-cart__quantity'>1</span>
@@ -159,7 +160,7 @@
 											</span>
 										</div>
 									</a>
-									<button class='btn-delete'></button>
+									<button class="btn-delete"><i class="fas fa-times-circle"></i></button>
 								</li>
 							</ul>
 							<div class='min-cart__wrap'>
@@ -167,7 +168,7 @@
 								<span class='min-cart__main-price'>$1052.00</span>
 							</div>
 							<a class='min-cart__link-next' href='#'>checkout</a>
-							<a class='min-cart__link-next' href='#'>go to cart</a>
+							<a class='min-cart__link-next' href='cart.html'>go to cart</a>
 						</div>
 					</details>
 					<details class='account'>
@@ -303,15 +304,8 @@
 		</nav>
 		<div class="content">
 			<div class="slider-good">
-				<button class="slider-good__btn">
-					<svg class='arrow arrow_color' viewBox='0 0 451.846 451.847' ><g transform='matrix(-1 -1.22465e-16 1.22465e-16 -1 451.846 451.847)'><g>
-					<path class='arrow arrow_color' d='M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z'></path></g></g></svg>
-				</button>
-				<button class="slider-good__btn">
-					<svg class='arrow arrow_color' viewBox='0 0 451.846 451.847'><g>
-					<path class='arrow arrow_color' d='M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
-					L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z'></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-				</button>
+				<button class="slider-good__btn"><i class="fas fa-angle-left fa-lg"></i></button>
+				<button class="slider-good__btn"><i class="fas fa-angle-right fa-lg"></i></button>
 			</div>
 			<section class="good center">
 				<header class="good__header">
@@ -322,12 +316,12 @@
 						<header class="descr__header">
 							<h2 class="descr__title">moschino cheap and chic</h2>
 						</header>
-						<div class='stars stars_center'>
-							<div class='stars__gold'></div>
-							<div class='stars__gold'></div>
-							<div class='stars__gold'></div>
-							<div class='stars__gold'></div>
-							<div class='stars__gold'></div>
+						<div class='good__stars stars'>
+							<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+							<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+							<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+							<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+							<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
 						</div>
 						<p class="descr__lead">
 							Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
@@ -339,6 +333,142 @@
 						<span class="descr__price">$561</span>
 					</div>
 				</article>
+				<form class="form-good">
+					<div class="form-good__box">
+						<fieldset class="form-good__wrap">
+							<legend class="form-good__name">choose color</legend>
+							<input class="form-good__inner" type="color" list="dl_color" name="color" id="color" value="#ef5b70">
+							<datalist id="dl_color">
+								<option value="#ff0000" label="red">
+								<option value="#008000" label="green">
+								<option value="#0000ff" label="blue">
+								<option value="#ffffff" label="White">
+								<option value="#cccccc" label="gold">
+							</datalist>
+						</fieldset>
+						<fieldset class="form-good__wrap">
+							<legend class="form-good__name">choose size</legend>
+							<select class='form-good__inner' id='show'>
+								<option value='size'>xxl</option>
+								<option value='size'>xl</option>
+								<option value='size'>l</option>
+								<option value='size'>m</option>
+								<option value='size'>s</option>
+								<option value='size'>xs</option>
+							</select>
+						</fieldset>
+						<fieldset class="form-good__wrap">
+							<legend class="form-good__name">quantity</legend>
+							<input class="form-good__inner" id="number" type="number" value="2" max="10">
+						</fieldset>
+					</div>
+					<input class="form-good__btn" type="submit" name="submit" value="Add to Cart">
+				</form>
+			</section>
+			<section class='products products_padding center'>
+				<h2 class="products__good-title">you may like also</h2>
+				<ul class='products__list products__list_margin_good'>
+					<li class='products__item'>
+						<a class='products__link' href='good.html'>
+							<img class='products__img' src='img/woman-1.jpg' alt='product' width='261'>
+							<div class='products__box'>
+								<h3 class='products__caption'>mango&emsp;people&emsp;t-shirt</h3>
+								<div class='products__inner'>
+									<span class='products__price'>$52.00</span>
+									<div class='stars'>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
+						</div>
+					</li>
+					<li class='products__item'>
+						<a class='products__link' href='good.html'>
+							<img class='products__img' src='img/woman-2.jpg' alt='product' width='261'>
+							<div class='products__box'>
+								<h3 class='products__caption'>mango&emsp;people&emsp;t-shirt</h3>
+								<div class='products__inner'>
+									<span class='products__price'>$52.00</span>
+									<div class='stars'>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
+						</div>
+					</li>
+					<li class='products__item'>
+						<a class='products__link' href='good.html'>
+							<img class='products__img' src='img/woman-3.jpg' alt='product' width='261'>
+							<div class='products__box'>
+								<h3 class='products__caption'>mango&emsp;people&emsp;t-shirt</h3>
+								<div class='products__inner'>
+									<span class='products__price'>$52.00</span>
+									<div class='stars'>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
+						</div>
+					</li>
+					<li class='products__item'>
+						<a class='products__link' href='good.html'>
+							<img class='products__img' src='img/woman-4.jpg' alt='product' width='261'>
+							<div class='products__box'>
+								<h3 class='products__caption'>mango&emsp;people&emsp;t-shirt</h3>
+								<div class='products__inner'>
+									<span class='products__price'>$52.00</span>
+									<div class='stars'>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<section class='subscribe'>
@@ -346,9 +476,7 @@
 				<div class='review__box'>
 					<img class='review__img' src='img/review.jpg' alt='user' width='83'>
 					<div class='review__wrap'>
-						<!-- <blockuote class='review__text'> --> <!-- Валидатор -->
 						<p class='review__lead'>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-						<!-- </blockuote> -->
 						<footer class='review__footer'>
 							<h3 class='review__title'>Bin Burhan</h3>
 							<span class='review__text'>Dhaka, Bd</span>
@@ -361,13 +489,13 @@
 					</div>
 				</div>
 			</div>
-			<div class='subscription'>
-				<div class='subscription__box'>
-					<h2 class='subscription__title'>subscribe</h2>
-					<h3 class='subscription__subject'>for our newletter and promotion</h3>
-					<form class='subscription__form'>
-						<input class='subscription__email' type='email' name='email' placeholder='Enter Your Email' autocomplete='on' required>
-						<input class='subscription__btn' type='submit' name='submit' value='Subscribe'>
+			<div class='form-sub'>
+				<div class='form-sub__box'>
+					<h2 class='form-sub__title'>subscribe</h2>
+					<h3 class='form-sub__subject'>for our newletter and promotion</h3>
+					<form class='form-sub__form'>
+						<input class='form-sub__email' type='email' name='email' placeholder='Enter Your Email' autocomplete='on' required>
+						<input class='form-sub__btn' type='submit' name='submit' value='Subscribe'>
 					</form>
 				</div>
 			</div>
@@ -455,24 +583,34 @@
 					<p class='footer-bottom__text'>&copy; 2017  Brand  All Rights Reserved.</p>
 					<ul class='footer-bottom__list'>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_facebook' href='https://www.facebook.com'>facebook</a>
+							<a class='footer-bottom__link' href='https://www.facebook.com'>
+								<i class="fab fa-facebook-f"></i>
+							</a>
 						</li>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_twitter' href='https://twitter.com/'>twitter</a>
+							<a class='footer-bottom__link' href='https://twitter.com/'>
+								<i class="fab fa-twitter"></i>
+							</a>
 						</li>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_linkedin' href='https://linkedin.com/'>linkedin</a>
+							<a class='footer-bottom__link' href='https://linkedin.com/'>
+								<i class="fab fa-linkedin-in"></i>
+							</a>
 						</li>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_pinterest' href='https://pinterest.com/'>pinterest</a>
+							<a class='footer-bottom__link' href='https://pinterest.com/'>
+								<i class="fab fa-pinterest-p"></i>
+							</a>
 						</li>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_google' href='https://plus.google.com/'>google plus</a>
+							<a class='footer-bottom__link' href='https://plus.google.com/'>
+								<i class="fab fa-google-plus-g"></i>
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</footer>
-	</div>
+	<!-- </div> -->
 </body>
 </html>

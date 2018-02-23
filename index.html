@@ -12,9 +12,10 @@
 	<meta name='application-name' content='Shop'/>
 	<meta name='msapplication-TileColor' content='#FFFFFF'/>
 	<meta name='msapplication-square150x150logo' content='img/favicon/mstile-150x150.png'/>
+	<script defer src="js/fontawesome-all.min.js"></script>
 </head>
 <body>
-	<div class='container'>
+	<!-- <div class='container'> -->
 		<header class='header'>
 			<div class='header__box center'>
 				<div class='header-left'>
@@ -85,7 +86,7 @@
 					</details>
 					<form action='#' class='header-left__form'>
 						<input class='header-left__search' type='search' name='search' placeholder='Search for Item...' autofocus autocomplete='on' required>
-						<input class='header-left__btn' type='submit' name='submit' value=''>
+						<button class='btn-search'><i class="fas fa-search"></i></button>
 					</form>
 				</div>
 				<div class='header-right'>
@@ -96,7 +97,7 @@
 						<summary class='min-cart__icon'>
 						</summary>
 						<div class='min-cart__box'>
-							<div class='triangle triangle_position'></div>
+							<div class='min-cart__triangle triangle'></div>
 							<ul class='min-cart__list'>
 								<li class='min-cart__item'>
 									<a class='min-cart__link' href='good.html'>
@@ -104,11 +105,11 @@
 										<div class='min-cart__inner'>
 											<h3 class='min-cart__title'>rebox zane</h3>
 											<div class='stars'>
-												<div class='stars__gold'></div>
-												<div class='stars__gray'></div>
-												<div class='stars__gray'></div>
-												<div class='stars__gray'></div>
-												<div class='stars__gray'></div>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 											</div>
 											<span class='min-cart__text'>
 												<span class='min-cart__quantity'>1</span>
@@ -117,7 +118,7 @@
 											</span>
 										</div>
 									</a>
-									<button class='btn-delete'></button>
+									<button class="btn-delete"><i class="fas fa-times-circle"></i></button>
 								</li>
 								<li class='min-cart__item'>
 									<a class='min-cart__link' href='good.html'>
@@ -125,11 +126,11 @@
 										<div class='min-cart__inner'>
 											<h3 class='min-cart__title'>rebox zane</h3>
 											<div class='stars'>
-												<div class='stars__gold'></div>
-												<div class='stars__gold'></div>
-												<div class='stars__gray'></div>
-												<div class='stars__gray'></div>
-												<div class='stars__gray'></div>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+												<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 											</div>
 											<span class='min-cart__text'>
 												<span class='min-cart__quantity'>1</span>
@@ -138,7 +139,7 @@
 											</span>
 										</div>
 									</a>
-									<button class='btn-delete'></button>
+									<button class="btn-delete"><i class="fas fa-times-circle"></i></button>
 								</li>
 							</ul>
 							<div class='min-cart__wrap'>
@@ -146,7 +147,7 @@
 								<span class='min-cart__main-price'>$500.00</span>
 							</div>
 							<a class='min-cart__link-next' href='#'>checkout</a>
-							<a class='min-cart__link-next' href='#'>go to cart</a>
+							<a class='min-cart__link-next' href='cart.html'>go to cart</a>
 						</div>
 					</details>
 					<details class='account'>
@@ -319,21 +320,25 @@
 						<a class='products__link' href='good.html'>
 							<img class='products__img' src='img/product-1.jpg' alt='product' width='261'>
 							<div class='products__box'>
-								<h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
+								<h3 class='products__caption'>mango&ensp;people&ensp;t-shirt <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ullam rem saepe nulla! Magni quaerat possimus, adipisci nulla cumque, libero accusantium eius delectus beatae quo autem reiciendis natus, est nam. Earum assumenda sequi rerum veniam quis ratione, consequuntur, quaerat facere, dignissimos perferendis possimus. Dolore accusantium ipsam, numquam vel excepturi aperiam esse nemo voluptate magni, fugit necessitatibus, nihil obcaecati natus nulla. Assumenda unde debitis ratione consequuntur sint magni beatae voluptatem alias est illo facere repellendus quod expedita qui fuga, repudiandae eaque voluptates veritatis, dolorem quidem doloremque quasi, quibusdam! Sapiente, nobis, voluptate.</span> </h3>
 								<div class='products__inner'>
 									<span class='products__price'>$52.00</span>
 									<div class='stars'>
-										<div class='stars__gold'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 									</div>
 								</div>
 							</div>
 						</a>
-						<div class='products-btn'>
-							<button class='products-btn__add'>Add to Cart</button>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
 						</div>
 					</li>
 					<li class='products__item'>
@@ -344,17 +349,21 @@
 								<div class='products__inner'>
 									<span class='products__price'>$52.00</span>
 									<div class='stars'>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 									</div>
 								</div>
 							</div>
 						</a>
-						<div class='products-btn'>
-							<button class='products-btn__add'>Add to Cart</button>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
 						</div>
 					</li>
 					<li class='products__item'>
@@ -365,17 +374,21 @@
 								<div class='products__inner'>
 									<span class='products__price'>$52.00</span>
 									<div class='stars'>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 									</div>
 								</div>
 							</div>
 						</a>
-						<div class='products-btn'>
-							<button class='products-btn__add'>Add to Cart</button>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
 						</div>
 					</li>
 					<li class='products__item'>
@@ -386,17 +399,21 @@
 								<div class='products__inner'>
 									<span class='products__price'>$52.00</span>
 									<div class='stars'>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gray'></div>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 									</div>
 								</div>
 							</div>
 						</a>
-						<div class='products-btn'>
-							<button class='products-btn__add'>Add to Cart</button>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
 						</div>
 					</li>
 					<li class='products__item'>
@@ -407,17 +424,21 @@
 								<div class='products__inner'>
 									<span class='products__price'>$52.00</span>
 									<div class='stars'>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 									</div>
 								</div>
 							</div>
 						</a>
-						<div class='products-btn'>
-							<button class='products-btn__add'>Add to Cart</button>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
 						</div>
 					</li>
 					<li class='products__item'>
@@ -428,17 +449,21 @@
 								<div class='products__inner'>
 									<span class='products__price'>$52.00</span>
 									<div class='stars'>
-										<div class='stars__gold'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 									</div>
 								</div>
 							</div>
 						</a>
-						<div class='products-btn'>
-							<button class='products-btn__add'>Add to Cart</button>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
 						</div>
 					</li>
 					<li class='products__item'>
@@ -449,17 +474,21 @@
 								<div class='products__inner'>
 									<span class='products__price'>$52.00</span>
 									<div class='stars'>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 									</div>
 								</div>
 							</div>
 						</a>
-						<div class='products-btn'>
-							<button class='products-btn__add'>Add to Cart</button>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
 						</div>
 					</li>
 					<li class='products__item'>
@@ -470,28 +499,30 @@
 								<div class='products__inner'>
 									<span class='products__price'>$52.00</span>
 									<div class='stars'>
-										<div class='stars__gold'></div>
-										<div class='stars__gold'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
-										<div class='stars__gray'></div>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__icon'><i class="fas fa-star fa-xs"></i></span>
+										<span class='stars__half'><i class="fas fa-star-half fa-xs"></i></span>
 									</div>
 								</div>
 							</div>
 						</a>
-						<div class='products-btn'>
-							<button class='products-btn__add'>Add to Cart</button>
+						<div class='btn-products'>
+							<button class='btn-products__add'>Add to Cart</button>
+							<div class='btn-products__box'>
+								<button class='btn-products__send'><i class="fas fa-retweet fa-lg"></i></button>
+								<button class='btn-products__like'><i class="far fa-heart fa-lg"></i></button>
+							</div>
 						</div>
 					</li>
 				</ul>
-				<button class='btn-expand'>Browse All Product&ensp;&rarr;</button>
+				<button class='btn-expand'>Browse All Product <i class="fas fa-long-arrow-alt-right"></i></button>
 			</section>
 		</div>
 		<section class='offer center'>
-			<div class='offer__pic'>
-				<h2 class='offer__title'>30%
-					<span class='offer__slogan'>offer</span>
-				</h2>
+			<div class="offer__box">
+				<h2 class='offer__title'>30%<span class='offer__slogan'>offer</span></h2>
 				<span class='offer__text'>for women</span>
 			</div>
 			<div class='offer__list'>
@@ -529,7 +560,11 @@
 				<div class='review__box'>
 					<img class='review__img' src='img/review.jpg' alt='user' width='83'>
 					<div class='review__wrap'>
-						<p class='review__lead'>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+						<p class='review__lead'>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore optio blanditiis dicta expedita, itaque assumenda vel debitis, nemo veritatis doloremque placeat, tenetur explicabo ratione mollitia aut quas minus asperiores quis.</span>
+						<span>Esse quo laborum distinctio dignissimos, quidem voluptates, accusantium eum vel! Possimus tempora, consequuntur aut? Neque culpa qui in. Corporis sapiente officia animi soluta aperiam illo veritatis iusto debitis porro doloribus.</span>
+						<span>Dolores eos eum alias nam rem, nemo temporibus quasi, sunt atque, architecto soluta earum doloribus veritatis. Voluptates nam ut omnis cumque perferendis, obcaecati. Atque voluptates sequi a enim inventore voluptatem.</span>
+						<span>Quae, porro quam sapiente laborum tenetur quasi quisquam! Rerum blanditiis temporibus enim, vitae dolores numquam inventore quibusdam, quidem ea, optio molestias consequuntur ducimus provident officia sequi tenetur aperiam hic nihil.</span>
+						<span>Tenetur consequuntur ullam dicta sequi odit doloremque cumque excepturi ut explicabo, molestiae nam, aliquid culpa suscipit cum eius dolores quam. Nihil doloribus repudiandae soluta officiis voluptatem, maxime earum, aperiam voluptatum?</span></p>
 						<footer class='review__footer'>
 							<h3 class='review__title'>Bin Burhan</h3>
 							<span class='review__text'>Dhaka, Bd</span>
@@ -542,13 +577,13 @@
 					</div>
 				</div>
 			</div>
-			<div class='subscription'>
-				<div class='subscription__box'>
-					<h2 class='subscription__title'>subscribe</h2>
-					<h3 class='subscription__subject'>for our newletter and promotion</h3>
-					<form class='subscription__form'>
-						<input class='subscription__email' type='email' name='email' placeholder='Enter Your Email' autocomplete='on' required>
-						<input class='subscription__btn' type='submit' name='submit' value='Subscribe'>
+			<div class='form-sub'>
+				<div class='form-sub__box'>
+					<h2 class='form-sub__title'>subscribe</h2>
+					<h3 class='form-sub__subject'>for our newletter and promotion</h3>
+					<form class='form-sub__form'>
+						<input class='form-sub__email' type='email' name='email' placeholder='Enter Your Email' autocomplete='on' required>
+						<input class='form-sub__btn' type='submit' name='submit' value='Subscribe'>
 					</form>
 				</div>
 			</div>
@@ -636,24 +671,34 @@
 					<p class='footer-bottom__text'>&copy; 2017  Brand  All Rights Reserved.</p>
 					<ul class='footer-bottom__list'>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_facebook' href='https://www.facebook.com'>facebook</a>
+							<a class='footer-bottom__link' href='https://www.facebook.com'>
+								<i class="fab fa-facebook-f"></i>
+							</a>
 						</li>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_twitter' href='https://twitter.com/'>twitter</a>
+							<a class='footer-bottom__link' href='https://twitter.com/'>
+								<i class="fab fa-twitter"></i>
+							</a>
 						</li>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_linkedin' href='https://linkedin.com/'>linkedin</a>
+							<a class='footer-bottom__link' href='https://linkedin.com/'>
+								<i class="fab fa-linkedin-in"></i>
+							</a>
 						</li>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_pinterest' href='https://pinterest.com/'>pinterest</a>
+							<a class='footer-bottom__link' href='https://pinterest.com/'>
+								<i class="fab fa-pinterest-p"></i>
+							</a>
 						</li>
 						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link footer-bottom__link_google' href='https://plus.google.com/'>google plus</a>
+							<a class='footer-bottom__link' href='https://plus.google.com/'>
+								<i class="fab fa-google-plus-g"></i>
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</footer>
-	</div>
+	<!-- </div> -->
 </body>
 </html>
