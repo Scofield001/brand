@@ -1,9 +1,9 @@
 $color: #6f6e6e;
 $partition: #dfdfdf;
-$circle: #f16d7f;
+$pink: #f16d7f;
 $track: #f0f0f0;
 
-.filter {
+.form-filter {
 	font-size: 14px;
 	display: flex;
 	margin-bottom: 30px;
@@ -18,11 +18,12 @@ $track: #f0f0f0;
 		font-weight: bold;
 		margin-bottom: 20px;
 	}
-	&__btn {
-		padding: 0;
+	&__link{
 		color: $color;
-		border: 0;
-		background: transparent;
+		text-transform: capitalize;
+		&:hover {
+			color: $pink;
+		}
 	}
 	&__partition {
 		color: $partition;
@@ -58,7 +59,7 @@ $track: #f0f0f0;
 			margin-top: -4px;
 			cursor: pointer;
 			border-radius: 50%;
-			background: $circle;
+			background: $pink;
 			-webkit-appearance: none;
 		}
 		&:focus {
