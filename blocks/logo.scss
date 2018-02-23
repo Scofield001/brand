@@ -9,19 +9,19 @@ $pink: #f16d7f;
 	align-items: center;
 	&:hover {
 		.logo__img {
-			transition: .2s;
 			filter: none;
 		}
 		.logo__text {
-			transition: .2s;
 			color: $pink;
 		}
 	}
 	&__img {
+		transition: filter .2s;
 		margin-right: 8px;
 		filter: grayscale(1);
 	}
 	&__text {
+		transition: color .2s;
 		font-weight: 900;
 		display: inline-block;
 	}

@@ -3,35 +3,30 @@ $present-back: #dadad2;
 .present {
 	display: flex;
 	padding: 98px 0 50px;
+
 	justify-content: space-between;
 	flex-wrap: wrap;
 	&__list {
 		width: 560px;
 	}
-	&__one
-	,
-	&__two
-	,
-	&__three
-	,
+	&__one,
+	&__two,
+	&__three,
 	&__four {
 		margin-bottom: 20px;
 		background-color: $present-back;
 		background-repeat: no-repeat;
 		&:hover {
 			.present__subject {
-				transition: .2s;
 				color: $pink;
 			}
 		}
 	}
-	&__one
-	,
+	&__one,
 	&__four {
 		height: 542px;
 	}
-	&__two
-	,
+	&__two,
 	&__three {
 		height: 261px;
 	}
@@ -54,11 +49,11 @@ $present-back: #dadad2;
 		padding: 14px 18px 10px;
 		background: #fff;
 	}
-	&__title
-	,
+	&__title,
 	&__subject {
 		font-weight: 900;
 		text-transform: uppercase;
+		transition: color .2s;
 	}
 	&__title {
 		font-size: 18px;

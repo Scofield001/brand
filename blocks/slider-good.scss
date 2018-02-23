@@ -2,11 +2,11 @@ $border: #eaeaea;
 $back: #f7f7f7;
 $btn: #d8d8d8;
 $hover-btn: #2a2a2a;
-$fill: #ef5b70;
+$pink: #ef5b70;
 
 .slider-good {
 	display: flex;
-	height: 775px;
+	height: 777px;
 	border-width: 1px 0 1px;
 	border-style: solid;
 	border-color: $border;
@@ -16,14 +16,14 @@ $fill: #ef5b70;
 	justify-content: space-between;
 	align-items: center;
 	&__btn {
+		transition: background .2s;
+		color: #fff;
 		width: 47px;
 		height: 47px;
 		background: $btn;
 		&:hover {
 			background: $hover-btn;
-			.arrow_color {
-				fill: $fill;
-			}
+			color: $pink;
 		}
 	}
 }

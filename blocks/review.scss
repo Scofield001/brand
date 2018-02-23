@@ -5,35 +5,30 @@ $pink: #f16d7f;
 	width: 50%;
 	opacity: .5;
 	border-right: 1px solid #fff;
-	align-items: center;
+	padding: 111px 71px 156px 14.4%;
+	transition: .2s; /*c background не меняется*/
 	&:hover {
-		transition: .2s;
 		opacity: 1;
-		background-color: rgba(255,255,255,.5);
+		background: rgba(255,255,255,.5);
 		.review__title {
-			transition: .2s;
 			color: $pink;
 		}
 	}
 	&__box {
 		display: flex;
-		margin-right: 72px;
 		margin-left: auto;
 	}
 
 	&__img {
-		margin-right: 28px;
+		margin-right: 29px;
 		border-radius: 50%;
 		align-self: flex-start;
-	}
-	&__wrap {
-		width: 386px;
 	}
 	&__lead {
 		font-size: 16px;
 		font-style: italic;
 		line-height: 26px;
-		margin-bottom: 9px;
+		margin: 7px 0 10px;
 		letter-spacing: .4px;
 	}
 	&__footer {
@@ -42,12 +37,13 @@ $pink: #f16d7f;
 	&__title {
 		font-size: 16px;
 		letter-spacing: .4px;
+		transition: color .2s;
 	}
 	&__text {
 		font-size: 12px;
 		font-weight: 300;
 		display: block;
-		margin-bottom: 40px;
+		margin-bottom: 41px;
 		letter-spacing: .3px;
 	}
 	&__inner {

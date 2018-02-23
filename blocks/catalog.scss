@@ -30,6 +30,7 @@ $pink: #ef5b70;
 	}
 	&__list {
 		display: flex;
+		align-items: center;
 	}
 	&__item {
 		font-size: 16px;
@@ -40,16 +41,7 @@ $pink: #ef5b70;
 	&__link {
 		display: block;
 		padding: 12px 9px;
-	}
-	&__btn {
 		background: transparent;
-		&:hover {
-			.arrow {
-				fill: $pink;
-			}
-		}
-	}
-	&__link {
 		color: $color-pag;
 		&:hover {
 			color: $pink;

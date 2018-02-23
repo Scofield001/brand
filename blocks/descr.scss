@@ -11,38 +11,37 @@ $text-right:  #2f2f2f;
 		color: $dark;
 		font-weight: 900;
 		font-size: 18px;
-		margin-bottom: 24px;
+		margin-bottom: 20px;
 	}
 	&__lead {
 		color: $gray;
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 24px;
-		margin: 26px 0 37px;
+		margin: 18px 0;
 	}
 	&__box {
 		display: flex;
-		justify-content: center;
-		margin: 28px;
+		justify-content: space-between;
+		margin: 20px auto 33px;
+		width: 335px;
 	}
 	&__text {
-		width: 132px;
-		height: 10px;
 		color: $text;
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
-		margin: 0 45px;
 	}
 	&__text-right {
 		color: $text-right;
 		padding-left: 3px;
 	}
 	&__price {
+		transition: color .2s;
 		color: $gray;
 		font-size: 24px;
 		font-weight: bold;
 		display: block;
-		margin-bottom: 43px;
+		margin-bottom: 41px;
 	}
 }

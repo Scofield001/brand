@@ -1,24 +1,21 @@
-$border-gray: #eaeaea;
+$gray: #eaeaea;
 $pink: #f16d7f;
 $dark-pink: #ef5b70;
 
 .good {
-	padding: 73px 0 122px;
-	border: 1px solid $border-gray;
+	padding: 53px 0 121px;
+	border: 1px solid $gray;
 	background-color: #fff;
 	position: relative;
 	top: -86px;
 	&:hover {
 		.good__title {
-			transition: .2s;
 			color: $pink;
 			&:after {
-				transition: .2s;
 				background: $dark-pink;
 			}
 		}
 		.descr__price {
-			transition: .2s;
 			color: $dark-pink;
 		}
 		.descr__box {
@@ -30,15 +27,17 @@ $dark-pink: #ef5b70;
 		text-transform: uppercase;
 	}
 	&__title {
+		transition: color .2s;
 		font-size: 14px;
 		display: inline-block;
-		margin: 17px;
-		padding-bottom: 15px;
+		margin: 16px;
+		padding-bottom: 9px;
 		color: $gray;
-		border-bottom: 1px solid $border-gray;
+		border-bottom: 1px solid $gray;
 		&:after {
 			position: relative;
-			top: 17px;
+			transition: background .2s;
+			top: 11px;
 			display: block;
 			width: 63px;
 			height: 3px;
@@ -50,6 +49,9 @@ $dark-pink: #ef5b70;
 	&__box {
 		width: 620px;
 		margin: 0 auto;
-		border-bottom: 1px solid $border-gray;
+		border-bottom: 1px solid $gray;
+	}
+	&__stars {
+		justify-content: center;
 	}
 }

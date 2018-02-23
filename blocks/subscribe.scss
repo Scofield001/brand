@@ -1,7 +1,8 @@
+$back: #eeeeee;
 .subscribe {
 	display: flex;
-	height: 438px;
-	background: url(../img/back-review.jpg) no-repeat;
+	min-height: 438px;
+	background: $back url(../img/back-review.jpg) no-repeat bottom;
 	&__box {
 		display: flex;
 		justify-content: space-between;

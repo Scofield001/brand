@@ -3,19 +3,16 @@ $gray: #e8e8e8;
 $black: #222;
 
 .slider {
-	background: $gray url(../img/curly-sue.jpg) no-repeat 100%;
+	background: $gray url(../img/curly-sue.jpg) no-repeat center;
 	&__box {
 		display: flex;
 		height: 613px;
-
 		align-items: center;
 		&:hover {
 			.slider__wrap {
-				transition: .2s;
 				border-color: $pink;
 			}
 			.slider__text {
-				transition: .2s;
 				color: $pink;
 			}
 		}
@@ -23,9 +20,9 @@ $black: #222;
 	&__wrap {
 		padding-left: 12px;
 		border-left: 12px solid $black;
+		transition: border .2s;
 	}
-	&__title
-	,
+	&__title,
 	&__subject {
 		font-weight: 900;
 		text-transform: uppercase;
@@ -37,5 +34,8 @@ $black: #222;
 	&__subject {
 		font-size: 40px;
 		letter-spacing: 1px;
+	}
+	&__text {
+		transition: color .2s;
 	}
 }
