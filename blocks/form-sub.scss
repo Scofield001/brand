@@ -1,21 +1,19 @@
 $hover: #ef5b70;
 $pink: #f16d7f;
 
-.subscription {
+.form-sub {
 	display: flex;
 	width: 50%;
 	opacity: .5;
 	align-items: center;
-	justify-content: center;
+	transition: .2s; /*c background не меняется*/
 	&:hover {
-		transition: .2s;
 		opacity: 1;
 		background: rgba(255,255,255,.5);
 	}
 	&__box {
-		margin-right: auto;
-		margin-left: 92px;
 		text-align: center;
+		margin: 0 auto;
 	}
 	&__title {
 		font-size: 24px;
@@ -50,8 +48,8 @@ $pink: #f16d7f;
 		border: 0;
 		border-radius: 0 23px 23px 0;
 		background-color: $pink;
+		transition: background .2s;
 		&:hover {
-			transition: .2s;
 			background-color: $hover;
 		}
 	}
