@@ -1,7 +1,11 @@
-$back: #c0c0c0;
+$color: #c0c0c0;
+$hover: #f16d7f;
 
 .btn-delete {
-	width: 15px;
-	height: 15px;
-	background: url('../img/svg/delete.svg') no-repeat;
+	color: $color;
+	padding: 0;
+	font-size: 16px;
+	&:hover {
+		color: $hover;
+	}
 }

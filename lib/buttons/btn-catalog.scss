@@ -11,8 +11,8 @@ $color: #c4c4c4;
 	border-radius: 3px;
 	background-color: transparent;
 	text-transform: capitalize;
+	transition: color .2s, border .2s;
 	&:hover {
-		transition: .2s;
 		color: $hover;
 		border-color: $hover;
 	}

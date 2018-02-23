@@ -10,8 +10,8 @@ $hover: #ef5b70;
 	letter-spacing: .4px;
 	color: #fff;
 	background: $back;
+	transition: background .5s;
 	&:hover {
-		transition: .5s;
 		background: $hover;
 	}
 }

@@ -1,56 +1,38 @@
-$active: #ef5b70;
+$hover: #ef5b70;
 
-.products-btn {
+.btn-products {
 	position: absolute;
 	top: 98px;
 	left: 70px;
 	visibility: hidden;
+	font-size: 13px;
 	&__box {
 		display: flex;
 		margin-top: 8px;
-
 		justify-content: space-between;
 	}
-	&__add
-	,
-	&__send
-	,
+	&__add,
+	&__send,
 	&__like {
+		color: #fff;
+		transition: border .2s;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		background: transparent;
 		&:hover {
-			cursor: ne-resize;
-		}
-		&:active {
-			transition: .2s;
-			border-color: $active;
+			border-color: $hover;
 		}
 	}
 	&__add {
-		font-size: 13px;
 		font-weight: bold;
 		padding: 13px 12px 10px 42px;
 		color: #fff;
 		border: 1px solid #fff;
-		background: url('../img/svg/cart-modal.svg') no-repeat 9px;
+		background: transparent url('../img/svg/cart-modal.svg') no-repeat 9px;
 	}
-	&__send
-	,
+	&__send,
 	&__like {
 		width: 57px;
 		height: 38px;
-		border: 1px solid #fff;
-		border-radius: 3px;
-		background-color: transparent;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		&:hover {
-			cursor: nw-resize;
-		}
-	}
-	&__send {
-		/* Точно не знаю, что этот значок означает */
-		background-image: url('../img/svg/send.svg');
-	}
-	&__like {
-		background-image: url('../img/svg/like.svg');
 	}
 }
