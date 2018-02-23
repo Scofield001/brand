@@ -1,14 +1,14 @@
 $subject: #9f9f9f;
 $pink: #f16d7f;
 $hover: #6f6e6e;
+$good-title: #4d4d4d;
 
 .products {
 	padding: 25px 0 58px;
 	&__header {
 		margin-bottom: 60px;
 	}
-	&__title
-	,
+	&__title,
 	&__subject {
 		text-align: center;
 	}
@@ -26,13 +26,14 @@ $hover: #6f6e6e;
 	&__list {
 		display: flex;
 		margin-bottom: 18px;
-
+		align-items: flex-start;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
 	&__item {
 		position: relative;
 		margin-bottom: 40px;
+		width: 261px;
 		&:hover {
 			box-shadow: 0 5px 8px rgba(0, 0, 0, .16);
 			.products__img {
@@ -41,7 +42,7 @@ $hover: #6f6e6e;
 			.products__caption {
 				color: $hover;
 			}
-			.products-btn {
+			.btn-products {
 				visibility: visible;
 			}
 		}
@@ -79,5 +80,13 @@ $hover: #6f6e6e;
 		top: 98px;
 		left: 70px;
 		visibility: hidden;
+	}
+	&__good-title{
+		color: $good-title;
+		text-align: center;
+		font-size: 24px;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin: 4px 0 67px;
 	}
 }
