@@ -1,0 +1,95 @@
+$border: #e6e6e6;
+@media screen and (max-width: 414px) {
+	.slider {
+		display: none;
+	}
+	.nav {
+		&__list {
+			flex-direction: column;
+		}
+		&__link {
+			border: 1px solid $border;
+			border-top: 0;
+			text-align: center;
+		}
+	}
+	.products {
+		&__header {
+			margin-bottom: 20px;
+		}
+		&__title {
+			margin: 0;
+		}
+		&__list {
+			justify-content: space-between;
+		}
+		&__item {
+			margin: 0;
+			width: 50%;
+		}
+		&__box {
+			padding: 13px 8px 15px;
+		}
+		&__inner {
+			margin-top: 5px;
+		}
+	}
+	.stars {
+		display: none;
+	}
+	.offer {
+		&__title,
+		&__text {
+			font-size: 24px;
+		}
+		&__subject {
+			font-size: 17px;
+		}
+		&__lead {
+			display: none;
+		}
+		&__box {
+			margin-top: 15px;
+		}
+		&__list {
+			align-items: baseline;
+			padding-top: 6px;
+		}
+		&__item {
+			margin-bottom: 15px;
+		}
+		&__icon {
+			margin-bottom: 10px;
+		}
+	}
+	.subscribe {
+		background-image: url(../img/@media/414px/back-review@414px.jpg);
+	}
+	.form-sub {
+		margin: 0;
+		width: 100%;
+		&__subject {
+			margin-bottom: 15px;
+		}
+		&__btn {
+			padding: 8px 13px;
+		}
+	}
+	.footer {
+		&__nav {
+			display: none;
+		}
+	}
+	.footer-bottom {
+		padding: 0;
+		&__text {
+			font-size: 13px;
+		}
+		&__list {
+			width: 158px;
+		}
+		&__item {
+			border: 1px solid $pink;
+		}
+	}
+}

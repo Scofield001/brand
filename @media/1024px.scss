@@ -1,0 +1,114 @@
+$pink: #f16d7f;
+@media screen and (max-width: 1024px) {
+	.logo {
+		&__img {
+			filter: none;
+		}
+	}
+	.header {
+		&__box {
+			justify-content: space-around;
+		}
+	}
+	.min-cart {
+		&__box {
+			display: none;
+		}
+	}
+	.mega {
+		display: none;
+	}
+	.slider {
+		background-image: url(../img/@media/1024px/curly-sue@1024px.jpg);
+		&__box {
+			height: 499px;
+		}
+		&__wrap {
+			margin-left: 50px;
+			border-color: $pink;
+		}
+		&__text {
+			color: $pink;
+		}
+	}
+	.present {
+		display: none;
+	}
+	.products {
+		&__list {
+			justify-content: space-around;
+		}
+		&__item {
+			transition: box-shadow .2s ease-out;
+			&:hover {
+				box-shadow: none;
+				transform: none;
+				.products__img {
+					filter: none;
+				}
+				.products__caption {
+					color: #222;
+				}
+			}
+		}
+		&__img {
+			transition: none;
+			max-width: 205px;
+		}
+		&__buttons {
+			display: none;
+		}
+	}
+	.offer {
+		margin: 0;
+		background-image: url(../img/@media/1024px/snow@1024px.jpg);
+		&__slogan {
+			color: $pink;
+		}
+		&__item {
+			margin-bottom: 27px;
+		}
+	}
+	.subscribe {
+		background-image: url(../img/@media/1024px/back-review@1024px.jpg);
+		min-height: 310px;
+	}
+	.review {
+		padding: 0 0 0 30px;
+		opacity: 1;
+		transition: none;
+		align-items: center;
+		&__title {
+			color: $pink;
+		}
+	}
+	.form-sub {
+		opacity: 1;
+		transition: none;
+	}
+
+	.footer {
+		&__box {
+			justify-content: space-around;
+			padding: 55px 0 35px;
+		}
+		&__nav {
+			margin: 0;
+		    min-width: 0
+		}
+	}
+	.footer-bottom {
+		padding: 10px 0;
+		&__box {
+			justify-content: space-around;
+		}
+	}
+	.btn-products {
+		display: none;
+	}
+	.breadcrumbs {
+		&__box {
+			justify-content: space-around;
+		}
+	}
+}

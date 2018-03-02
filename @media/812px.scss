@@ -1,0 +1,80 @@
+$back: #222224;
+
+@media screen and (max-width: 812px) {
+	.header {
+		&__box {
+			height: auto;
+			justify-content: space-between;
+		}
+	}
+	.account {
+		order: 1;
+	}
+	.header-left {
+		&__form {
+			display: none;
+		}
+	}
+	.menu-left {
+		display: none;
+	}
+	.slider {
+		background-image: url(../img/@media/812px/curly-sue@812px.jpg);
+		&__box {
+			height: 374px;
+		}
+	}
+	.offer {
+		flex-direction: column;
+		background: $back;
+		&__box {
+			margin: 27px auto 0;
+			display: flex;
+		}
+		&__text {
+			font-size: 3.375rem;
+			margin-left: 10px;
+		}
+		&__list {
+			display: flex;
+			padding-top: 20px;
+		}
+		&__item {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	.subscribe {
+		min-height: 210px;
+		background-image: url(../img/@media/812px/back-review@812px.jpg);
+	}
+	.review {
+		display: none;
+	}
+	.form-sub {
+		margin: 0 auto;
+	}
+	.footer {
+		&__box {
+			padding: 10px 0 0;
+		}
+		&__text {
+			margin: 0;
+		}
+		&__nav {
+		    min-width: 100%;
+		    justify-content: space-around;
+		}
+		&__title {
+			margin-bottom: 14px;
+		}
+		&__link {
+			margin-bottom: 12px;
+		}
+		&__wrap {
+			padding: 0 30px;
+			max-width: none;
+		}
+	}
+}
