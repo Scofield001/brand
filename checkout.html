@@ -15,12 +15,13 @@
 	<script defer src='js/fontawesome-all.min.js'></script>
 </head>
 <body>
+	<div class="container">
 		<header class='header'>
-			<div class='header__box container'>
+			<div class='header__box center'>
 				<div class='header-left'>
 					<a class='logo' href='index.html'>
 						<img class='logo__img' src='img/logo.png' width='59' alt='logo'>
-						<span>bran<span class='logo__text'>d</span></span>
+						<span class='logo__main-text'>bran<span class='logo__text'>d</span></span>
 					</a>
 					<details class='menu-left'>
 						<summary class='menu-left__text'>Browse</summary>
@@ -146,11 +147,11 @@
 								<span class='min-cart__main-price'>$500.00</span>
 							</div>
 							<a class='min-cart__link-next' href='checkout.html'>checkout</a>
-							<a class='min-cart__link-next' href='cart.html'>go to cart</a>
+							<a class='min-cart__link-next' href='cart.html'>go&nbsp;to&nbsp;cart</a>
 						</div>
 					</details>
 					<details class='account'>
-						<summary class='account__text'>My Account</summary>
+						<summary class='account__text'>My&nbsp;Account</summary>
 					</details>
 				</div>
 			</div>
@@ -269,7 +270,7 @@
 			</ul>
 		</nav>
 		<nav class='breadcrumbs'>
-			<section class='breadcrumbs__box container'>
+			<section class='breadcrumbs__box center'>
 				<h2 class='breadcrumbs__title'>new arrivals</h2>
 				<ul class='breadcrumbs__list'>
 					<li class='breadcrumbs__item'>
@@ -280,179 +281,178 @@
 				</ul>
 			</section>
 		</nav>
-		<main class='checkout container'>
-			<details class='checkout__box' open>
-				<summary class='checkout__name'>01.&ensp; shipping adress</summary>
-				<div class='checkout__wrap'>
-					<form action='#' class='checkout__form'>
-						<fieldset class='checkout__inner'>
-							<legend class='checkout__title'>check as a guest or register</legend>
-							<p class='checkout__text'>Register with us for future convenience</p>
-							<label class='checkout__label' for='radio-1'><input type='radio' class='checkout__radio' name='radio' id='radio-1' required>checkout as guest</label>
-							<label class='checkout__label' for='radio-2'><input type='radio' class='checkout__radio' name='radio' id='radio-2' checked>register</label>
-						</fieldset>
-						<fieldset class='checkout__inner'>
-							<legend class='checkout__title'>register and save time!</legend>
-							<p class='checkout__text'>Register with us for future convenience</p>
-							<button class='checkout__btn'>
-								<i class='fas fa-angle-double-right fa-sm'></i>
-								Fast and easy checkout
-							</button>
-							<button class='checkout__btn'>
-								<i class='fas fa-angle-double-right fa-sm'></i>
-								Easy access to your order history and status
-							</button>
-							<input class='checkout__submit' type='submit' value='continue'>
-						</fieldset>
-					</form>
-					<form action='#' class='checkout__form'>
-						<fieldset class='checkout__inner'>
-							<legend class='checkout__title'>already registed?</legend>
-							<p class='checkout__text checkout__text_last'>Please log in below</p>
-							<label class='checkout__label checkout__label_last' for='email'>email address
-								<span class='checkout__required'>*</span>
-							</label>
-							<input class='checkout__input' type='email' name='email' id='email' required autofocus tabindex='1' pattern='^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'>
-							<label class='checkout__label checkout__label_last' for='password'>password
-								<span class='checkout__required'>*</span>
-							</label>
-							<input class='checkout__input' type='password' name='password' id='password' required tabindex='2'>
-							<p class='checkout__required checkout__required_size'>* required fileds</p>
-							<input class='checkout__submit' type='submit' value='log in'>
-							<a class='checkout__link' href='#'>forgot password ?</a>
-						</fieldset>
-					</form>
-				</div>
-			</details>
-			<details class='checkout__box'>
-				<summary class='checkout__name'>02.&ensp; billing information</summary>
-			</details>
-			<details class='checkout__box'>
-				<summary class='checkout__name'>03.&ensp; shipping information</summary>
-			</details>
-			<details class='checkout__box'>
-				<summary class='checkout__name'>04.&ensp; shipping method</summary>
-			</details>
-			<details class='checkout__box'>
-				<summary class='checkout__name'>05.&ensp; payment method</summary>
-			</details>
-			<details class='checkout__box'>
-				<summary class='checkout__name'>06.&ensp; order review</summary>
-			</details>
-		</main>
-		<section class='subscribe'>
-			<div class='review'>
-				<div class='review__box'>
-					<img class='review__img' src='img/review.jpg' alt='user' width='83'>
-					<div class='review__wrap'>
-						<p class='review__lead'>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-						<footer class='review__footer'>
-							<h3 class='review__title'>Bin Burhan</h3>
-							<span class='review__text'>Dhaka, Bd</span>
-							<div class='review__inner'>
-								<button class='btn-choice'></button>
-								<button class='btn-choice'></button>
-								<button class='btn-choice'></button>
+		<div class="content">
+			<div class='checkout center'>
+				<details class='checkout__box' open>
+					<summary class='checkout__name'>01.&ensp; shipping adress</summary>
+					<div class='checkout__wrap'>
+						<form action='#' class='checkout__form'>
+							<fieldset class='checkout__inner'>
+								<legend class='checkout__title'>check as&nbsp;a&nbsp;guest or&nbsp;register</legend>
+								<p class='checkout__text'>Register with&nbsp;us for future convenience</p>
+								<label class='checkout__label' for='radio-1'><input type='radio' class='checkout__radio' name='radio' id='radio-1' required>checkout as&nbsp;guest</label>
+								<label class='checkout__label' for='radio-2'><input type='radio' class='checkout__radio' name='radio' id='radio-2' checked>register</label>
+							</fieldset>
+							<fieldset class='checkout__inner'>
+								<legend class='checkout__title'>register and save time!</legend>
+								<p class='checkout__text'>Register with&nbsp;us for future convenience</p>
+								<button class='checkout__btn'>
+									<i class='fas fa-angle-double-right fa-sm'></i>
+									Fast and easy checkout
+								</button>
+								<button class='checkout__btn'>
+									<i class='fas fa-angle-double-right fa-sm'></i>
+									Easy access to&nbsp;your order history and status
+								</button>
+								<input class='checkout__submit' type='submit' value='continue'>
+							</fieldset>
+						</form>
+						<form action='#' class='checkout__form'>
+							<fieldset class='checkout__inner'>
+								<legend class='checkout__title'>already registed?</legend>
+								<p class='checkout__text checkout__text_last'>Please log in&nbsp;below</p>
+								<label class='checkout__label checkout__label_last' for='email'>email address
+									<span class='checkout__required'>*</span>
+								</label>
+								<input class='checkout__input' type='email' name='email' id='email' required autofocus tabindex='1' pattern='^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'>
+								<label class='checkout__label checkout__label_last' for='password'>password
+									<span class='checkout__required'>*</span>
+								</label>
+								<input class='checkout__input' type='password' name='password' id='password' required tabindex='2'>
+								<p class='checkout__required checkout__required_size'>* required fileds</p>
+								<input class='checkout__submit' type='submit' value='log in'>
+								<a class='checkout__link' href='#'>forgot password ?</a>
+							</fieldset>
+						</form>
+					</div>
+				</details>
+				<details class='checkout__box'>
+					<summary class='checkout__name'>02.&ensp; billing information</summary>
+				</details>
+				<details class='checkout__box'>
+					<summary class='checkout__name'>03.&ensp; shipping information</summary>
+				</details>
+				<details class='checkout__box'>
+					<summary class='checkout__name'>04.&ensp; shipping method</summary>
+				</details>
+				<details class='checkout__box'>
+					<summary class='checkout__name'>05.&ensp; payment method</summary>
+				</details>
+				<details class='checkout__box'>
+					<summary class='checkout__name'>06.&ensp; order review</summary>
+				</details>
+			</div>
+		</div>
+		<footer class='footer'>
+			<section class='subscribe'>
+				<div class='review'>
+					<div class='review__box'>
+						<img class='review__img' src='img/review.jpg' alt='user' width='83'>
+						<div class='review__wrap'>
+							<p class='review__lead'>&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium&raquo;</p>
+							<div class='review__footer'>
+								<h3 class='review__title'>Bin Burhan</h3>
+								<span class='review__text'>Dhaka, Bd</span>
+								<div class='review__inner'>
+									<button class='btn-choice'></button>
+									<button class='btn-choice'></button>
+									<button class='btn-choice'></button>
+								</div>
 							</div>
-						</footer>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class='form-sub'>
-				<div class='form-sub__box'>
-					<h2 class='form-sub__title'>subscribe</h2>
-					<h3 class='form-sub__subject'>for our newletter and promotion</h3>
-					<form class='form-sub__form'>
-						<input class='form-sub__email' type='email' name='email' placeholder='Enter Your Email' autocomplete='on' required pattern='^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'>
-						<input class='form-sub__btn' type='submit' name='submit' value='Subscribe'>
-					</form>
+				<div class='form-sub'>
+					<div class='form-sub__box'>
+						<h2 class='form-sub__title'>subscribe</h2>
+						<h3 class='form-sub__subject'>for our newletter and promotion</h3>
+						<form class='form-sub__form'>
+							<input class='form-sub__email' type='email' name='email' placeholder='Enter Your Email' autocomplete='on' required pattern='^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'>
+							<input class='form-sub__btn' type='submit' name='submit' value='Subscribe'>
+						</form>
+					</div>
 				</div>
-			</div>
-		</section>
-		<footer class='footer'>
-			<div class='footer__box container'>
-				<div class='footer__wrap'>
+			</section>
+			<div class='footer-content center'>
+				<div class='footer-content__box'>
 					<a class='logo' href='index.html'>
 						<img class='logo__img' src='img/logo.png' width='59' alt='logo'>
-						<span>bran<span class='logo__text'>d</span></span>
+						<span class='logo__main-text'>bran<span class='logo__text'>d</span></span>
 					</a>
-					<p class='footer__text'>
-						Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+					<p class='footer-content__text'>
+						Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.
 					</p>
-					<p class='footer__text'>
+					<p class='footer-content__text'>
 						Efficiently plagiarize 24/365 action items and focused infomediaries.
 						Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
 					</p>
 				</div>
-				<nav class='footer__nav'>
-					<ul class='footer__list'>
-						<li class='footer__item'>
-							<h2 class='footer__title'>company</h2>
+				<nav class='footer-content__nav'>
+					<ul class='footer-content__list'>
+						<li class='footer-content__item'>
+							<h2 class='footer-content__title'>company</h2>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='index.html'>home</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='index.html'>home</a>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>shop</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>shop</a>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>about</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>about</a>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>how it works</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>how it&nbsp;works</a>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>contact</a>
-						</li>
-					</ul>
-					<ul class='footer__list'>
-						<li class='footer__item'>
-							<h2 class='footer__title'>information</h2>
-						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>tearms &amp; condition</a>
-						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>privacy policy</a>
-						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>how to buy</a>
-						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>how to sell</a>
-						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>promotion</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>contact</a>
 						</li>
 					</ul>
-					<ul class='footer__list footer__list_last'>
-						<li class='footer__item'>
-							<h2 class='footer__title'>SHOP CATEGORY</h2>
+					<ul class='footer-content__list'>
+						<li class='footer-content__item'>
+							<h2 class='footer-content__title'>information</h2>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='man.html'>Men</a>
-
-
-
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>tearms &amp;&nbsp;condition</a>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>Women</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>privacy policy</a>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>Child</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>how to&nbsp;buy</a>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>Apparel</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>how to&nbsp;sell</a>
 						</li>
-						<li class='footer__item'>
-							<a class='footer__link' href='#'>Brows All</a>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>promotion</a>
+						</li>
+					</ul>
+					<ul class='footer-content__list footer-content__list_last'>
+						<li class='footer-content__item'>
+							<h2 class='footer-content__title'>SHOP CATEGORY</h2>
+						</li>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='man.html'>Men</a>
+						</li>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>Women</a>
+						</li>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>Child</a>
+						</li>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>Apparel</a>
+						</li>
+						<li class='footer-content__item'>
+							<a class='footer-content__link' href='#'>Brows All</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 			<div class='footer-bottom'>
-				<div class='footer-bottom__box container'>
-					<p class='footer-bottom__text'>&copy; 2017  Brand  All Rights Reserved.</p>
+				<div class='footer-bottom__box center'>
+					<p class='footer-bottom__text'>&copy;&nbsp;2017 Brand All Rights Reserved.</p>
 					<ul class='footer-bottom__list'>
 						<li class='footer-bottom__item'>
 							<a class='footer-bottom__link' href='https://www.facebook.com'>
@@ -483,5 +483,6 @@
 				</div>
 			</div>
 		</footer>
+	</div>
 </body>
 </html>
