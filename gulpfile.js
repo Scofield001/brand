@@ -8,8 +8,11 @@ gulp.task( 'sass', () => {
 	const mask = [
 					'lib/**/*.scss',
 					'blocks/container.scss',
-					'blocks/center.scss',
-					'blocks/**/*.scss'
+					'blocks/**/*.scss',
+					'blocks/**/***/*.scss',
+					'@media/1024px.scss',
+					'@media/812px.scss',
+					'@media/414px.scss'
 				],
 		run = () => gulp.src( mask )
 			.pipe( concat( 'style.scss' ))
