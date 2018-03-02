@@ -4,7 +4,7 @@ $pink: #f16d7f;
 $track: #f0f0f0;
 
 .form-filter {
-	font-size: 14px;
+	font-size: 0.875rem;
 	display: flex;
 	margin-bottom: 30px;
 	text-transform: uppercase;
@@ -27,6 +27,7 @@ $track: #f0f0f0;
 	}
 	&__partition {
 		color: $partition;
+		padding: 0 11px;
 	}
 	&__check {
 		margin: 0 10px 0 3px;
