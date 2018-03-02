@@ -5,7 +5,7 @@ $back: #f16d7f;
 		color: #fff;
 	}
 	&__text {
-		font-size: 15px;
+		font-size: 0.9375rem;
 		display: flex;
 		flex-direction: row-reverse;
 		height: 38px;
@@ -15,11 +15,11 @@ $back: #f16d7f;
 		align-items: center;
 		justify-content: space-between;
 		&::-webkit-details-marker {
-			font-size: 12px;
+			font-size: 0.75rem;
 			padding: 4px 8px 0;
 		}
 		&::-moz-details-marker {
-			font-size: 12px;
+			font-size: 0.75rem;
 			padding: 4px 8px 0;
 		}
 	}

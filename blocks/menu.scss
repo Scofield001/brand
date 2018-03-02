@@ -14,7 +14,7 @@ $pink: #f16d7f;
 		}
 	}
 	&__label {
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: bold;
 		display: flex;
 		height: 37px;
@@ -26,7 +26,7 @@ $pink: #f16d7f;
 		align-items: center;
 		justify-content: space-between;
 		&:after /* Rotate не помогло */ {
-			font-size: 9px;
+			font-size: 0.5625rem;
 			content: '\25bc'; //Вниз
 		}
 		&::-webkit-details-marker {
@@ -43,7 +43,7 @@ $pink: #f16d7f;
 		margin: 17px 0;
 	}
 	&__link {
-		font-size: 14px;
+		font-size: 0.875rem;
 		display: block;
 		padding-left: 17px;
 		text-transform: capitalize;

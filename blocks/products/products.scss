@@ -6,36 +6,39 @@ $good-title: #4d4d4d;
 .products {
 	padding: 25px 0 58px;
 	&__header {
-		margin-bottom: 60px;
+		margin-bottom: 59px;
 	}
 	&__title,
 	&__subject {
 		text-align: center;
 	}
 	&__title {
-		font-size: 30px;
+		font-size: 1.875rem;
 		margin-bottom: 7px;
 		letter-spacing: .75px;
 	}
 	&__subject {
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: normal;
 		letter-spacing: .35px;
 		color: $subject;
 	}
 	&__list {
 		display: flex;
-		margin-bottom: 18px;
+		margin-bottom: 19px;
 		align-items: flex-start;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
 	&__item {
 		position: relative;
-		margin-bottom: 40px;
-		width: 261px;
+		margin-bottom: 39px;
+		max-width: 261px;
+		overflow: hidden;
+		transition: box-shadow .4s, transform .4s ease-out;
 		&:hover {
 			box-shadow: 0 5px 8px rgba(0, 0, 0, .16);
+			transform: scale(1.1,1.1);
 			.products__img {
 				filter: brightness(.4);
 			}
@@ -47,29 +50,31 @@ $good-title: #4d4d4d;
 			}
 		}
 	}
+	&__img {
+		transition: filter .4s ease-out;
+	}
 	&__link {
 		display: block;
 	}
 	&__box {
-		padding: 17px 15px 20px;
+		padding: 18px 13px 20px;
 	}
 	&__wrap {
 		padding: 14px 15px 20px;
 	}
 	&__caption {
-		font-size: 13px;
+		font-size: 0.8125rem;
 		font-weight: normal;
 		text-transform: uppercase;
 	}
 	&__inner {
 		display: flex;
 		margin-top: 13px;
-
 		justify-content: space-between;
 		align-items: center;
 	}
 	&__price {
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: bold;
 		display: block;
 		text-transform: uppercase;
@@ -84,7 +89,7 @@ $good-title: #4d4d4d;
 	&__good-title{
 		color: $good-title;
 		text-align: center;
-		font-size: 24px;
+		font-size: 1.5rem;
 		font-weight: 900;
 		text-transform: uppercase;
 		margin: 4px 0 67px;

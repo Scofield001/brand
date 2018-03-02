@@ -1,7 +1,7 @@
 $pink: #f16d7f;
 
 .logo {
-	font-size: 27px;
+	font-size: 1.6875rem;
 	font-weight: 300;
 	display: flex;
 	letter-spacing: .68px;
@@ -17,8 +17,11 @@ $pink: #f16d7f;
 	}
 	&__img {
 		transition: filter .2s;
-		margin-right: 8px;
+		margin-right: 11px;
 		filter: grayscale(1);
+	}
+	&__main-text {
+		margin-top: 7px;
 	}
 	&__text {
 		transition: color .2s;

@@ -19,7 +19,7 @@ $border-box: #e8e8e8;
 		text-transform: uppercase;
 	}
 	&__name {
-		font-size: 16px;
+		font-size: 1rem;
 		transition: color .2s;
 		font-weight: bold;
 		padding: 30px 0 24px;
@@ -44,13 +44,13 @@ $border-box: #e8e8e8;
 		padding: 0;
 	}
 	&__title {
-		font-size: 13px;
+		font-size: 0.8125rem;
 		padding: 12px 0 12px;
 	}
 	&__text,
 	&__btn {
 		color: $color;
-		font-size: 13px;
+		font-size: 0.8125rem;
 	}
 	&__text {
 		margin-bottom: 31px;
@@ -62,7 +62,7 @@ $border-box: #e8e8e8;
 		margin: 0 15px 17px 0;
 	}
 	&__label {
-		font-size: 12px;
+		font-size: 0.75rem;
 		display: block;
 		&_last {
 			margin: 12px 0;
@@ -80,7 +80,7 @@ $border-box: #e8e8e8;
 		width: 180px;
 		text-align: left;
 		color: $submit;
-		font-size: 14px;
+		font-size: 0.875rem;
 		border: 1px solid #eaeaea;
 		background: transparent;
 		padding: 16px 53px;
@@ -93,10 +93,10 @@ $border-box: #e8e8e8;
 	}
 	&__required {
 		color: $required;
-		font-size: 17px;
+		font-size: 1.0625rem;
 		text-transform: capitalize;
 		&_size {
-			font-size: 13px;
+			font-size: 0.8125rem;
 			margin: 17px 0 10px;
 		}
 	}
@@ -110,7 +110,7 @@ $border-box: #e8e8e8;
 	&__link {
 		text-transform: capitalize;
 		transition: color .2s;
-		font-size: 14px;
+		font-size: 0.875rem;
 		&:hover {
 			color: $hover;
 		}

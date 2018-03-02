@@ -16,13 +16,13 @@ $pink: #f16d7f;
 		margin: 0 auto;
 	}
 	&__title {
-		font-size: 24px;
+		font-size: 1.5rem;
 		margin-bottom: 7px;
 		letter-spacing: .6px;
 		text-transform: uppercase;
 	}
 	&__subject {
-		font-size: 14px;
+		font-size: 0.875rem;
 		margin-bottom: 31px;
 		letter-spacing: .35px;
 		text-transform: uppercase;
@@ -40,7 +40,7 @@ $pink: #f16d7f;
 		background-color: #e1e1e1;
 	}
 	&__btn {
-		font-size: 14px;
+		font-size: 0.875rem;
 		padding: 15px 20px;
 		cursor: pointer;
 		letter-spacing: .35px;

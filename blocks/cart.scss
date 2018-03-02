@@ -15,7 +15,7 @@ $border-wrap: #e2e2e2;
 		padding: 16px 38px;
 		border: 1px solid $border;
 		color: $color;
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: bold;
 		text-transform: uppercase;
 		transition: border .2s, color .2s;
@@ -35,7 +35,7 @@ $border-wrap: #e2e2e2;
 		padding: 0;
 	}
 	&__legend {
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: bold;
 		text-transform: uppercase;
 		transition: border .2s;
@@ -58,17 +58,17 @@ $border-wrap: #e2e2e2;
 		&::-webkit-input-placeholder {
 			color: $placeholder;
 			text-transform: capitalize;
-			font-size: 13px;
+			font-size: 0.8125rem;
 		}
 		&::-moz-placeholder {
 			color: $placeholder;
 			text-transform: capitalize;
-			font-size: 13px;
+			font-size: 0.8125rem;
 		}
 		&:-ms-input-placeholder {
 			color: $placeholder;
 			text-transform: capitalize;
-			font-size: 13px;
+			font-size: 0.8125rem;
 		}
 	}
 	&__submit {
@@ -76,7 +76,7 @@ $border-wrap: #e2e2e2;
 		padding: 11px 14px;
 		margin-top: 2px;
 		color: $color;
-		font-size: 11px;
+		font-size: 0.6875rem;
 		font-weight: bold;
 		text-transform: uppercase;
 		cursor: pointer;
@@ -89,7 +89,7 @@ $border-wrap: #e2e2e2;
 		display: block;
 		margin: 4px 0 24px;
 		color: #000;
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: 300;
 	}
 	&__wrap-price {
@@ -104,7 +104,7 @@ $border-wrap: #e2e2e2;
 	}
 	&__text {
 		color: $color;
-		font-size: 11px;
+		font-size: 0.6875rem;
 		text-transform: uppercase;
 		text-align: right;
 		margin-bottom: 13px;
@@ -113,7 +113,7 @@ $border-wrap: #e2e2e2;
 		padding-left: 16px;
 	}
 	&__text_last {
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: bold;
 	}
 	&__price_color {
@@ -126,7 +126,7 @@ $border-wrap: #e2e2e2;
 		padding: 16px 0;
 		text-align: center;
 		color: #fff;
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: bold;
 		text-transform: uppercase;
 		margin-top: 17px;

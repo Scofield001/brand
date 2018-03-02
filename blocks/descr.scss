@@ -10,12 +10,12 @@ $text-right:  #2f2f2f;
 		text-transform: uppercase;
 		color: $dark;
 		font-weight: 900;
-		font-size: 18px;
+		font-size: 1.125rem;
 		margin-bottom: 20px;
 	}
 	&__lead {
 		color: $gray;
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: 300;
 		line-height: 24px;
 		margin: 18px 0;
@@ -28,7 +28,7 @@ $text-right:  #2f2f2f;
 	}
 	&__text {
 		color: $text;
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
@@ -39,9 +39,10 @@ $text-right:  #2f2f2f;
 	&__price {
 		transition: color .2s;
 		color: $gray;
-		font-size: 24px;
+		font-size: 1.5rem;
 		font-weight: bold;
 		display: block;
 		margin-bottom: 41px;
+		padding-right: 24px;
 	}
 }

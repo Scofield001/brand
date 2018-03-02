@@ -17,7 +17,7 @@ $hover: #ef5b70;
 	}
 	&__name {
 		color: $black;
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: bold;
 		text-transform: uppercase;
 		padding-bottom: 13px;
@@ -25,7 +25,7 @@ $hover: #ef5b70;
 	&__inner {
 		width: 144px;
 		color: $gray;
-		font-size: 14px;
+		font-size: 0.875rem;
 		border: 1px solid $border;
 		padding-left: 16px;
 		height: 35px;
@@ -41,7 +41,7 @@ $hover: #ef5b70;
 		height: 55px;
 		border: 1px solid $gray;
 		color: $gray;
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: bold;
 		background: transparent url('../img/svg/cart-good.svg') no-repeat 40.4% 10px;
 		padding-left: 50px;

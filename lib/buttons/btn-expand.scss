@@ -2,11 +2,13 @@ $back: #f16d7f;
 $hover: #ef5b70;
 
 .btn-expand {
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: bold;
 	display: block;
 	margin: 0 auto;
-	padding: 14px 19px 16px 24px;
+	// padding: 14px 19px 16px 24px;
+	width: 212px;
+	height: 48px;
 	letter-spacing: .4px;
 	color: #fff;
 	background: $back;

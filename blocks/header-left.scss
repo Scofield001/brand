@@ -3,7 +3,7 @@ $placeholder: #a4a4a4;
 
 .header-left {
 	display: flex;
-
+	margin-top: 2px;
 	align-items: center;
 	&__search {
 		height: 38px;
@@ -14,7 +14,7 @@ $placeholder: #a4a4a4;
 		display: flex;
 	}
 	&__search {
-		font-size: 14px;
+		font-size: 0.875rem;
 		width: 281px;
 		padding-left: 15px;
 		letter-spacing: .35px;
@@ -31,10 +31,6 @@ $placeholder: #a4a4a4;
 			font-weight: 300;
 			color: $placeholder;
 		}
-	}
-	&__btn {
-		// position: relative;
-		// background: #fff url(../img/svg/search.svg) no-repeat 50%;
 	}
 }
 

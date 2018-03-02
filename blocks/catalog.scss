@@ -6,14 +6,14 @@ $pink: #ef5b70;
 .catalog {
 	display: flex;
 	color: $color;
-	margin-top: 60px;
+	margin-top: 59px;
 	&__nav {
 		display: flex;
 		flex-direction: column;
 		margin-right: 48px;
 	}
 	&__box {
-		padding-top: 8px;
+		padding-top: 9px;
 	}
 	&__footer {
 		display: flex;
@@ -33,14 +33,14 @@ $pink: #ef5b70;
 		align-items: center;
 	}
 	&__item {
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: bold;
 		color: $color-pag;
 	}
 	&__btn,
 	&__link {
 		display: block;
-		padding: 12px 9px;
+		padding: 10px 9px;
 		background: transparent;
 		color: $color-pag;
 		&:hover {

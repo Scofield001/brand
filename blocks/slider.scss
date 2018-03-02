@@ -3,7 +3,7 @@ $gray: #e8e8e8;
 $black: #222;
 
 .slider {
-	background: $gray url(../img/curly-sue.jpg) no-repeat center;
+	background: $gray url(../img/curly-sue.jpg) no-repeat center 100%;
 	&__box {
 		display: flex;
 		height: 613px;
@@ -21,6 +21,7 @@ $black: #222;
 		padding-left: 12px;
 		border-left: 12px solid $black;
 		transition: border .2s;
+		margin-bottom: 77px;
 	}
 	&__title,
 	&__subject {
@@ -28,11 +29,11 @@ $black: #222;
 		text-transform: uppercase;
 	}
 	&__title {
-		font-size: 60px;
+		font-size: 3.75rem;
 		letter-spacing: 1.5px;
 	}
 	&__subject {
-		font-size: 40px;
+		font-size: 2.5rem;
 		letter-spacing: 1px;
 	}
 	&__text {

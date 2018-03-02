@@ -5,7 +5,7 @@ $hover: #f16d7f;
 
 .table {
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 0.8125rem;
 	border-collapse: collapse;
 	margin: 70px 0 44px;
 	width: 100%;
@@ -33,7 +33,7 @@ $hover: #f16d7f;
 		height: 30px;
 		text-align: center;
 		color: $col;
-		font-size: 13px;
+		font-size: 0.8125rem;
 		padding-left: 13px;
 		border: 1px solid $border;
 		&:focus {

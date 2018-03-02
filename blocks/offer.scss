@@ -5,7 +5,7 @@ $white: #fbfbfb;
 	display: flex;
 	justify-content: space-between;
 	margin: 55px auto 97px;
-	background: $black url(../img/snow.jpg) no-repeat left top;
+	background: $back url(../img/snow.jpg) no-repeat left top;
 	&:hover {
 		.offer__slogan {
 			color: $pink;
@@ -17,16 +17,17 @@ $white: #fbfbfb;
 		letter-spacing: 1.5px;
 		text-transform: uppercase;
 		color: #fff;
-		margin: 134px 0 0 36px;
+		margin: 134px 0 0 37px;
 	}
 	&__title {
-		font-size: 54px;
+		font-size: 3.375rem;
 	}
 	&__slogan {
 		transition: color .2s;
+		margin-left: 10px;
 	}
 	&__text {
-		font-size: 32px;
+		font-size: 2rem;
 		letter-spacing: .9px;
 	}
 	&__list {
@@ -39,16 +40,19 @@ $white: #fbfbfb;
 		justify-content: space-between;
 		align-items: flex-start;
 	}
+	&__icon {
+		margin-bottom: 5px;
+	}
 	&__inner {
 		max-width: 219px;
 		color: $white;
 	}
 	&__subject {
-		font-size: 20px;
+		font-size: 1.25rem;
 		letter-spacing: .5px;
 	}
 	&__lead {
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: 300;
 		line-height: 24px;
 		margin-top: 11px;
