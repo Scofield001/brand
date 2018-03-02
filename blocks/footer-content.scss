@@ -1,16 +1,16 @@
 $color: #898989;
 $pink: #f16d7f;
 
-.footer {
-	background: #fff;
-	&__box {
+.footer-content {
+		background: #fff;
 		display: flex;
 		padding: 110px 0 70px;
 		justify-content: space-between;
 		flex-wrap: wrap;
+	&__box {
+		max-width: 428px;
 	}
 	&__wrap {
-		width: 428px;
 	}
 	&__nav {
 		display: flex;
@@ -19,7 +19,7 @@ $pink: #f16d7f;
 		min-width: 619px;
 	}
 	&__text {
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: 300;
 		line-height: 24px;
 		margin-top: 22px;
@@ -31,14 +31,14 @@ $pink: #f16d7f;
 	}
 
 	&__title {
-		font-size: 18px;
+		font-size: 1.125rem;
 		margin: 11px 0 37px;
 		letter-spacing: .45px;
 		text-transform: uppercase;
 		color: $pink;
 	}
 	&__link {
-		font-size: 16px;
+		font-size: 1rem;
 		display: block;
 		margin-bottom: 24px;
 		letter-spacing: .4px;
