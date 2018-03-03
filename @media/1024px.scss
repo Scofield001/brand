@@ -87,14 +87,22 @@ $pink: #f16d7f;
 		transition: none;
 	}
 
-	.footer {
+	.footer-content {
+		justify-content: space-around;
+		padding: 55px 0 35px;
 		&__box {
-			justify-content: space-around;
-			padding: 55px 0 35px;
+			max-width: 90%;
 		}
 		&__nav {
 			margin: 0;
-		    min-width: 0
+		    min-width: 0;
+			width: 90%;
+		}
+		&__list {
+			width: auto;
+		}
+		&__text {
+			margin-top: 10px;
 		}
 	}
 	.footer-bottom {

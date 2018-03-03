@@ -14,6 +14,7 @@ $border: #e6e6e6;
 		}
 	}
 	.products {
+		padding: 10px 0 0;
 		&__header {
 			margin-bottom: 20px;
 		}
@@ -36,6 +37,9 @@ $border: #e6e6e6;
 	}
 	.stars {
 		display: none;
+	}
+	.btn-expand {
+		width: 100%;
 	}
 	.offer {
 		&__title,
@@ -75,7 +79,7 @@ $border: #e6e6e6;
 			padding: 8px 13px;
 		}
 	}
-	.footer {
+	.footer-content {
 		&__nav {
 			display: none;
 		}

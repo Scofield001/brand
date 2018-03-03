@@ -1,4 +1,5 @@
 $back: #222224;
+$gray: #d3d3d3;
 
 @media screen and (max-width: 812px) {
 	.header {
@@ -7,10 +8,39 @@ $back: #222224;
 			justify-content: space-between;
 		}
 	}
+	.min-cart {
+		margin: 0;
+		top: 0;
+		&__icon {
+			&:after {
+				height: 52px;
+				width: 52px;
+				background: $gray;
+				content: url('../img/svg/cart-white.svg');
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
 	.account {
-		order: 1;
+		color: #fff;
+		&__text {
+			background: $back;
+			height: 52px;
+		}
+	}
+	.header-right {
+		align-items: flex-start;
+		&__ellipse {
+			width: 22px;
+			height: 22px;
+			left: 30px;
+			top: 0px;
+		}
 	}
 	.header-left {
+		margin: 0;
 		&__form {
 			display: none;
 		}
@@ -55,10 +85,8 @@ $back: #222224;
 	.form-sub {
 		margin: 0 auto;
 	}
-	.footer {
-		&__box {
+	.footer-content {
 			padding: 10px 0 0;
-		}
 		&__text {
 			margin: 0;
 		}
