@@ -35,7 +35,7 @@ $track: #f0f0f0;
 	&__label {
 		width: 24px;
 		margin-right: 20px;
-		font-family: opensans;
+		font-family: opensans, sans-serif;
 	}
 	&__range {
 		position: relative;
@@ -86,6 +86,6 @@ $track: #f0f0f0;
 		justify-content: space-between;
 	}
 	&__price {
-		font-family: opensans;
+		font-family: opensans, sans-serif;
 	}
 }
