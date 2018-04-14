@@ -229,6 +229,21 @@ summary {
 p {
   margin: 0; }
 
+.stars {
+  color: #e4af48;
+  display: flex; }
+
+.triangle {
+  position: absolute;
+  top: -5px;
+  left: 69px;
+  width: 9px;
+  height: 9px;
+  transform: rotate(45deg);
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  background-color: #fff; }
+
 .btn-catalog {
   font-size: 1rem;
   font-weight: bold;
@@ -311,21 +326,6 @@ p {
   transition: color .2s; }
   .btn-search:hover {
     color: #222; }
-
-.stars {
-  color: #e4af48;
-  display: flex; }
-
-.triangle {
-  position: absolute;
-  top: -5px;
-  left: 69px;
-  width: 9px;
-  height: 9px;
-  transform: rotate(45deg);
-  border-top: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
-  background-color: #fff; }
 
 .container {
   min-height: 100%;
@@ -1465,22 +1465,6 @@ p {
     .mega__link:hover {
       color: #f16d7f; }
 
-.nav {
-  background: #fff; }
-  .nav__list {
-    display: flex;
-    justify-content: center; }
-  .nav__link {
-    font-size: 0.875rem;
-    font-weight: bold;
-    display: block;
-    padding: 16px 23px 16px;
-    text-transform: uppercase;
-    border-bottom: 3px solid transparent; }
-    .nav__link:hover {
-      color: #f16d7f;
-      border-bottom: 3px solid #ef5b70; }
-
 .products {
   padding: 25px 0 58px; }
   .products__header {
@@ -1553,6 +1537,22 @@ p {
     text-transform: uppercase;
     margin: 4px 0 67px; }
 
+.nav {
+  background: #fff; }
+  .nav__list {
+    display: flex;
+    justify-content: center; }
+  .nav__link {
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: block;
+    padding: 16px 23px 16px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent; }
+    .nav__link:hover {
+      color: #f16d7f;
+      border-bottom: 3px solid #ef5b70; }
+
 .table {
   text-transform: uppercase;
   font-size: 0.8125rem;
@@ -1590,11 +1590,6 @@ p {
 .mega__box_margin {
   margin: 0 45px; }
 
-.nav__item_hover {
-  position: relative; }
-  .nav__item_hover:hover .mega {
-    visibility: visible; }
-
 .products__list_margin {
   margin-bottom: 0; }
   .products__list_margin_good {
@@ -1602,6 +1597,11 @@ p {
 
 .products_padding {
   padding-bottom: 0; }
+
+.nav__item_hover {
+  position: relative; }
+  .nav__item_hover:hover .mega {
+    visibility: visible; }
 
 .table__title_first {
   text-align: left; }
