@@ -1,0 +1,29 @@
+{
+  "name": "brand",
+  "version": "1.0.0",
+  "description": "Адаптивный сайт",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scofield001/brand.git"
+  },
+  "author": "Александр",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scofield001/brand/issues"
+  },
+  "homepage": "https://github.com/Scofield001/brand#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "brand",
+  "homepage": "https://github.com/Scofield001/brand",
+  "authors": [
+    "Александр"
+  ],
+  "description": "Адаптивный сайт",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery-ui": "^1.12.1",
+    "gulp": "^4.0.0"
+  }
+}
