@@ -16,13 +16,13 @@ gulp.task( 'sass', () => {
 				],
 		run = () => gulp.src( mask )
 			.pipe( concat( 'style.scss' ))
-			.pipe( sass(/*{
+			.pipe( sass({
 				outputStyle: 'compressed'
-			}*/))
-/*			.pipe(autoprefixer({
+			}))
+			.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: false
-			}))*/
+			}))
 			.pipe( gulp.dest( 'style/' ));
 
 	watch( mask, run );
