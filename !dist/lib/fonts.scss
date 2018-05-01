@@ -1,0 +1,21 @@
+@mixin font-face ($name, $mod, $font-weight, $style: false) {
+	@font-face {
+		font-family: $name;
+		src: url('../fonts/' + $name + '/' + $name + '-' + $mod + '.eot');
+		src: url('../fonts/' + $name + '/' + $name + '-' + $mod + '.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/' + $name + '/' + $name + '-' + $mod + '.woff2') format('woff2'),
+			 url('../fonts/' + $name + '/' + $name + '-' + $mod + '.woff') format('woff'),
+			 url('../fonts/' + $name + '/' + $name + '-' + $mod + '.ttf') format('truetype');
+		font-weight: $font-weight;
+		@if $style {
+			font-style: $style;
+		}
+	}
+}
+
+@include font-face(lato, black, 900); //lato-black
+@include font-face(lato, bold, bold); //lato-bold
+@include font-face(lato, regular, normal); //lato-regular
+@include font-face(lato, italic, normal, italic); //lato-italic
+@include font-face(lato, light, 300); //lato-light
+@include font-face(opensans, regular, normal); //OpenSans regular

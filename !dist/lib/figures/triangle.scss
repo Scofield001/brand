@@ -1,0 +1,12 @@
+$border-gray: #e6e6e6;
+.triangle {
+	position: absolute;
+	top: -5px;
+	left: 69px;
+	width: 9px;
+	height: 9px;
+	transform: rotate(45deg);
+	border-top: 1px solid $border-gray;
+	border-left: 1px solid $border-gray;
+	background-color: #fff;
+}

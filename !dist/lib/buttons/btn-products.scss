@@ -1,0 +1,38 @@
+$hover: #ef5b70;
+
+.btn-products {
+	position: absolute;
+	top: 98px;
+	left: 70px;
+	visibility: hidden;
+	font-size: 0.8125rem;
+	&__box {
+		display: flex;
+		margin-top: 8px;
+		justify-content: space-between;
+	}
+	&__add,
+	&__send,
+	&__like {
+		color: #fff;
+		transition: border .2s;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		background: transparent;
+		&:hover {
+			border-color: $hover;
+		}
+	}
+	&__add {
+		font-weight: bold;
+		padding: 13px 12px 10px 42px;
+		color: #fff;
+		border: 1px solid #fff;
+		background: transparent url('../img/svg/cart-modal.svg') no-repeat 9px;
+	}
+	&__send,
+	&__like {
+		width: 57px;
+		height: 38px;
+	}
+}
