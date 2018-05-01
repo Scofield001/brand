@@ -12,14 +12,12 @@
     <meta name='application-name' content='Man'/>
     <meta name='msapplication-TileColor' content='#FFFFFF'/>
     <meta name='msapplication-square150x150logo' content='img/favicon/mstile-150x150.png'/>
-    <script defer src='js/fontawesome-all.min.js'></script>
+    <script defer src='lib/fontawesome/fontawesome-all.min.js'></script>
 
-    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/theme.css">
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-
+    <link rel="stylesheet" href="lib/jquery-ui/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="lib/jquery-ui/base/theme.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.min.js"></script>
 </head>
 <body>
     <div class='container'>
@@ -448,7 +446,7 @@
                         </fieldset>
                         <fieldset class='form-filter__box'>
                             <legend class='form-filter__name'>price</legend>
-                            <input class='form-filter__range' id='range' type='range' min='1' max='540' value='52' step='2'>
+                            <input class='form-filter__range' id='range' type='range' min='1' max='540' value='52' step='2' title="range">
                             <div class='form-filter__inner'>
                                 <span class='form-filter__price'>$<output for='range' name='result'>52</output></span>
                                 <span class='form-filter__price'>$400</span>
