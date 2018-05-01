@@ -1,67 +1,66 @@
 $present-back: #dadad2;
+$pink: #f16d7f;
 
 .present {
-	display: flex;
-	padding: 98px 0 50px;
+  display: flex;
+  padding: 98px 0 50px;
 
-	justify-content: space-between;
-	flex-wrap: wrap;
-	&__list {
-		width: 560px;
-	}
-	&__one,
-	&__two,
-	&__three,
-	&__four {
-		margin-bottom: 20px;
-		background-color: $present-back;
-		background-repeat: no-repeat;
-		&:hover {
-			.present__subject {
-				color: $pink;
-			}
-		}
-	}
-	&__one,
-	&__four {
-		height: 542px;
-	}
-	&__two,
-	&__three {
-		height: 261px;
-	}
-	&__one {
-		background-image: url('../img/present-1.jpg');
-	}
-	&__two {
-		background-image: url('../img/present-2.jpg');
-		background-position: 100% 0;
-	}
-	&__three {
-		background-image: url('../img/present-3.jpg');
-	}
-	&__four {
-		background-image: url('../img/present-4.jpg');
-	}
-	&__box {
-		display: inline-block;
-		margin-top: 26px;
-		padding: 14px 18px 10px;
-		background: #fff;
-	}
-	&__title,
-	&__subject {
-		font-weight: 900;
-		text-transform: uppercase;
-		transition: color .2s;
-	}
-	&__title {
-		font-size: 1.125rem;
-		margin-bottom: 4px;
-		letter-spacing: .45px;
-	}
-	&__subject {
-		font-size: 1.875rem;
-		letter-spacing: .75px;
-	}
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__list {
+      width: 560px;
+  }
+  &__one,
+  &__two,
+  &__three,
+  &__four {
+      margin-bottom: 20px;
+      background: $present-back no-repeat;
+      &:hover {
+          .present__subject {
+              color: $pink;
+          }
+      }
+  }
+  &__one,
+  &__four {
+      height: 542px;
+  }
+  &__two,
+  &__three {
+      height: 261px;
+  }
+  &__one {
+      background-image: url('../img/present-1.jpg');
+  }
+  &__two {
+    background: url('../img/present-2.jpg') 100% 0;
+  }
+  &__three {
+      background-image: url('../img/present-3.jpg');
+  }
+  &__four {
+      background-image: url('../img/present-4.jpg');
+  }
+  &__box {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 14px 18px 10px;
+      background: #fff;
+  }
+  &__title,
+  &__subject {
+      font-weight: 900;
+      text-transform: uppercase;
+      transition: color .2s;
+  }
+  &__title {
+      font-size: 1.125rem;
+      margin-bottom: 4px;
+      letter-spacing: .45px;
+  }
+  &__subject {
+      font-size: 1.875rem;
+      letter-spacing: .75px;
+  }
 }

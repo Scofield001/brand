@@ -10,9 +10,7 @@ $pink: #ef5b70;
 	border-width: 1px 0 1px;
 	border-style: solid;
 	border-color: $border;
-	background: $back url('../img/big/good.jpg') 51.2% 10px no-repeat;
-	background-color: $back;
-	background-repeat: no-repeat;
+	background: $back url('../img/big/good.jpg') no-repeat 51.2% 10px;
 	justify-content: space-between;
 	align-items: center;
 	&__btn {
