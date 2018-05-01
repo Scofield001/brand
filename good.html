@@ -1,616 +1,622 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<meta charset='UTF-8'>
-	<title>Good</title>
-	<link rel='stylesheet' type='text/css' href='style/style.css'>
-	<meta name='viewport' content='width=device-width'>
-	<meta name='MobileOptimized' content='320'>
-	<meta name='HandheldFriendly' content='true'>
-	<link rel='icon' type='image/png' href='img/favicon/favicon-32x32.png' sizes='32x32'/>
-	<link rel='icon' type='image/png' href='img/favicon/favicon-16x16.png' sizes='16x16'/>
-	<meta name='application-name' content='Good'/>
-	<meta name='msapplication-TileColor' content='#FFFFFF'/>
-	<meta name='msapplication-square150x150logo' content='img/favicon/mstile-150x150.png'/>
-	<script defer src='js/fontawesome-all.min.js'></script>
+    <meta charset='UTF-8'>
+    <title>Good</title>
+    <link rel='stylesheet' type='text/css' href='style/style.css'>
+    <meta name='viewport' content='width=device-width'>
+    <meta name='MobileOptimized' content='320'>
+    <meta name='HandheldFriendly' content='true'>
+    <link rel='icon' type='image/png' href='img/favicon/favicon-32x32.png' sizes='32x32'/>
+    <link rel='icon' type='image/png' href='img/favicon/favicon-16x16.png' sizes='16x16'/>
+    <meta name='application-name' content='Good'/>
+    <meta name='msapplication-TileColor' content='#FFFFFF'/>
+    <meta name='msapplication-square150x150logo' content='img/favicon/mstile-150x150.png'/>
+    <script defer src='js/fontawesome-all.min.js'></script>
+
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/theme.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 </head>
 <body>
-	<div class='container'>
-		<header class='header'>
-			<div class='header__box center'>
-				<div class='header-left'>
-					<a class='logo' href='index.html'>
-						<img class='logo__img' src='img/logo.png' width='59' alt='logo'>
-						<span class='logo__main-text'>bran<span class='logo__text'>d</span></span>
-					</a>
-					<details class='menu-left'>
-						<summary class='menu-left__text'>Browse</summary>
-						<nav class='menu-left__nav'>
-							<div class='triangle'></div>
-							<ul class='menu-left__list'>
-								<li class='menu-left__item'>
-									<h3 class='menu-left__title'>women</h3>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Dresses</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Tops</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Sweaters/Knits</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Jackets/Coats</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Blazers</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Denim</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Leggings/Pants</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Skirts/Shorts</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='#' class='menu-left__link'>Accessories</a>
-								</li>
-							</ul>
-							<ul class='menu-left__list'>
-								<li class='menu-left__item'>
-									<h3 class='menu-left__title'>men</h3>
-								</li>
-								<li class='menu-left__item'>
-									<a href='' class='menu-left__link'>Tees/Tank tops</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='' class='menu-left__link'>Shirts/Polos</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='' class='menu-left__link'>Sweaters</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='' class='menu-left__link'>Sweatshirts/Hoodies</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='' class='menu-left__link'>Blazers</a>
-								</li>
-								<li class='menu-left__item'>
-									<a href='' class='menu-left__link'>Jackets/vests</a>
-								</li>
-							</ul>
-						</nav>
-					</details>
-					<form action='#' class='header-left__form'>
-						<input class='header-left__search' type='search' name='search' placeholder='Search for Item...' autofocus autocomplete='on' required>
-						<button class='btn-search'><i class='fas fa-search'></i></button>
-					</form>
-				</div>
-				<div class='header-right'>
-					<div class='header-right__ellipse'>
-						<span class='header-right__quantity'>5</span>
-					</div>
-					<details class='min-cart'>
-						<summary class='min-cart__icon'>
-						</summary>
-						<div class='min-cart__box'>
-							<div class='min-cart__triangle triangle'></div>
-							<ul class='min-cart__list'>
-								<li class='min-cart__item'>
-									<a class='min-cart__link' href='good.html'>
-										<img class='min-cart__img' src='img/min/good-1.jpg' alt='good' width='72'>
-										<div class='min-cart__inner'>
-											<h3 class='min-cart__title'>rebox zane</h3>
-											<div class='stars'>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-											</div>
-											<span class='min-cart__text'>
-												<span class='min-cart__quantity'>2</span>
-												<span class='min-cart__multi'>&ensp;x&ensp;</span>
-												<span class='min-cart__price'>$250</span>
-											</span>
-										</div>
-									</a>
-									<button class='btn-delete'><i class='fas fa-times-circle'></i></button>
-								</li>
-								<li class='min-cart__item'>
-									<a class='min-cart__link' href='good.html'>
-										<img class='min-cart__img' src='img/min/good-2.jpg' alt='good' width='72'>
-										<div class='min-cart__inner'>
-											<h3 class='min-cart__title'>rebox zane</h3>
-											<div class='stars'>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-											</div>
-											<span class='min-cart__text'>
-												<span class='min-cart__quantity'>2</span>
-												<span class='min-cart__multi'>&ensp;x&ensp;</span>
-												<span class='min-cart__price'>$250</span>
-											</span>
-										</div>
-									</a>
-									<button class='btn-delete'><i class='fas fa-times-circle'></i></button>
-								</li>
-								<li class='min-cart__item'>
-									<a class='min-cart__link' href='good.html'>
-										<img class='min-cart__img' src='img/min/man-3.jpg' alt='good' width='72'>
-										<div class='min-cart__inner'>
-											<h3 class='min-cart__title'>mango&ensp;people&ensp;t-shirt</h3>
-											<div class='stars'>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-												<span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-											</div>
-											<span class='min-cart__text'>
-												<span class='min-cart__quantity'>1</span>
-												<span class='min-cart__multi'>&ensp;x&ensp;</span>
-												<span class='min-cart__price'>$52</span>
-											</span>
-										</div>
-									</a>
-									<button class='btn-delete'><i class='fas fa-times-circle'></i></button>
-								</li>
-							</ul>
-							<div class='min-cart__wrap'>
-								<span class='min-cart__main-text'>total</span>
-								<span class='min-cart__main-price'>$1052.00</span>
-							</div>
-							<a class='min-cart__link-next' href='checkout.html'>checkout</a>
-							<a class='min-cart__link-next' href='cart.html'>go&nbsp;to&nbsp;cart</a>
-						</div>
-					</details>
-					<details class='account'>
-						<summary class='account__text'>My&nbsp;Account</summary>
-					</details>
-				</div>
-			</div>
-		</header>
-		<nav class='nav'>
-			<ul class='nav__list'>
-				<li class='nav__item'>
-					<a class='nav__link' href='index.html'>home</a>
-				</li>
-				<li class='nav__item'>
-					<a class='nav__link' href='man.html'>man</a>
-				</li>
-				<li class='nav__item'>
-					<a class='nav__link' href='#'>women</a>
-				</li>
-				<li class='nav__item nav__item_hover'>
-					<a class='nav__link' href='#'>kids</a>
-					<nav class='mega'>
-						<div class='triangle'></div>
-						<ul class='mega__list'>
-							<li class='mega__item'>
-								<h3 class='mega__title'>women</h3>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>dresses</a>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>tops</a>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>sweaters/knits</a>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>jackets/coats</a>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>blazers</a>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>denim</a>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>leggings/pants</a>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>skirts/shorts</a>
-							</li>
-							<li class='mega__item'>
-								<a class='mega__link' href='#'>accessories</a>
-							</li>
-						</ul>
-						<div class='mega__box mega__box_margin'>
-							<ul class='mega__list'>
-								<li class='mega__item'>
-									<h3 class='mega__title'>women</h3>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>dresses</a>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>tops</a>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>sweaters/knits</a>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>jackets/coats</a>
-								</li>
-							</ul>
-							<ul class='mega__list'>
-								<li class='mega__item'>
-									<h3 class='mega__title'>women</h3>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>dresses</a>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>tops</a>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>sweaters/knits</a>
-								</li>
-							</ul>
-						</div>
-						<div class='mega__box'>
-							<ul class='mega__list'>
-								<li class='mega__item'>
-									<h3 class='mega__title'>women</h3>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>dresses</a>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>tops</a>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>sweaters/knits</a>
-								</li>
-								<li class='mega__item'>
-									<a class='mega__link' href='#'>jackets/coats</a>
-								</li>
-							</ul>
-							<img class='mega__img' src='img/glass.jpg' alt='glass' width='255'>
-						</div>
-					</nav>
-				</li>
-				<li class='nav__item'>
-					<a class='nav__link' href='#'>accoseriese</a>
-				</li>
-				<li class='nav__item'>
-					<a class='nav__link' href='#'>featured</a>
-				</li>
-				<li class='nav__item'>
-					<a class='nav__link' href='#'>hot deals</a>
-				</li>
-			</ul>
-		</nav>
-		<nav class='breadcrumbs'>
-			<section class='breadcrumbs__box center'>
-				<h2 class='breadcrumbs__title'>new arrivals</h2>
-				<ul class='breadcrumbs__list'>
-					<li class='breadcrumbs__item'>
-						<a class='breadcrumbs__link' href='index.html'>home</a><span class='breadcrumbs__partition'> /</span>
-						<a class='breadcrumbs__link' href='man.html'>men</a><span class='breadcrumbs__partition'> /</span>
-						<span class='breadcrumbs__text'>new arrivals</span>
-					</li>
-				</ul>
-			</section>
-		</nav>
-		<div class='content'>
-			<div class='slider-good'>
-				<button class='slider-good__btn'><i class='fas fa-angle-left fa-lg'></i></button>
-				<button class='slider-good__btn'><i class='fas fa-angle-right fa-lg'></i></button>
-			</div>
-			<section class='good center'>
-				<header class='good__header'>
-					<h1 class='good__title'>women collection</h1>
-				</header>
-				<article class='good__box'>
-					<div class='descr'>
-						<header class='descr__header'>
-							<h2 class='descr__title'>moschino cheap and chic</h2>
-						</header>
-						<div class='good__stars stars'>
-							<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-							<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-							<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-							<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-							<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-						</div>
-						<p class='descr__lead'>
-							Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
-						</p>
-						<div class='descr__box'>
-							<span class='descr__text'>material:<span class='descr__text-right'>cotton</span></span>
-							<span class='descr__text'>designer:<span class='descr__text-right'>binburhan</span></span>
-						</div>
-						<span class='descr__price'>$561</span>
-					</div>
-				</article>
-				<form class='form-good'>
-					<div class='form-good__box'>
-						<fieldset class='form-good__wrap'>
-							<legend class='form-good__name'>choose color</legend>
-							<input class='form-good__inner' type='color' list='dl_color' name='color' id='color' value='#ef5b70' title="color">
-							<datalist id='dl_color'>
-								<option value='#ff0000' label='red'>
-								<option value='#008000' label='green'>
-								<option value='#0000ff' label='blue'>
-								<option value='#ffffff' label='White'>
-								<option value='#cccccc' label='gold'>
-							</datalist>
-						</fieldset>
-						<fieldset class='form-good__wrap'>
-							<legend class='form-good__name'>choose size</legend>
-							<select class='form-good__inner' id='show'>
-								<option value='size'>xxl</option>
-								<option value='size'>xl</option>
-								<option value='size'>l</option>
-								<option value='size'>m</option>
-								<option value='size'>s</option>
-								<option value='size'>xs</option>
-							</select>
-						</fieldset>
-						<fieldset class='form-good__wrap'>
-							<legend class='form-good__name'>quantity</legend>
-							<input class='form-good__inner' id='number' type='number' value='2' max='10'>
-						</fieldset>
-					</div>
-					<input class='form-good__btn' type='submit' name='submit' value='Add to Cart'>
-				</form>
-			</section>
-			<section class='products products_padding center'>
-				<h2 class='products__good-title'>you may like also</h2>
-				<ul class='products__list products__list_margin_good'>
-					<li class='products__item'>
-						<a class='products__link' href='good.html'>
-							<img class='products__img' src='img/woman-1.jpg' alt='product' width='261'>
-							<div class='products__box'>
-								<h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-								<div class='products__inner'>
-									<span class='products__price'>$52.00</span>
-									<div class='stars'>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-									</div>
-								</div>
-							</div>
-						</a>
-						<div class='btn-products'>
-							<button class='btn-products__add'>Add to&nbsp;Cart</button>
-							<div class='btn-products__box'>
-								<button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-								<button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-							</div>
-						</div>
-					</li>
-					<li class='products__item'>
-						<a class='products__link' href='good.html'>
-							<img class='products__img' src='img/woman-2.jpg' alt='product' width='261'>
-							<div class='products__box'>
-								<h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-								<div class='products__inner'>
-									<span class='products__price'>$52.00</span>
-									<div class='stars'>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-									</div>
-								</div>
-							</div>
-						</a>
-						<div class='btn-products'>
-							<button class='btn-products__add'>Add to&nbsp;Cart</button>
-							<div class='btn-products__box'>
-								<button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-								<button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-							</div>
-						</div>
-					</li>
-					<li class='products__item'>
-						<a class='products__link' href='good.html'>
-							<img class='products__img' src='img/woman-3.jpg' alt='product' width='261'>
-							<div class='products__box'>
-								<h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-								<div class='products__inner'>
-									<span class='products__price'>$52.00</span>
-									<div class='stars'>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-									</div>
-								</div>
-							</div>
-						</a>
-						<div class='btn-products'>
-							<button class='btn-products__add'>Add to&nbsp;Cart</button>
-							<div class='btn-products__box'>
-								<button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-								<button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-							</div>
-						</div>
-					</li>
-					<li class='products__item'>
-						<a class='products__link' href='good.html'>
-							<img class='products__img' src='img/woman-4.jpg' alt='product' width='261'>
-							<div class='products__box'>
-								<h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-								<div class='products__inner'>
-									<span class='products__price'>$52.00</span>
-									<div class='stars'>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-										<span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-									</div>
-								</div>
-							</div>
-						</a>
-						<div class='btn-products'>
-							<button class='btn-products__add'>Add to&nbsp;Cart</button>
-							<div class='btn-products__box'>
-								<button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-								<button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-		</div>
-		<footer class='footer'>
-			<section class='subscribe'>
-				<div class='review'>
-					<div class='review__box'>
-						<img class='review__img' src='img/review.jpg' alt='user' width='83'>
-						<div class='review__wrap'>
-							<p class='review__lead'>&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium&raquo;</p>
-							<div class='review__footer'>
-								<h3 class='review__title'>Bin Burhan</h3>
-								<span class='review__text'>Dhaka, Bd</span>
-								<div class='review__inner'>
-									<button class='btn-choice'></button>
-									<button class='btn-choice'></button>
-									<button class='btn-choice'></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class='form-sub'>
-					<div class='form-sub__box'>
-						<h2 class='form-sub__title'>subscribe</h2>
-						<h3 class='form-sub__subject'>for our newletter and promotion</h3>
-						<form class='form-sub__form'>
-							<input class='form-sub__email' type='email' name='email' placeholder='Enter Your Email' autocomplete='on' required pattern='^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'>
-							<input class='form-sub__btn' type='submit' name='submit' value='Subscribe'>
-						</form>
-					</div>
-				</div>
-			</section>
-			<div class='footer-content center'>
-				<div class='footer-content__box'>
-					<a class='logo' href='index.html'>
-						<img class='logo__img' src='img/logo.png' width='59' alt='logo'>
-						<span class='logo__main-text'>bran<span class='logo__text'>d</span></span>
-					</a>
-					<p class='footer-content__text'>
-						Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.
-					</p>
-					<p class='footer-content__text'>
-						Efficiently plagiarize 24/365 action items and focused infomediaries.
-						Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
-					</p>
-				</div>
-				<nav class='footer-content__nav'>
-					<ul class='footer-content__list'>
-						<li class='footer-content__item'>
-							<h2 class='footer-content__title'>company</h2>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='index.html'>home</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>shop</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>about</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>how it&nbsp;works</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>contact</a>
-						</li>
-					</ul>
-					<ul class='footer-content__list'>
-						<li class='footer-content__item'>
-							<h2 class='footer-content__title'>information</h2>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>tearms &amp;&nbsp;condition</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>privacy policy</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>how to&nbsp;buy</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>how to&nbsp;sell</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>promotion</a>
-						</li>
-					</ul>
-					<ul class='footer-content__list footer-content__list_last'>
-						<li class='footer-content__item'>
-							<h2 class='footer-content__title'>SHOP CATEGORY</h2>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='man.html'>Men</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>Women</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>Child</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>Apparel</a>
-						</li>
-						<li class='footer-content__item'>
-							<a class='footer-content__link' href='#'>Brows All</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class='footer-bottom'>
-				<div class='footer-bottom__box center'>
-					<p class='footer-bottom__text'>&copy;&nbsp;2017 Brand All Rights Reserved.</p>
-					<ul class='footer-bottom__list'>
-						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link' href='https://www.facebook.com'>
-								<i class='fab fa-facebook-f'></i>
-							</a>
-						</li>
-						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link' href='https://twitter.com/'>
-								<i class='fab fa-twitter'></i>
-							</a>
-						</li>
-						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link' href='https://linkedin.com/'>
-								<i class='fab fa-linkedin-in'></i>
-							</a>
-						</li>
-						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link' href='https://pinterest.com/'>
-								<i class='fab fa-pinterest-p'></i>
-							</a>
-						</li>
-						<li class='footer-bottom__item'>
-							<a class='footer-bottom__link' href='https://plus.google.com/'>
-								<i class='fab fa-google-plus-g'></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</div>
+    <div class='container'>
+        <header class='header'>
+            <div class='header__box center'>
+                <div class='header-left'>
+                    <a class='logo' href='index.html'>
+                        <img class='logo__img' src='img/logo.png' width='59' alt='logo'>
+                        <span class='logo__main-text'>bran<span class='logo__text'>d</span></span>
+                    </a>
+                    <details class='menu-left'>
+                        <summary class='menu-left__text'>Browse</summary>
+                        <nav class='menu-left__nav'>
+                            <div class='triangle'></div>
+                            <ul class='menu-left__list'>
+                                <li class='menu-left__item'>
+                                    <h3 class='menu-left__title'>women</h3>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Dresses</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Tops</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Sweaters/Knits</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Jackets/Coats</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Blazers</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Denim</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Leggings/Pants</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Skirts/Shorts</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='#' class='menu-left__link'>Accessories</a>
+                                </li>
+                            </ul>
+                            <ul class='menu-left__list'>
+                                <li class='menu-left__item'>
+                                    <h3 class='menu-left__title'>men</h3>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='' class='menu-left__link'>Tees/Tank tops</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='' class='menu-left__link'>Shirts/Polos</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='' class='menu-left__link'>Sweaters</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='' class='menu-left__link'>Sweatshirts/Hoodies</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='' class='menu-left__link'>Blazers</a>
+                                </li>
+                                <li class='menu-left__item'>
+                                    <a href='' class='menu-left__link'>Jackets/vests</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </details>
+                    <form action='#' class='header-left__form'>
+                        <input class='header-left__search' type='search' name='search' placeholder='Search for Item...' autofocus autocomplete='on' required>
+                        <button class='btn-search'><i class='fas fa-search'></i></button>
+                    </form>
+                </div>
+                <div class='header-right'>
+                    <div class='header-right__ellipse'>
+                        <span class='header-right__quantity'>5</span>
+                    </div>
+                    <details class='min-cart'>
+                        <summary class='min-cart__icon'>
+                        </summary>
+                        <div class='min-cart__box'>
+                            <div class='min-cart__triangle triangle'></div>
+                            <ul class='min-cart__list'>
+                                <li class='min-cart__item'>
+                                    <a class='min-cart__link' href='good.html'>
+                                        <img class='min-cart__img' src='img/min/good-1.jpg' alt='good' width='72'>
+                                        <div class='min-cart__inner'>
+                                            <h3 class='min-cart__title'>rebox zane</h3>
+                                            <div class='stars'>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
+                                            </div>
+                                            <span class='min-cart__text'>
+                                                <span class='min-cart__quantity'>2</span>
+                                                <span class='min-cart__multi'>&ensp;x&ensp;</span>
+                                                <span class='min-cart__price'>$250</span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <button class='btn-delete'><i class='fas fa-times-circle'></i></button>
+                                </li>
+                                <li class='min-cart__item'>
+                                    <a class='min-cart__link' href='good.html'>
+                                        <img class='min-cart__img' src='img/min/good-2.jpg' alt='good' width='72'>
+                                        <div class='min-cart__inner'>
+                                            <h3 class='min-cart__title'>rebox zane</h3>
+                                            <div class='stars'>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
+                                            </div>
+                                            <span class='min-cart__text'>
+                                                <span class='min-cart__quantity'>2</span>
+                                                <span class='min-cart__multi'>&ensp;x&ensp;</span>
+                                                <span class='min-cart__price'>$250</span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <button class='btn-delete'><i class='fas fa-times-circle'></i></button>
+                                </li>
+                                <li class='min-cart__item'>
+                                    <a class='min-cart__link' href='good.html'>
+                                        <img class='min-cart__img' src='img/min/man-3.jpg' alt='good' width='72'>
+                                        <div class='min-cart__inner'>
+                                            <h3 class='min-cart__title'>mango&ensp;people&ensp;t-shirt</h3>
+                                            <div class='stars'>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                                <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
+                                            </div>
+                                            <span class='min-cart__text'>
+                                                <span class='min-cart__quantity'>1</span>
+                                                <span class='min-cart__multi'>&ensp;x&ensp;</span>
+                                                <span class='min-cart__price'>$52</span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <button class='btn-delete'><i class='fas fa-times-circle'></i></button>
+                                </li>
+                            </ul>
+                            <div class='min-cart__wrap'>
+                                <span class='min-cart__main-text'>total</span>
+                                <span class='min-cart__main-price'>$1052.00</span>
+                            </div>
+                            <a class='min-cart__link-next' href='checkout.html'>checkout</a>
+                            <a class='min-cart__link-next' href='cart.html'>go&nbsp;to&nbsp;cart</a>
+                        </div>
+                    </details>
+                    <details class='account'>
+                        <summary class='account__text'>My&nbsp;Account</summary>
+                    </details>
+                </div>
+            </div>
+        </header>
+        <nav class='nav'>
+            <ul class='nav__list'>
+                <li class='nav__item'>
+                    <a class='nav__link' href='index.html'>home</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav__link' href='man.html'>man</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav__link' href='#'>women</a>
+                </li>
+                <li class='nav__item nav__item_hover'>
+                    <a class='nav__link' href='#'>kids</a>
+                    <nav class='mega'>
+                        <div class='triangle'></div>
+                        <ul class='mega__list'>
+                            <li class='mega__item'>
+                                <h3 class='mega__title'>women</h3>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>dresses</a>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>tops</a>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>sweaters/knits</a>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>jackets/coats</a>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>blazers</a>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>denim</a>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>leggings/pants</a>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>skirts/shorts</a>
+                            </li>
+                            <li class='mega__item'>
+                                <a class='mega__link' href='#'>accessories</a>
+                            </li>
+                        </ul>
+                        <div class='mega__box mega__box_margin'>
+                            <ul class='mega__list'>
+                                <li class='mega__item'>
+                                    <h3 class='mega__title'>women</h3>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>dresses</a>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>tops</a>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>sweaters/knits</a>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>jackets/coats</a>
+                                </li>
+                            </ul>
+                            <ul class='mega__list'>
+                                <li class='mega__item'>
+                                    <h3 class='mega__title'>women</h3>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>dresses</a>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>tops</a>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>sweaters/knits</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='mega__box'>
+                            <ul class='mega__list'>
+                                <li class='mega__item'>
+                                    <h3 class='mega__title'>women</h3>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>dresses</a>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>tops</a>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>sweaters/knits</a>
+                                </li>
+                                <li class='mega__item'>
+                                    <a class='mega__link' href='#'>jackets/coats</a>
+                                </li>
+                            </ul>
+                            <img class='mega__img' src='img/glass.jpg' alt='glass' width='255'>
+                        </div>
+                    </nav>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav__link' href='#'>accoseriese</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav__link' href='#'>featured</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav__link' href='#'>hot deals</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class='breadcrumbs'>
+            <section class='breadcrumbs__box center'>
+                <h2 class='breadcrumbs__title'>new arrivals</h2>
+                <ul class='breadcrumbs__list'>
+                    <li class='breadcrumbs__item'>
+                        <a class='breadcrumbs__link' href='index.html'>home</a><span class='breadcrumbs__partition'> /</span>
+                        <a class='breadcrumbs__link' href='man.html'>men</a><span class='breadcrumbs__partition'> /</span>
+                        <span class='breadcrumbs__text'>new arrivals</span>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <div class='content'>
+            <div class='slider-good'>
+                <button class='slider-good__btn'><i class='fas fa-angle-left fa-lg'></i></button>
+                <button class='slider-good__btn'><i class='fas fa-angle-right fa-lg'></i></button>
+            </div>
+            <section class='good center'>
+                <header class='good__header'>
+                    <h1 class='good__title'>women collection</h1>
+                </header>
+                <article class='good__box'>
+                    <div class='descr'>
+                        <header class='descr__header'>
+                            <h2 class='descr__title'>moschino cheap and chic</h2>
+                        </header>
+                        <div class='good__stars stars'>
+                            <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                            <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                            <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                            <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                            <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                        </div>
+                        <p class='descr__lead'>
+                            Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+                        </p>
+                        <div class='descr__box'>
+                            <span class='descr__text'>material:<span class='descr__text-right'>cotton</span></span>
+                            <span class='descr__text'>designer:<span class='descr__text-right'>binburhan</span></span>
+                        </div>
+                        <span class='descr__price'>$561</span>
+                    </div>
+                </article>
+                <form class='form-good'>
+                    <div class='form-good__box'>
+                        <fieldset class='form-good__wrap'>
+                            <legend class='form-good__name'>choose color</legend>
+                            <input class='form-good__inner' type='color' list='dl_color' name='color' id='color' value='#ef5b70' title="color">
+                            <datalist id='dl_color'>
+                                <option value='#ff0000' label='red'>
+                                <option value='#008000' label='green'>
+                                <option value='#0000ff' label='blue'>
+                                <option value='#ffffff' label='White'>
+                                <option value='#cccccc' label='gold'>
+                            </datalist>
+                        </fieldset>
+                        <fieldset class='form-good__wrap'>
+                            <legend class='form-good__name'>choose size</legend>
+                            <select class='form-good__inner' id='show'>
+                                <option value='size'>xxl</option>
+                                <option value='size'>xl</option>
+                                <option value='size'>l</option>
+                                <option value='size'>m</option>
+                                <option value='size'>s</option>
+                                <option value='size'>xs</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class='form-good__wrap'>
+                            <legend class='form-good__name'>quantity</legend>
+                            <input class='form-good__inner' id='number' type='number' value='2' max='10'>
+                        </fieldset>
+                    </div>
+                    <input class='form-good__btn' type='submit' name='submit' value='Add to Cart'>
+                </form>
+            </section>
+            <section class='products products_padding center'>
+                <h2 class='products__good-title'>you may like also</h2>
+                <ul class='products__list products__list_margin_good'>
+                    <li class='products__item'>
+                        <a class='products__link' href='good.html'>
+                            <img class='products__img' src='img/woman-1.jpg' alt='product' width='261'>
+                            <div class='products__box'>
+                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
+                                <div class='products__inner'>
+                                    <span class='products__price'>$52.00</span>
+                                    <div class='stars'>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class='btn-products'>
+                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
+                            <div class='btn-products__box'>
+                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
+                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='products__item'>
+                        <a class='products__link' href='good.html'>
+                            <img class='products__img' src='img/woman-2.jpg' alt='product' width='261'>
+                            <div class='products__box'>
+                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
+                                <div class='products__inner'>
+                                    <span class='products__price'>$52.00</span>
+                                    <div class='stars'>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class='btn-products'>
+                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
+                            <div class='btn-products__box'>
+                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
+                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='products__item'>
+                        <a class='products__link' href='good.html'>
+                            <img class='products__img' src='img/woman-3.jpg' alt='product' width='261'>
+                            <div class='products__box'>
+                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
+                                <div class='products__inner'>
+                                    <span class='products__price'>$52.00</span>
+                                    <div class='stars'>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class='btn-products'>
+                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
+                            <div class='btn-products__box'>
+                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
+                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='products__item'>
+                        <a class='products__link' href='good.html'>
+                            <img class='products__img' src='img/woman-4.jpg' alt='product' width='261'>
+                            <div class='products__box'>
+                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
+                                <div class='products__inner'>
+                                    <span class='products__price'>$52.00</span>
+                                    <div class='stars'>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class='btn-products'>
+                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
+                            <div class='btn-products__box'>
+                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
+                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer class='footer'>
+            <section class='subscribe'>
+                <div class='review'>
+                    <div class='review__box'>
+                        <img class='review__img' src='img/review.jpg' alt='user' width='83'>
+                        <div class='review__wrap'>
+                            <p class='review__lead'>&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium&raquo;</p>
+                            <div class='review__footer'>
+                                <h3 class='review__title'>Bin Burhan</h3>
+                                <span class='review__text'>Dhaka, Bd</span>
+                                <div class='review__inner'>
+                                    <button class='btn-choice'></button>
+                                    <button class='btn-choice'></button>
+                                    <button class='btn-choice'></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='form-sub'>
+                    <div class='form-sub__box'>
+                        <h2 class='form-sub__title'>subscribe</h2>
+                        <h3 class='form-sub__subject'>for our newletter and promotion</h3>
+                        <form class='form-sub__form'>
+                            <input class='form-sub__email' type='email' name='email' placeholder='Enter Your Email' autocomplete='on' required pattern='^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'>
+                            <input class='form-sub__btn' type='submit' name='submit' value='Subscribe'>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class='footer-content center'>
+                <div class='footer-content__box'>
+                    <a class='logo' href='index.html'>
+                        <img class='logo__img' src='img/logo.png' width='59' alt='logo'>
+                        <span class='logo__main-text'>bran<span class='logo__text'>d</span></span>
+                    </a>
+                    <p class='footer-content__text'>
+                        Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.
+                    </p>
+                    <p class='footer-content__text'>
+                        Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    </p>
+                </div>
+                <nav class='footer-content__nav'>
+                    <ul class='footer-content__list'>
+                        <li class='footer-content__item'>
+                            <h2 class='footer-content__title'>company</h2>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='index.html'>home</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>shop</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>about</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>how it&nbsp;works</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>contact</a>
+                        </li>
+                    </ul>
+                    <ul class='footer-content__list'>
+                        <li class='footer-content__item'>
+                            <h2 class='footer-content__title'>information</h2>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>tearms &amp;&nbsp;condition</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>privacy policy</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>how to&nbsp;buy</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>how to&nbsp;sell</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>promotion</a>
+                        </li>
+                    </ul>
+                    <ul class='footer-content__list footer-content__list_last'>
+                        <li class='footer-content__item'>
+                            <h2 class='footer-content__title'>SHOP CATEGORY</h2>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='man.html'>Men</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>Women</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>Child</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>Apparel</a>
+                        </li>
+                        <li class='footer-content__item'>
+                            <a class='footer-content__link' href='#'>Brows All</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class='footer-bottom'>
+                <div class='footer-bottom__box center'>
+                    <p class='footer-bottom__text'>&copy;&nbsp;2017 Brand All Rights Reserved.</p>
+                    <ul class='footer-bottom__list'>
+                        <li class='footer-bottom__item'>
+                            <a class='footer-bottom__link' href='https://www.facebook.com'>
+                                <i class='fab fa-facebook-f'></i>
+                            </a>
+                        </li>
+                        <li class='footer-bottom__item'>
+                            <a class='footer-bottom__link' href='https://twitter.com/'>
+                                <i class='fab fa-twitter'></i>
+                            </a>
+                        </li>
+                        <li class='footer-bottom__item'>
+                            <a class='footer-bottom__link' href='https://linkedin.com/'>
+                                <i class='fab fa-linkedin-in'></i>
+                            </a>
+                        </li>
+                        <li class='footer-bottom__item'>
+                            <a class='footer-bottom__link' href='https://pinterest.com/'>
+                                <i class='fab fa-pinterest-p'></i>
+                            </a>
+                        </li>
+                        <li class='footer-bottom__item'>
+                            <a class='footer-bottom__link' href='https://plus.google.com/'>
+                                <i class='fab fa-google-plus-g'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
