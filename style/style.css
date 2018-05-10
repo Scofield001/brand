@@ -1132,6 +1132,9 @@ p {
     border: 1px solid #e6e6e6;
     border-radius: 5px;
     background-color: #fff; }
+  .min-cart__list {
+    max-height: 348px;
+    overflow-y: auto; }
   .min-cart__item {
     display: flex;
     margin-bottom: 16px;
