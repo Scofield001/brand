@@ -13,7 +13,6 @@
     <meta name='msapplication-TileColor' content='#FFFFFF'/>
     <meta name='msapplication-square150x150logo' content='img/favicon/mstile-150x150.png'/>
     <script defer src='lib/fontawesome/fontawesome-all.min.js'></script>
-
     <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/theme.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -96,60 +95,17 @@
                 </div>
                 <div class='header-right'>
                     <div class='header-right__ellipse'>
-                        <span class='header-right__quantity'>2</span>
+                        <span class='header-right__count-goods' id="count">0</span>
                     </div>
-                    <details class='min-cart'>
+                    <details class='min-cart' open>
                         <summary class='min-cart__icon'>
                         </summary>
                         <div class='min-cart__box'>
                             <div class='min-cart__triangle triangle'></div>
-                            <ul class='min-cart__list'>
-                                <li class='min-cart__item'>
-                                    <a class='min-cart__link' href='good.html'>
-                                        <img class='min-cart__img' src='img/min/good-1.jpg' alt='good' width='72'>
-                                        <div class='min-cart__inner'>
-                                            <h3 class='min-cart__title'>rebox zane</h3>
-                                            <div class='stars'>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                            </div>
-                                            <span class='min-cart__text'>
-                                                <span class='min-cart__quantity'>1</span>
-                                                <span class='min-cart__multi'>&ensp;x&ensp;</span>
-                                                <span class='min-cart__price'>$250</span>
-                                            </span>
-                                        </div>
-                                    </a>
-                                    <button class='btn-delete'><i class='fas fa-times-circle'></i></button>
-                                </li>
-                                <li class='min-cart__item'>
-                                    <a class='min-cart__link' href='good.html'>
-                                        <img class='min-cart__img' src='img/min/good-2.jpg' alt='good' width='72'>
-                                        <div class='min-cart__inner'>
-                                            <h3 class='min-cart__title'>rebox zane</h3>
-                                            <div class='stars'>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                            </div>
-                                            <span class='min-cart__text'>
-                                                <span class='min-cart__quantity'>1</span>
-                                                <span class='min-cart__multi'>&ensp;x&ensp;</span>
-                                                <span class='min-cart__price'>$250</span>
-                                            </span>
-                                        </div>
-                                    </a>
-                                    <button class='btn-delete'><i class='fas fa-times-circle'></i></button>
-                                </li>
-                            </ul>
+                            <ul class='min-cart__list' id="basket"></ul>
                             <div class='min-cart__wrap'>
                                 <span class='min-cart__main-text'>total</span>
-                                <span class='min-cart__main-price'>$500.00</span>
+                                <span class='min-cart__main-price' id="totalPrice">0</span>
                             </div>
                             <a class='min-cart__link-next' href='checkout.html'>checkout</a>
                             <a class='min-cart__link-next' href='cart.html'>go&nbsp;to&nbsp;cart</a>
@@ -320,207 +276,7 @@
                     <h1 class='products__title'>Fetured Items</h1>
                     <h2 class='products__subject'>Shop for items based on&nbsp;what we&nbsp;featured in&nbsp;this week</h2>
                 </header>
-                <ul class='products__list'>
-                    <li class='products__item'>
-                        <a class='products__link' href='good.html'>
-                            <img class='products__img' src='img/product-1.jpg' alt='product' width='261'>
-                            <div class='products__box'>
-                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-                                <div class='products__inner'>
-                                    <span class='products__price'>$52.00</span>
-                                    <div class='stars'>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='btn-products'>
-                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
-                            <div class='btn-products__box'>
-                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class='products__item'>
-                        <a class='products__link' href='good.html'>
-                            <img class='products__img' src='img/product-2.jpg' alt='product' width='261'>
-                            <div class='products__box'>
-                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-                                <div class='products__inner'>
-                                    <span class='products__price'>$52.00</span>
-                                    <div class='stars'>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='btn-products'>
-                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
-                            <div class='btn-products__box'>
-                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class='products__item'>
-                        <a class='products__link' href='good.html'>
-                            <img class='products__img' src='img/product-3.jpg' alt='product' width='261'>
-                            <div class='products__box'>
-                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-                                <div class='products__inner'>
-                                    <span class='products__price'>$52.00</span>
-                                    <div class='stars'>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='btn-products'>
-                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
-                            <div class='btn-products__box'>
-                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class='products__item'>
-                        <a class='products__link' href='good.html'>
-                            <img class='products__img' src='img/product-4.jpg' alt='product' width='261'>
-                            <div class='products__box'>
-                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-                                <div class='products__inner'>
-                                    <span class='products__price'>$52.00</span>
-                                    <div class='stars'>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='btn-products'>
-                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
-                            <div class='btn-products__box'>
-                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class='products__item'>
-                        <a class='products__link' href='good.html'>
-                            <img class='products__img' src='img/product-5.jpg' alt='product' width='261'>
-                            <div class='products__box'>
-                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-                                <div class='products__inner'>
-                                    <span class='products__price'>$52.00</span>
-                                    <div class='stars'>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='btn-products'>
-                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
-                            <div class='btn-products__box'>
-                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class='products__item'>
-                        <a class='products__link' href='good.html'>
-                            <img class='products__img' src='img/product-6.jpg' alt='product' width='261'>
-                            <div class='products__box'>
-                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-                                <div class='products__inner'>
-                                    <span class='products__price'>$52.00</span>
-                                    <div class='stars'>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='btn-products'>
-                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
-                            <div class='btn-products__box'>
-                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class='products__item'>
-                        <a class='products__link' href='good.html'>
-                            <img class='products__img' src='img/product-7.jpg' alt='product' width='261'>
-                            <div class='products__box'>
-                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-                                <div class='products__inner'>
-                                    <span class='products__price'>$52.00</span>
-                                    <div class='stars'>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='btn-products'>
-                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
-                            <div class='btn-products__box'>
-                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class='products__item'>
-                        <a class='products__link' href='good.html'>
-                            <img class='products__img' src='img/product-8.jpg' alt='product' width='261'>
-                            <div class='products__box'>
-                                <h3 class='products__caption'>mango&ensp;people&ensp;t-shirt</h3>
-                                <div class='products__inner'>
-                                    <span class='products__price'>$52.00</span>
-                                    <div class='stars'>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                        <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='btn-products'>
-                            <button class='btn-products__add'>Add to&nbsp;Cart</button>
-                            <div class='btn-products__box'>
-                                <button class='btn-products__send'><i class='fas fa-retweet fa-lg'></i></button>
-                                <button class='btn-products__like'><i class='far fa-heart fa-lg'></i></button>
-                            </div>
-                        </div>
-                    </li>
+                <ul class='products__list' id="products">
                 </ul>
                 <button class='btn-expand'>Browse All Product&ensp;<i class='fas fa-long-arrow-alt-right'></i></button>
             </section>
@@ -701,5 +457,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/Good.js"></script>
+    <script src="js/Basket.js"></script>
 </body>
 </html>
