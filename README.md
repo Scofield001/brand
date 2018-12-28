@@ -2,3 +2,4 @@
 
 Адаптивный сайт (только index).
 Написан с помощью: html5/css3, БЭМ, gulp, SASS, FontAwesome, svg, tinypng, pixelPerfect.
+ТОвары выводятся через ajax
