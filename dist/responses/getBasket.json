@@ -1,0 +1,14 @@
+{
+  "result": 1,
+  "basket": [
+    {
+      "id_product": 1,
+      "product_name": "product one",
+      "price": 50,
+      "img_url": "img/product-1.jpg",
+      "page_url": "good.html",
+      "rating": 5
+    }
+  ],
+  "amount": 50
+}
