@@ -96,78 +96,14 @@
                 </div>
                 <div class='header-right'>
                     <div class='header-right__ellipse'>
-                        <span class='header-right__count-goods'>5</span>
+                        <span class='header-right__count-goods' id="count">0</span>
                     </div>
                     <details class='min-cart'>
                         <summary class='min-cart__icon'>
                         </summary>
                         <div class='min-cart__box'>
                             <div class='min-cart__triangle triangle'></div>
-                            <ul class='min-cart__list'>
-                                <li class='min-cart__item'>
-                                    <a class='min-cart__link' href='good.html'>
-                                        <img class='min-cart__img' src='img/min/good-1.jpg' alt='good' width='72'>
-                                        <div class='min-cart__inner'>
-                                            <h3 class='min-cart__title'>rebox zane</h3>
-                                            <div class='stars'>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                            </div>
-                                            <span class='min-cart__text'>
-                                                <span class='min-cart__quantity'>2</span>
-                                                <span class='min-cart__multi'>x</span>
-                                                <span class='min-cart__price'>$250</span>
-                                            </span>
-                                        </div>
-                                    </a>
-                                    <button class='btn-delete'><i class='fas fa-times-circle'></i></button>
-                                </li>
-                                <li class='min-cart__item'>
-                                    <a class='min-cart__link' href='good.html'>
-                                        <img class='min-cart__img' src='img/min/good-2.jpg' alt='good' width='72'>
-                                        <div class='min-cart__inner'>
-                                            <h3 class='min-cart__title'>rebox zane</h3>
-                                            <div class='stars'>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                            </div>
-                                            <span class='min-cart__text'>
-                                                <span class='min-cart__quantity'>2</span>
-                                                <span class='min-cart__multi'>x</span>
-                                                <span class='min-cart__price'>$250</span>
-                                            </span>
-                                        </div>
-                                    </a>
-                                    <button class='btn-delete'><i class='fas fa-times-circle'></i></button>
-                                </li>
-                                <li class='min-cart__item'>
-                                    <a class='min-cart__link' href='good.html'>
-                                        <img class='min-cart__img' src='img/min/man-3.jpg' alt='good' width='72'>
-                                        <div class='min-cart__inner'>
-                                            <h3 class='min-cart__title'>mango&ensp;people&ensp;t-shirt</h3>
-                                            <div class='stars'>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__icon'><i class='fas fa-star fa-xs'></i></span>
-                                                <span class='stars__half'><i class='fas fa-star-half fa-xs'></i></span>
-                                            </div>
-                                            <span class='min-cart__text'>
-                                                <span class='min-cart__quantity'>1</span>
-                                                <span class='min-cart__multi'>x</span>
-                                                <span class='min-cart__price'>$52</span>
-                                            </span>
-                                        </div>
-                                    </a>
-                                    <button class='btn-delete'><i class='fas fa-times-circle'></i></button>
-                                </li>
-                            </ul>
+                            <ul class='min-cart__list' id="basket"></ul>
                             <div class='min-cart__wrap'>
                                 <span class='min-cart__main-text'>total</span>
                                 <span class='min-cart__main-price'>$1052.00</span>
@@ -472,7 +408,7 @@
                         </fieldset>
                     </form>
                     <section class='products products_padding'>
-                        <ul class='products__list products__list_margin' id="products">
+                        <ul class='products__list products__list_margin'>
                             <li class='products__item'>
                                 <a class='products__link' href='good.html'>
                                     <img class='products__img' src='img/man-1.jpg' alt='product' width='261'>
@@ -906,5 +842,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/build.min.js"></script>
 </body>
 </html>
