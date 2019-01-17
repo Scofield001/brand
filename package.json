@@ -20,15 +20,21 @@
   },
   "homepage": "https://github.com/Scofield001/brand#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cheerio": "^0.6.3",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1",
-    "gulp-uglifyjs": "^0.6.2",
-    "gulp-watch": "^5.0.0"
-  }
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-tinify": "^1.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {}
 }
