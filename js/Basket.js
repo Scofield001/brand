@@ -23,10 +23,10 @@ class Basket {
                 return;
             }
             let data = JSON.parse(xhr.responseText);
-            basket.render(data);
+            Basket.render(data);
         }
     }
-    render(products) {
+    static render(products) {
         for (let i = 0; i < products.basket.length; i++) {
             let list = document.getElementById('basket'),
                 totalPrice = document.getElementById('totalPrice'),
