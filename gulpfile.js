@@ -16,6 +16,7 @@ const gulp = require( 'gulp' ),
             'blocks/container.scss',
             'blocks/**/*.scss',
             'blocks/**/**/*.scss',
+            '@media/*.scss'
         ],
         js: [
             'js/Good.js',
