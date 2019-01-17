@@ -66,7 +66,7 @@ $track: #f0f0f0;
 		&:focus {
 			outline: none;
 			&::-webkit-slider-runnable-track {
-				background: $track * .97;
+				background: darken($track, 3);
 			}
 		}
 		&::-webkit-slider-runnable-track {
