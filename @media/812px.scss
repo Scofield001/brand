@@ -8,6 +8,14 @@ $gray: #d3d3d3;
 			justify-content: space-between;
 		}
 	}
+	.nav {
+		&__list {
+			justify-content: space-around;
+		}
+		&__link {
+			padding: 16px 0;
+		}
+	}
 	.min-cart {
 		margin: 0;
 		top: 0;
