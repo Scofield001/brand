@@ -43,9 +43,15 @@ $pink: #F16D7F;
       width: 100%;
   }
   .offer {
+      &__box {
+        flex-direction: column;
+      }
       &__title,
       &__text {
           font-size: 24px;
+      }
+      &__text {
+        margin: 0;
       }
       &__subject {
           font-size: 17px;
@@ -92,9 +98,6 @@ $pink: #F16D7F;
       }
       &__list {
           width: 158px;
-      }
-      &__item {
-          border: 1px solid $pink;
       }
   }
 }
