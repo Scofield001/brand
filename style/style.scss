@@ -588,12 +588,6 @@ $border-gray: #e6e6e6;
 }
 
 .products {
-	&_padding {
-		padding-bottom: 0;
-	}
-}
-
-.products {
 	&__list {
 		&_margin {
 			margin-bottom: 0;
@@ -601,6 +595,12 @@ $border-gray: #e6e6e6;
 				margin-bottom: 34px;
 			}
 		}
+	}
+}
+
+.products {
+	&_padding {
+		padding-bottom: 0;
 	}
 }
 
@@ -2361,9 +2361,6 @@ $pink: #f16d7f;
 		display: none;
 	}
 	.products {
-		&__list {
-			justify-content: space-around;
-		}
 		&__item {
 			transition: box-shadow .2s ease-out;
 			&:hover {
@@ -2559,6 +2556,14 @@ $gray: #d3d3d3;
 		&__box {
 			height: auto;
 			justify-content: space-between;
+		}
+	}
+	.nav {
+		&__list {
+			justify-content: space-around;
+		}
+		&__link {
+			padding: 16px 0;
 		}
 	}
 	.min-cart {
