@@ -35,9 +35,6 @@ $pink: #f16d7f;
 		display: none;
 	}
 	.products {
-		&__list {
-			justify-content: space-around;
-		}
 		&__item {
 			transition: box-shadow .2s ease-out;
 			&:hover {
