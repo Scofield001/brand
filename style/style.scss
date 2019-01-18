@@ -588,6 +588,12 @@ $border-gray: #e6e6e6;
 }
 
 .products {
+	&_padding {
+		padding-bottom: 0;
+	}
+}
+
+.products {
 	&__list {
 		&_margin {
 			margin-bottom: 0;
@@ -601,12 +607,6 @@ $border-gray: #e6e6e6;
 .table {
 	&__title_first {
 		text-align: left;
-	}
-}
-
-.products {
-	&_padding {
-		padding-bottom: 0;
 	}
 }
 
@@ -2009,8 +2009,9 @@ $black: #222;
 $back: #eeeeee;
 .subscribe {
 	display: flex;
-	min-height: 438px;
-	background: $back url(../img/back-review.jpg) repeat-x bottom;
+	background: $back url(../img/back-review.jpg);
+	background-size: cover;
+
 	&__box {
 		display: flex;
 		justify-content: space-between;
@@ -2491,9 +2492,15 @@ $pink: #F16D7F;
       width: 100%;
   }
   .offer {
+      &__box {
+        flex-direction: column;
+      }
       &__title,
       &__text {
           font-size: 24px;
+      }
+      &__text {
+        margin: 0;
       }
       &__subject {
           font-size: 17px;
@@ -2540,9 +2547,6 @@ $pink: #F16D7F;
       }
       &__list {
           width: 158px;
-      }
-      &__item {
-          border: 1px solid $pink;
       }
   }
 }

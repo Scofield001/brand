@@ -367,6 +367,9 @@ p {
   .nav__item_hover:hover .mega {
     visibility: visible; }
 
+.products_padding {
+  padding-bottom: 0; }
+
 .products__list_margin {
   margin-bottom: 0; }
   .products__list_margin_good {
@@ -374,9 +377,6 @@ p {
 
 .table__title_first {
   text-align: left; }
-
-.products_padding {
-  padding-bottom: 0; }
 
 .account[open] {
   color: #fff; }
@@ -1649,8 +1649,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 438px;
-  background: #eeeeee url(../img/back-review.jpg) repeat-x bottom; }
+  background: #eeeeee url(../img/back-review.jpg);
+  background-size: cover; }
   .subscribe__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2054,8 +2054,15 @@ p {
     display: none; }
   .btn-expand {
     width: 100%; }
+  .offer__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .offer__title, .offer__text {
     font-size: 24px; }
+  .offer__text {
+    margin: 0; }
   .offer__subject {
     font-size: 17px; }
   .offer__lead {
@@ -2087,9 +2094,7 @@ p {
     .footer-bottom__text {
       font-size: 13px; }
     .footer-bottom__list {
-      width: 158px; }
-    .footer-bottom__item {
-      border: 1px solid #F16D7F; } }
+      width: 158px; } }
 
 @media screen and (max-width: 812px) {
   .header__box {
