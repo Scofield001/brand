@@ -12,7 +12,7 @@ Brand
 * Присутствует анимация элементов и блоков.
 * Прижат *footer*
 
-**[Перейти на сайт](https://scofield001.github.io/brand)**
+**[Перейти на сайт](https://scofield001.github.io/brand/)**
 
 Тот же **`Brand`**, но с элементами **PHP**:
 [ссылка на репизторий](https://github.com/Scofield001/php_lv2/tree/master/dz-7)
