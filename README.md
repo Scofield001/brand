@@ -1,6 +1,4 @@
 Brand
-===
-<http://scofield001.github.io>
 ---
 #### *Адаптивный сайт*
 
@@ -14,7 +12,7 @@ Brand
 * Присутствует анимация элементов и блоков.
 * Прижат *footer*
 
-*Production-версия находится* **[здесь](https://github.com/Scofield001/scofield001.github.io)** с сжатыми файлами
+*Production-версия находится* **[здесь](https://github.com/Scofield001/scofield001.github.io/brand)** с сжатыми файлами
 
 Тот же **`Brand`**, но с элементами **PHP**:
 [ссылка на репизторий](https://github.com/Scofield001/php_lv2/tree/master/dz-7)
