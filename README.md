@@ -11,8 +11,8 @@ Brand
 * Старался добавить товары с помощью *нативного* JS.
 * Присутствует анимация элементов и блоков.
 * Прижат *footer*
-
-**[Сам сайт](https://scofield001.github.io/brand)**
+Сам
+**[Перейти на сайт](https://scofield001.github.io/brand)**
 
 Тот же **`Brand`**, но с элементами **PHP**:
 [ссылка на репизторий](https://github.com/Scofield001/php_lv2/tree/master/dz-7)
